@@ -1,0 +1,176 @@
+/* Footer CSS START */
+footer {
+    width: 100%;
+    min-height: 359px;
+    background: #1DA99D;
+    color: #FFFF;
+    padding-top: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-inline: 250px;
+}
+
+.footer_col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+.footer_col h3,
+.pay_container h3,
+.social_container h3 {
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+
+}
+
+.to_right {
+    position: relative;
+    right: 27px;
+}
+
+.footer_col ul li a {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer_col_pay {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pay_container,
+.social_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_nav_bar li {
+    list-style-type: none;
+}
+
+.logo_icon_footer {
+    width: 148px;
+    height: 195px;
+}
+
+.tel_num {
+    list-style-type: none;
+    list-style-image: url('./img/tel_phon.png');
+    text-decoration: none;
+}
+
+.email_num {
+    list-style-type: none;
+    list-style-image: url('./img/email_num.png');
+    text-decoration: none;
+}
+
+.map_num {
+    list-style-type: none;
+    list-style-image: url('./img/map_num.png');
+    text-decoration: none;
+}
+
+.time_num {
+    list-style-type: none;
+    list-style-image: url('./img/time_num.png');
+    text-decoration: none;
+}
+
+.contact_us li a {
+    position: relative;
+    top: -5px;
+}
+
+.pay_cards {}
+
+.facebook {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/facebook.svg');
+    background-size: cover;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.instagram {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/instagram.svg');
+    background-size: cover;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.content_social {
+    display: flex;
+    gap: 24px;
+}
+
+.low_footer {
+    width: 100%;
+    background: #268E83;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.low_bar_content {
+    display: flex;
+    gap: 10px;
+}
+
+.low_bar_content li {
+    list-style-type: none;
+}
+
+.low_bar_content li a {
+    color: #EBEBEB;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: center;
+}
+
+.low_footer h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: left;
+}
+
+.shtix {
+    width: 2px;
+    background-image: url('./img/Lineik.png');
+    background-size: cover;
+}
+
+/* Footer CSS END */

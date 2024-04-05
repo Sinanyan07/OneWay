@@ -1,3 +1,4 @@
+/* Default CSS Style END */
 html,
 body,
 div,
@@ -75,9 +76,13 @@ video {
     vertical-align: baseline;
     background: transparent;
 }
-
+@font-face {
+    font-family: "Mardoto-Regular";
+    src: url(./fonter.am_mardoto/Mardoto-Medium.ttf)
+}
 body {
     line-height: 1;
+    font-family: "Mardoto-Regular";
 }
 
 article,
@@ -164,20 +169,15 @@ select {
     vertical-align: middle;
 }
 
-footer {
-    width: 100%;
-    min-height: 359px;
-    background: #1DA99D;
-    padding-inline: 250px;
-    color: #FFFF;
-    padding-top: 47px;
-}
-
-.logo_icon_footer {
-    width: 148px;
-    height: 195px;
-}
-
 a {
     text-decoration: none;
 }
+/* Default CSS Style END */
+
+
+
+
+
+
+
+
