@@ -1,0 +1,75 @@
+
+
+/* Main CSS START */
+
+.custom_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 130px;
+    padding-inline: 305px;
+}
+
+.marty_icon {
+    align-self: end;
+}
+
+.custom_section form {
+    width: 100%;
+    max-width: 540px;
+    min-height: 585px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px 0px #1DA99D33;
+    padding: 50px 45px;
+}
+
+.custom_section form h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.custom_btn {
+    padding-inline: 5px;
+    width: 88px;
+    height: 48px;
+    border-radius: 8px 0px 0px 8px;
+    border-right: 1px solid #D8D8D8
+}
+
+.sign_up_form {
+    width: 100%;
+    min-height: 45px;
+    background: #1DA99D;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.custom-input_form {
+    border: none;
+    box-shadow: 0px 0px 8px 0px #0000001A;
+    height: 50px;
+}
+
+.mb_custom_for_sing_btn {
+    margin-bottom: 30px;
+}
+
+.custom-bnt_country_code {
+    width: 88px;
+    height: 50px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #0000001A;
+    border-right: 1px solid #D8D8D8;
+    background-position: right 119px center;
+}
+
+
+/* Main CSS END */
+

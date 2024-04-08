@@ -1,13 +1,12 @@
 /* Footer CSS START */
 footer {
     width: 100%;
-    min-height: 359px;
     background: #1DA99D;
     color: #FFFF;
-    padding-top: 47px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 23px
 }
 
 .footer_container {
