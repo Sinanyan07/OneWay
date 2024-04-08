@@ -76,10 +76,12 @@ video {
     vertical-align: baseline;
     background: transparent;
 }
+
 @font-face {
     font-family: "Mardoto-Regular";
     src: url(./fonter.am_mardoto/Mardoto-Medium.ttf)
 }
+
 body {
     line-height: 1;
     font-family: "Mardoto-Regular";
@@ -172,12 +174,25 @@ select {
 a {
     text-decoration: none;
 }
+
 /* Default CSS Style END */
 
 
+.custom_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 135px;
+    padding-inline: 422px;
+}
+
+.custom_section form {
+    width: 100%;
+    max-width: 540px;
+    min-height: 585px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px 0px #1DA99D33;
 
 
-
-
-
-
+}
