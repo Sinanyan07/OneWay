@@ -1,14 +1,16 @@
-
-
 /* Main CSS START */
+
 
 .custom_section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 130px;
-    padding-inline: 305px;
+    gap: 240px;
+    /* justify-content: space-around; */
+    /* padding-inline: 305px; */
 }
+
 
 .marty_icon {
     align-self: end;
@@ -70,6 +72,97 @@
     background-position: right 119px center;
 }
 
+.toggle-password {
+    padding: 10px;
+    /* Задаем отступ кнопке */
+    border-left: 0;
+    /* Убираем границу слева */
+    cursor: pointer;
+    /* Делаем курсор указателем при наведении */
+}
+
+.custom-input_form {
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #808080;
+    /* Задаем скругление углов справа */
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 8px 0px #0000001A;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.see_password {
+    position: relative;
+    top: -32px;
+    left: 90%;
+    z-index: 5;
+    background-image: url('./img/eye_2.svg');
+    background-size: cover;
+    width: 22px;
+    height: 19px;
+}
+
 
 /* Main CSS END */
 
+#fill_in_the_data_Id {
+    /* display: flex; */
+    display: none;
+}
+
+
+/* For step 2 CSS START */
+
+.textTitel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.textTitel span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+}
+
+.container_for_chek {
+    display: flex;
+    justify-content: space-around;
+}
+
+.check_input {
+    color: #1DA99D;
+    border: 1px solid #1DA99D;
+}
+
+.form-check-input:checked {
+
+    border: 5px solid #1DA99D;
+    background-color: #ffffff;
+}
+
+/* For step 2 CSS END */
+
+
+
+
+
+
+
+
+@media (max-width: 1570px) {
+    .custom_section {
+        gap: unset;
+        justify-content: space-around;
+        padding-inline: 135px;
+    }
+}

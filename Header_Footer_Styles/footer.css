@@ -77,25 +77,25 @@ footer {
 
 .tel_num {
     list-style-type: none;
-    list-style-image: url('./img/tel_phon.png');
+    list-style-image: url('../img/tel_phon.png');
     text-decoration: none;
 }
 
 .email_num {
     list-style-type: none;
-    list-style-image: url('./img/email_num.png');
+    list-style-image: url('../img/email_num.png');
     text-decoration: none;
 }
 
 .map_num {
     list-style-type: none;
-    list-style-image: url('./img/map_num.png');
+    list-style-image: url('../img/map_num.png');
     text-decoration: none;
 }
 
 .time_num {
     list-style-type: none;
-    list-style-image: url('./img/time_num.png');
+    list-style-image: url('../img/time_num.png');
     text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ footer {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url('./img/facebook.svg');
+    background-image: url('../img/facebook.svg');
     background-size: cover;
     background-position: center;
     text-indent: -9999px;
@@ -120,7 +120,7 @@ footer {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url('./img/instagram.svg');
+    background-image: url('../img/instagram.svg');
     background-size: cover;
     background-position: center;
     text-indent: -9999px;
@@ -168,7 +168,7 @@ footer {
 
 .shtix {
     width: 2px;
-    background-image: url('./img/Lineik.png');
+    background-image: url('../img/Lineik.png');
     background-size: cover;
 }
 
