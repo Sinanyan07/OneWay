@@ -1,5 +1,94 @@
-
 .navbar {
     margin-bottom: 0px;
 }
 
+.aboutUs {
+    border-bottom: 1px solid #1DA99D;
+}
+
+.aboutInn {
+    padding-left: 250px;
+    min-height: 700px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.abInLeft {
+    max-width: 658px;
+    width: 100%;
+    min-height: 325px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 197px;
+}
+
+.abInLeft h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70.31px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.abInLeft span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    color: #263238;
+    margin-bottom: 30px;
+}
+
+.abInLeft p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+    color: #000000;
+    margin-left: 25px;
+    margin-bottom: 17px;
+}
+
+.abInLeft ul {
+    margin-left: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    list-style-image: url(../img/ulLi.svg);
+}
+
+.abInnRight {
+    height: 700px;
+}
+/* first sel end */
+
+
+
+/* second select st */
+
+.marty{
+    padding-inline: 250px;
+}
+.martyInn{
+    display: flex;
+    justify-content: space-between;
+    gap: 107px;
+    min-height: 943px;
+
+}
+.mInnLeft{
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+.mInnRight{
+    max-width: 710px;
+    width: 100%;
+    margin-top: 334px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
