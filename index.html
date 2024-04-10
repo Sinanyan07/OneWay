@@ -9,11 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Header_Footer_Styles/footer.css">
     <link rel="stylesheet" href="./Header_Footer_Styles/header.css">
     <link rel="stylesheet" href="main_page.css">
-    <script src="script.js" defer></script>
     <title>One Way</title>
 </head>
 
@@ -105,15 +105,16 @@
                   </select> 
                 -->
 
-                <button id="dropdownMenuButton" class="btn custom-bnt_country_code dropdown-toggle" type="button"
+                <button id="dropdownMenuButton1" class="btn custom-bnt_country_code dropdown-toggle" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">+374</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+374')">+374</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+7')">+7</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+1')">+1</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+99')">+99</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#" onclick="changeCode('+374', 'dropdownMenuButton1')">+374</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#" onclick="changeCode('+7', 'dropdownMenuButton1')">+7</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeCode('+1','dropdownMenuButton1')">+1</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="changeCode('+99','dropdownMenuButton1')">+99</a></li>
                 </ul>
-                <input id="textInput" type="text" class="form-control custom-input_form"
+                <input id="textInput_1" type="text" class="form-control custom-input_form"
                     aria-label="Text input with dropdown button">
             </div>
         </div>
@@ -133,7 +134,7 @@
     </form>
 </section>
 
-<section class="custom_section">
+<section class="custom_section" id="welcome_Id">
     <img src="./img/marty_2.svg" alt="Marty" class="marty_icon">
     <form action="">
         <h4 class="text-center textTitel">Բարի գալուստ!
@@ -144,51 +145,46 @@
             <label class="form-label mb-3">Գրանցվել որպես</label>
             <div class="container_for_chek">
                 <div class="form-check">
-                    <input class="form-check-input check_input" type="radio" name="customerType" id="individualType"
+                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio" name="customerType" id="individualType"
                         value="individual" checked>
                     <label class="form-check-label" for="individualType">
                         Ֆիզիկական անձ
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input check_input" type="radio" name="customerType" id="legalType" value="legal">
+                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio" name="customerType" id="legalType"
+                        value="legal">
                     <label class="form-check-label" for="legalType">
                         Իրավաբանական անձ
                     </label>
                 </div>
             </div>
         </div>
-
-
-
         <div class="mb-3">
-            <label for="countryNumber" class="form-label">Հեռախոսահամար *</label>
-            <div class="input-group">
-                <button id="dropdownMenuButton" class="btn custom-bnt_country_code dropdown-toggle" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">+374</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+374')">+374</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+7')">+7</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+1')">+1</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeCode('+99')">+99</a></li>
-                </ul>
-                <input id="textInput" type="text" class="form-control custom-input_form"
-                    aria-label="Text input with dropdown button">
-            </div>
+            <label for="name" class="form-label">Անուն *</label>
+            <input type="text" class="form-control custom-input_form" id="name" placeholder="Լրացնել լատինատառ">
         </div>
-
-        <div class="mb-3">
-            <label for="exampPassword_1" class="form-label">Գաղտնաբառ *</label>
-            <input type="password" class="form-control custom-input_form" id="exampPassword_1">
-            <div class="see_password" onclick="for_see_password_type('exampPassword_1')"></div>
-        </div>
-
         <div class="mb_custom_for_sing_btn">
-            <label for="exampPassword_2" class="form-label">Կրկնել գաղտնաբառը *</label>
-            <input type="password" class="form-control custom-input_form" id="exampPassword_2">
-            <div class="see_password" onclick="for_see_password_type('exampPassword_2')"></div>
+            <label for="surename" class="form-label">Ազգանուն *</label>
+            <input type="text" class="form-control custom-input_form" id="surename" placeholder="Լրացնել լատինատառ">
         </div>
-
+        <div class="mb_custom_for_sing_btn" id="company_name_container">
+            <label for="company_name" class="form-label">Ընկերության անվանում *</label>
+            <input type="text" class="form-control custom-input_form" id="company_name" placeholder="Լրացնել լատինատառ">
+        </div>
+        <div class="mb_custom_for_sing_btn">
+            <label for="surename" class="form-label">Քաղաք *</label>
+            <select class="form-select custom-input_form" aria-label="Default select example">
+                <option selected>Yerevan</option>
+                <option value="1">Gyumri</option>
+                <option value="2">Vanadzor</option>
+                <option value="3">Qexarquniq</option>
+            </select>
+        </div>
+        <div class="mb_custom_for_sing_btn">
+            <label for="addres" class="form-label">Հասցե *</label>
+            <input type="text" class="form-control custom-input_form" id="addres" placeholder="Լրացնել լատինատառ">
+        </div>
         <button class="sign_up_form">
             Գրանցվել
         </button>

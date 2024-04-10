@@ -150,6 +150,10 @@
     background-color: #ffffff;
 }
 
+#company_name_container {
+    display: none;
+}
+
 /* For step 2 CSS END */
 
 
