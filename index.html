@@ -145,15 +145,15 @@
             <label class="form-label mb-3">Գրանցվել որպես</label>
             <div class="container_for_chek">
                 <div class="form-check">
-                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio" name="customerType" id="individualType"
-                        value="individual" checked>
+                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio"
+                        name="customerType" id="individualType" value="individual" checked>
                     <label class="form-check-label" for="individualType">
                         Ֆիզիկական անձ
                     </label>
                 </div>
                 <div class="form-check">
-                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio" name="customerType" id="legalType"
-                        value="legal">
+                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio"
+                        name="customerType" id="legalType" value="legal">
                     <label class="form-check-label" for="legalType">
                         Իրավաբանական անձ
                     </label>
@@ -187,6 +187,36 @@
         </div>
         <button class="sign_up_form">
             Գրանցվել
+        </button>
+    </form>
+</section>
+
+<section class="custom_section" id="logIn_Id">
+    <img src="./img/marty_2.svg" alt="Marty" class="marty_icon">
+    <form action="">
+        <h4 class="text-center textTitel">Մուտքագրել տվյալները</h4>
+        <div class="mb-3"><label for="exampleInputEmail1" class="form-label">Էլ․ հասցե *</label>
+            <input type="email" class="form-control custom-input_form" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="mb_custom_for_sing_btn">
+            <label for="exampPassword_login" class="form-label">Կրկնել գաղտնաբառը *</label>
+            <input type="password" class="form-control custom-input_form" id="exampPassword_login">
+            <div class="see_password" onclick="for_see_password_type('exampPassword_login')"></div>
+        </div>
+        <div class="container_forgotPassword">
+            <div class="mb-3">
+                <input class="form-check-inputs" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Հիշել
+                </label>
+              </div>
+              <span>Մոռացե ՞լ եք գաղտնաբառը։</span>
+        </div>
+
+
+        <button class="sign_up_form">
+            Մուտք
         </button>
     </form>
 </section>

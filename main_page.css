@@ -113,7 +113,7 @@
 
 /* Main CSS END */
 
-#fill_in_the_data_Id {
+#fill_in_the_data_Id, #welcome_Id {
     /* display: flex; */
     display: none;
 }
@@ -156,12 +156,15 @@
 
 /* For step 2 CSS END */
 
+/* For step 2 CSS START */
+
+.container_forgotPassword {
+    display: flex;
+    justify-content: space-between;
+}
 
 
-
-
-
-
+/* For step 2 CSS START */
 
 @media (max-width: 1570px) {
     .custom_section {
