@@ -193,10 +193,10 @@
 
 <section class="custom_section" id="logIn_Id">
     <img src="./img/marty_2.svg" alt="Marty" class="marty_icon">
-    <form action="">
+    <form action="" class="h_size_login">
         <h4 class="text-center textTitel">Մուտքագրել տվյալները</h4>
-        <div class="mb-3"><label for="exampleInputEmail1" class="form-label">Էլ․ հասցե *</label>
-            <input type="email" class="form-control custom-input_form" id="exampleInputEmail1"
+        <div class="mb-3"><label for="exampleInputEmail2" class="form-label">Էլ․ հասցե *</label>
+            <input type="email" class="form-control custom-input_form" id="exampleInputEmail2"
                 aria-describedby="emailHelp">
         </div>
         <div class="mb_custom_for_sing_btn">
@@ -206,12 +206,12 @@
         </div>
         <div class="container_forgotPassword">
             <div class="mb-3">
-                <input class="form-check-inputs" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Հիշել
+                <label class="main_check">Հիշել
+                    <input type="checkbox">
+                    <span class="geekmark"></span>
                 </label>
-              </div>
-              <span>Մոռացե ՞լ եք գաղտնաբառը։</span>
+            </div>
+            <span>Մոռացե ՞լ եք գաղտնաբառը։</span>
         </div>
 
 
@@ -220,6 +220,79 @@
         </button>
     </form>
 </section>
+
+<section class="custom_section gap_unset_custom" id="forgot_your_password">
+    <img src="./img/marty_3.svg" alt="Marty" class="marty_icon_special">
+    <form action="" class="h_size_login_sm">
+        <h4 class="text-center textTitel">Մոռացե ՞լ եք գաղտնաբառը</h4>
+        <div class="mb-3"><label for="exampleInputEmail3" class="form-label">Էլ․ հասցե *</label>
+            <input type="email" class="form-control custom-input_form mb-2" id="exampleInputEmail3"
+                aria-describedby="emailHelp" placeholder="Էլ․ հասցե ">
+            <span class="forgot_span">
+                Մուտքագրեք համակարգում գրանցված էլ․ հասցեն, որին ուղարկվելու է վերականգնման կոդը։
+            </span>
+        </div>
+        <button class="sign_up_form">
+            Ստանալ կոդը
+        </button>
+    </form>
+
+</section>
+
+<section class="custom_section gap_unset_custom" id="enter_the_code">
+    <img src="./img/marty_3.svg" alt="Marty" class="marty_icon_special">
+    <form action="" class="h_size_login_sm">
+        <div class="mb-3">
+            <h4 class="text-center textTitel">Մոռացե ՞լ եք գաղտնաբառը</h4>
+            <input type="number" class="form-control custom-input_form mb-2" id="example_num"
+                aria-describedby="emailHelp">
+            <span class="forgot_span mb-3">
+                Լրացնել էլ․հասցեին ուղարկված կոդը։
+            </span>
+        </div>
+        <button class="sign_up_form">
+            Հաստատել
+        </button>
+    </form>
+
+</section>
+
+<section class="custom_section gap_unset_custom" id="password_new">
+    <img src="./img/marty_3.svg" alt="Marty" class="marty_icon_special">
+    <form action="" class="h_size_login_sm">
+        <div class="mb-3">
+            <h4 class="text-center textTitel">Նոր գաղտնաբառ</h4>
+            <div class="mb-3">
+                <label for="exampPassword_new" class="form-label">Գաղտնաբառ *</label>
+                <input type="password" class="form-control custom-input_form" id="exampPassword_new">
+                <div class="see_password" onclick="for_see_password_type('exampPassword_new')"></div>
+            </div>
+            <div class="mb_custom_for_sing_btn">
+                <label for="exampPassword_new_1" class="form-label">Կրկնել գաղտնաբառը *</label>
+                <input type="password" class="form-control custom-input_form" id="exampPassword_new_1">
+                <div class="see_password" onclick="for_see_password_type('exampPassword_new_1')"></div>
+            </div>
+        </div>
+        <button class="sign_up_form">
+            Հաստատել
+        </button>
+    </form>
+
+</section>
+
+<section class="custom_section gap_unset_custom" id="password_change">
+    <form action="" class="h_size_login_sm">
+        <div class="mb-3 one_new_paswword_container">
+            <h4 class="text-center textTitel">Նոր գաղտնաբառ</h4>
+            <img src="./img/1.svg" alt="/" class="one_img">
+        </div>
+        <button class="sign_up_form">
+            Վերադառնալ գլխավոր
+        </button>
+    </form>
+
+</section>
+
 
 <!-- Main Content END -->
 

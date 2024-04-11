@@ -1,0 +1,14 @@
+.slider_content {
+    width: 100%;
+    min-height: 700px;
+}
+
+.navbar {
+    margin-bottom:unset !important;
+}
+
+.slid_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
