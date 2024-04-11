@@ -4,11 +4,39 @@
 }
 
 .navbar {
-    margin-bottom:unset !important;
+    margin-bottom: unset !important;
 }
 
 .slid_1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section_1_right {
+    padding-left: 225px;
+}
+
+.section_1_right h1 {
+    text-wrap: wrap;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70.31px;
+    text-align: left;
+    color: #000000;
+}
+
+.section_1_left {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    max-width: 850px;
+    height: 630px;
+    background-image: url("./img_home/section_1_home_img.svg");
+    background-size: 100%;
+    background-position: start;
+    background-repeat: no-repeat;
+    z-index: -5;
 }
