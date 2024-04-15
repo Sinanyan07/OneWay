@@ -30,16 +30,24 @@
 .rightShop {
     height: 700px;
 }
+/* .rightShop img{
+    
+} */
 
 /* this end  */
 
 /* shopping sect st */
 
 .shopping {
-    padding-inline: 250px;
+    padding-inline: 150px;
+    display: flex;
+    justify-content: center;
 
 }
-
+.shoppingInn{
+    max-width: 1420px;
+    width: 100%;
+}
 .searchInp {
     display: flex;
     justify-content: flex-end;
@@ -89,10 +97,50 @@ input {
 /* shopping sect end */
 
 /* brands sect st */
+
+
+.countryType {
+    max-width: 1175px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+#allCountry {
+    /* max-width: 112px; */
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FBFBFB;
+        /* background-color: #1DA99D; */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: center;
+    color: #212121;
+    padding-inline: 14px;
+}
+
+.greenGl{
+    display: none;
+}
+
+.allCountry{
+
+}
+
+
 .brands {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
     margin-bottom: 185px;
 }
@@ -106,7 +154,8 @@ input {
     padding-block: 30px;
     padding-inline: 30px;
 }
-.imageDv{
+
+.imageDv {
     margin-bottom: 30px;
     height: 280px;
     display: flex;
