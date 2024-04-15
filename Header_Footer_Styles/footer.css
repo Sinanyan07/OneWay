@@ -142,7 +142,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 14px;
+    padding-block: 14px;
 }
 
 .low_bar_content {

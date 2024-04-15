@@ -13,10 +13,16 @@ ul {
     margin-bottom: 70px;
 }
 
-.contTop {
+.contMainTop {
     width: 100%;
-    margin: auto;
-    padding-inline: 250px;
+    padding-inline: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.contTop {
+    max-width: 1420px;
+    width: 100%;
 }
 
 
@@ -39,7 +45,6 @@ ul {
     font-weight: 400;
     line-height: 18.75px;
     text-align: left;
-    margin-right: 0;
 }
 
 .topLeftNav button {
@@ -79,6 +84,14 @@ ul {
 
 }
 
+.regBut:hover {
+    background-color: #67B7B1;
+}
+
+.regBut:active {
+    background-color: #268E83;
+}
+
 .regBut a {
     font-size: 18px;
     font-weight: 500;
@@ -90,12 +103,15 @@ ul {
 .contBot {
     width: 100%;
     background-color: #1DA99D;
+    height: 90px;
+    display: flex;
+    justify-content: center;
 }
 
 .contBotInn {
+    max-width: 1720px;
     width: 100%;
-    margin: auto;
-    padding-inline: 250px;
+    padding-inline: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,10 +121,13 @@ ul {
 .contBotInn ul {
     display: flex;
     justify-content: space-between;
+    /*   gapi tex */
     max-width: 637px;
     width: 100%;
     height: 30px;
     align-items: center;
+    margin-left: 160px;
+    /* gap: 22px; */
 }
 
 .contBotInn ul li a {
@@ -138,6 +157,7 @@ ul {
     /* justify-content: space-between; */
     height: 40px;
     gap: 26px;
+    flex-direction: row-reverse;
 
 }
 
@@ -152,6 +172,10 @@ ul {
     gap: 6px;
     padding-inline: 10px;
     border: none;
+}
+
+.selDiv:active {
+    background-color: #268E83;
 }
 
 .counter {
@@ -169,4 +193,149 @@ ul {
     line-height: 21.09px;
     text-align: center;
     color: #FFFFFF;
+}
+
+
+
+
+/* calculator st */
+.counter:hover {
+    color: #FFFFFF;
+    background-color: #67B7B1CC;
+    border-color: none;
+}
+
+.counter:active {
+    border-color: unset;
+    box-shadow: unset !important;
+    background: #67B7B1CC;
+
+}
+
+.counter:focus {
+    border-color: unset;
+    box-shadow: unset !important;
+    /* background-color: unset; */
+    background: #67B7B1CC;
+
+}
+
+.countOpened {
+    max-width: 558px;
+    margin: 250px auto;
+}
+
+.countOpInn {
+    max-width: 558px;
+    width: 100%;
+    min-height: 440px;
+    border-radius: 8px;
+    margin: unset;
+}
+
+
+
+.sendCount {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: left;
+    color: #000000;
+}
+
+.btn-close {
+    background: unset;
+}
+
+.btn-close:focus {
+    box-shadow: unset !important;
+    opacity: unset;
+}
+
+.opInnFirst {
+    padding: 24px 24px;
+    position: relative;
+    border-bottom: none;
+    margin-bottom: 50px;
+}
+
+
+
+.opInnSec {
+    max-width: 446px;
+    width: 100%;
+    height: 44px;
+    position: unset;
+    display: flex;
+    justify-content: space-between;
+    flex: unset;
+    padding: unset;
+    padding-inline: 40px;
+    margin-bottom: 50px;
+
+}
+
+#countrySet {
+    border: none;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    border-radius: 4px;
+    
+}
+
+.opInnThrd {
+    max-width: 292px;
+    width: 100%;
+    height: 79px;
+
+}
+
+.opInnThrd form {
+    padding-inline: 40px;
+
+}
+
+.opInnThrd label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+    color: #000000;
+}
+
+.opInnThrd input {
+    height: 52px;
+    padding-left: 16px;
+    padding-block: 16px;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    box-shadow: unset;
+}
+.opInnThrd input:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+}
+.opInnThrd{
+    margin-bottom: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* calculator end */
+
+
+@media(max-width:1440px) {
+    .contBotInn ul {
+        margin-left: 65px;
+    }
 }

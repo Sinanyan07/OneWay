@@ -10,30 +10,33 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../Header_Footer_Styles/header.css">
+    <link rel="stylesheet" href="../Header_Footer_Styles/footer.css">
     <link rel="stylesheet" href="aboutStyle.css">
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
     <title>One Way</title>
 </head>
 
 <!-- HEADER START -->
 <nav class="navbar">
-    <div class="contTop">
-        <div class="topLeftNav">
-            <div class="number">
-                <img src="../img/call.svg" alt="call">
-                <div class="span">
-                    +374 33 79 88 88
+    <div class="contMainTop">
+        <div class="contTop">
+            <div class="topLeftNav">
+                <div class="number">
+                    <img src="../img/call.svg" alt="call">
+                    <div class="span">
+                        +374 33 79 88 88
+                    </div>
                 </div>
+                <button class="signBut">
+                    <a href="#">Մուտք</a>
+                </button>
+                <button class="regBut"> <a href="#">Գրանցվել</a></button>
             </div>
-            <button class="signBut">
-                <a href="#">Մուտք</a>
-            </button>
-            <button class="regBut"> <a href="#">Գրանցվել</a></button>
+    
         </div>
-
     </div>
+    
     <div class="contBot">
         <div class="contBotInn">
             <div class="logoParent">
@@ -43,7 +46,7 @@
             </div>
             <ul>
                 <li>
-                    <a href="#">Մեր մասին</a>
+                    <a href="./about.html">Մեր մասին</a>
                 </li>
                 <div class="vert"></div>
                 <li class="liMen">
@@ -59,7 +62,7 @@
                 </li>
                 <div class="vert"></div>
                 <li>
-                    <a href="#">Խանութներ</a>
+                    <a href="../Shops/shop.html">Խանութներ</a>
                 </li>
             </ul>
             <div class="eventRig">
@@ -67,10 +70,60 @@
                     <img src="../img/arm.svg" alt="flag">
                     <img src="../img/dropdown.svg" alt="vector">
                 </button>
-                <button class="counter">
-                    <img src="../img/calculator.svg" alt="counter">
-                    <span>Հաշվիչ</span>
-                </button>
+                <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img src="../img/calculator.svg" alt="counter">
+                <span>Հաշվիչ</span>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog countOpened">
+                    <div class="modal-content countOpInn">
+                        <div class="modal-header opInnFirst">
+                            <h5 class="sendCount">Առաքման հաշվիչ</h5>
+                            <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <img src="../img/closeIcon.svg" alt="closing">
+                            </button>
+                        </div>
+                        <div class="modal-body opInnSec">
+
+                            <button id="countrySet">
+                                <img src="../shopsImage/usa.svg" alt="country">
+                            </button>
+                            <button id="countrySet">
+                                <img src="../shopsImage/china.svg" alt="country">
+                            </button>
+                            <button id="countrySet">
+                                <img src="../shopsImage/spain.svg" alt="country">
+                            </button>
+                            <button id="countrySet">
+                                <img src="../shopsImage/rus.svg" alt="country">
+                            </button>
+                            <button id="countrySet">
+                                <img src="../shopsImage/luxe.svg" alt="country">
+                            </button>
+                        </div>
+                        <div class=" opInnThrd">
+                            <form>
+                                <label for="weightInp">Քաշ (կգ)
+                                    <input type="number" min="0" placeholder="0" id="weightInp">
+                                </label>
+                            </form>
+                        </div>
+                        <div class=" opInnThrd">
+                            <form>
+                                <label for="weightInp">Առաքման արժեք (AMD)
+                                    <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal end -->
             </div>
         </div>
     </div>
@@ -98,7 +151,8 @@
             </ul>
         </div>
         <div class="abInnRight">
-            <img src="../img/martyMain.svg" alt="bigImage">
+            <img class="martyMain19" src="../img/martyMain.svg" alt="bigImage">
+            <img class="martyMain14" src="../img/martyMain.svg" alt="bigImage">
         </div>
 
     </div>
@@ -113,10 +167,10 @@
         <div class="mInnRight">
             <p>Ո ՞վ է Մարթին</p>
             <span>Ես Մարթին եմ, OneWay-ի ճանապարհն անցնելու ենք միասին։
-                Ես շրջագայում եմ ամբողջ աշխարհով և հավաքելով ձեր պատվերները բեռնափոխադրում եմ Հայաստան 🇦🇲: Լինում եմ
+                Ես շրջագայում եմ ամբողջ աշխարհով և հավաքելով ձեր պատվերները բեռնափոխադրում եմ Հայաստան 🇦🇲:Լինում եմ
                 Չինաստանում 🇨🇳 , արդեն շատ ընկերներ ունեմ այնտեղ: Ռուսաստանի 🇷🇺 Wildberries-ի պահեստում ինձ զգում եմ
                 արդեն ինչպես տանը: Հասցրել եմ այցելել Եվրոպայի մի քանի երկրներ` Իսպանիա 🇪🇸 , Հունաստան🇬🇷 և
-                Լյուքսեմբուրգ 🇱🇺 : Եվ չմոռանանք ԱՄՆ-ի մասին 🇺🇸 , որին մենք բոլորս միասին այդքան սպասում էինք: Իհարկե
+                Լյուքսեմբուրգ 🇱🇺 : Եվ չմոռանանք ԱՄՆ-ի մասին 🇺🇸 , որին մենք բոլորս միասին այդքան սպասում էինք:Իհարկե
                 դեռ վայրերը շատ են, որ պետք է գնամ: Ես միշտ լսում և փորձում եմ իրականացնել ձեր ցանկությունները:✨</span>
         </div>
     </div>
