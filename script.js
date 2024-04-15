@@ -19,3 +19,24 @@ function for_see_password_type(id) {
         }
     }
 }
+
+
+{
+    //header opening language
+  
+    const openDv = document.querySelector('.langDv');
+    const dropLang = document.querySelector('.dropDownLang');
+     const selDiv = document.querySelector('.selDiv');
+  
+    function openLang() {
+      openDv.style.display = openDv.style.display === 'block' ? 'none' : 'block';
+      dropLang.style.transform = dropLang.style.transform === 'rotate(180deg)' ? 'rotate(0)' : 'rotate(180deg)';
+    }
+    window.addEventListener("click", function (event) {
+      if (!selDiv.contains(event.target) && openDv.style.display === "block") {
+        openDv.style.display = "none";
+        dropLang.style.transform = "rotate(0deg)";
+      }
+    
+    })
+  }

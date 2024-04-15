@@ -172,9 +172,32 @@ ul {
     gap: 6px;
     padding-inline: 10px;
     border: none;
+    position: relative;
 }
 
 .selDiv:active {
+    background-color: #268E83;
+}
+
+.langDv {
+    width: 66px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 140px;
+    display: none;
+}
+
+.langDv button {
+    height: 40px;
+    border: none;
+    background-color: #67B7B1;
+    padding-right: 26px;
+    padding-left: 10px;
+}
+
+.langDv button:hover {
     background-color: #268E83;
 }
 
@@ -193,6 +216,24 @@ ul {
     line-height: 21.09px;
     text-align: center;
     color: #FFFFFF;
+}
+#allCountry {
+    /* max-width: 112px; */
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FBFBFB;
+        /* background-color: #1DA99D; */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: center;
+    color: #212121;
+    padding-inline: 14px;
 }
 
 
@@ -284,7 +325,7 @@ ul {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px 0px #1DA99D80;
     border-radius: 4px;
-    
+
 }
 
 .opInnThrd {
@@ -318,24 +359,82 @@ ul {
     border-radius: 8px;
     box-shadow: unset;
 }
+
 .opInnThrd input:focus-visible {
     outline: none;
     box-shadow: 0px 0px 10px 0px #1DA99D80;
 
 }
-.opInnThrd{
+
+.opInnThrd {
     margin-bottom: 30px;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
+}
+
+.pageLogo12 {
+    display: none;
 }
 
 /* calculator end */
 
-
+/* media start */
 @media(max-width:1440px) {
     .contBotInn ul {
         margin-left: 65px;
+    }
+
+    .contTop {
+        max-width: 1140px;
+        width: 100%;
+    }
+
+    .contMainTop {
+        width: 100%;
+        padding-inline: 100px;
+    }
+
+    .contBotInn {
+        max-width: 1340px;
+        padding-inline: 100px;
+    }
+}
+
+
+@media(max-width:1280px) {
+    .contBotInn ul {
+        margin-left: -3px;
+    }
+
+    .contBotInn ul {
+        justify-content: space-between;
+        max-width: 615px;
+    }
+    .contBotInn {
+        gap: 20px;
+    }
+    .contBot {
+        height: 80px;
+    }
+
+    .pageLogo19 {
+        display: none;
+    }
+
+    .pageLogo12 {
+        display: block;
+    }
+
+    .contBotInn ul li a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.09px;
+
+    }
+    .langDv {
+        top: 135px;
     }
 }

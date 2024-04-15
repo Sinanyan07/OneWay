@@ -33,15 +33,16 @@
                 </button>
                 <button class="regBut"> <a href="#">Գրանցվել</a></button>
             </div>
-    
+
         </div>
     </div>
-    
+
     <div class="contBot">
         <div class="contBotInn">
             <div class="logoParent">
                 <a href="../index.html">
-                    <img src="../img/mainLogo.svg" alt="logoPage">
+                    <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
+                    <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
                 </a>
             </div>
             <ul>
@@ -66,64 +67,69 @@
                 </li>
             </ul>
             <div class="eventRig">
-                <button class="selDiv">
+                <button class="selDiv" onclick="openLang()">
                     <img src="../img/arm.svg" alt="flag">
-                    <img src="../img/dropdown.svg" alt="vector">
+                    <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
                 </button>
+                <div class="langDv">
+                    <button><img src="../img/usaLang.svg" alt="languages"></button>
+                    <button><img src="../img/rusLang.svg" alt="languages"></button>
+                </div>
+                
                 <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                <img src="../img/calculator.svg" alt="counter">
-                <span>Հաշվիչ</span>
-            </button>
+                    data-bs-target="#exampleModal">
+                    <img src="../img/calculator.svg" alt="counter">
+                    <span>Հաշվիչ</span>
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog countOpened">
-                    <div class="modal-content countOpInn">
-                        <div class="modal-header opInnFirst">
-                            <h5 class="sendCount">Առաքման հաշվիչ</h5>
-                            <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
-                                aria-label="Close">
-                                <img src="../img/closeIcon.svg" alt="closing">
-                            </button>
-                        </div>
-                        <div class="modal-body opInnSec">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog countOpened">
+                        <div class="modal-content countOpInn">
+                            <div class="modal-header opInnFirst">
+                                <h5 class="sendCount">Առաքման հաշվիչ</h5>
+                                <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                    <img src="../img/closeIcon.svg" alt="closing">
+                                </button>
+                            </div>
+                            <div class="modal-body opInnSec">
 
-                            <button id="countrySet">
-                                <img src="../shopsImage/usa.svg" alt="country">
-                            </button>
-                            <button id="countrySet">
-                                <img src="../shopsImage/china.svg" alt="country">
-                            </button>
-                            <button id="countrySet">
-                                <img src="../shopsImage/spain.svg" alt="country">
-                            </button>
-                            <button id="countrySet">
-                                <img src="../shopsImage/rus.svg" alt="country">
-                            </button>
-                            <button id="countrySet">
-                                <img src="../shopsImage/luxe.svg" alt="country">
-                            </button>
-                        </div>
-                        <div class=" opInnThrd">
-                            <form>
-                                <label for="weightInp">Քաշ (կգ)
-                                    <input type="number" min="0" placeholder="0" id="weightInp">
-                                </label>
-                            </form>
-                        </div>
-                        <div class=" opInnThrd">
-                            <form>
-                                <label for="weightInp">Առաքման արժեք (AMD)
-                                    <input type="number" min="0.00" placeholder="0.00" id="weightInp">
-                                </label>
-                            </form>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/usa.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/china.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/spain.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/rus.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/luxe.svg" alt="country">
+                                </button>
+                            </div>
+                            <div class=" opInnThrd">
+                                <form>
+                                    <label for="weightInp">Քաշ (կգ)
+                                        <input type="number" min="0" placeholder="0" id="weightInp">
+                                    </label>
+                                </form>
+                            </div>
+                            <div class=" opInnThrd">
+                                <form>
+                                    <label for="weightInp">Առաքման արժեք (AMD)
+                                        <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                    </label>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- modal end -->
+                <!-- modal end -->
             </div>
         </div>
     </div>

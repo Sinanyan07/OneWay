@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../Header_Footer_Styles/footer.css">
     <link rel="stylesheet" href="shopStyle.css">
     <script src="./shops.js" defer></script>
+    <script src="../script.js" defer></script>
     <title>ShopPage</title>
 </head>
 
@@ -41,7 +42,8 @@
         <div class="contBotInn">
             <div class="logoParent">
                 <a href="../index.html">
-                    <img src="../img/mainLogo.svg" alt="logoPage">
+                    <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
+                    <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
                 </a>
             </div>
             <ul>
@@ -66,10 +68,15 @@
                 </li>
             </ul>
             <div class="eventRig">
-                <button class="selDiv">
+                <button class="selDiv" onclick="openLang()">
                     <img src="../img/arm.svg" alt="flag">
-                    <img src="../img/dropdown.svg" alt="vector">
+                    <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
                 </button>
+                <div class="langDv">
+                    <button><img src="../img/usaLang.svg" alt="languages"></button>
+                    <button><img src="../img/rusLang.svg" alt="languages"></button>
+                </div>
+
                 <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     <img src="../img/calculator.svg" alt="counter">
@@ -191,7 +198,8 @@
                     <img src="../shopsImage/pm6.svg" alt="brandImage">
                 </div>
                 <p>6pm</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="china_id">
@@ -199,7 +207,8 @@
                     <img src="../shopsImage/taobao.svg" alt="brandImage">
                 </div>
                 <p>Taobao</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="china_id">
@@ -207,7 +216,8 @@
                     <img src="../shopsImage/ali.svg" alt="brandImage">
                 </div>
                 <p>Aliexpress</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="china_id">
@@ -215,7 +225,8 @@
                     <img src="../shopsImage/pind.svg" alt="brandImage">
                 </div>
                 <p>Pinduoduo</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="rus_id">
@@ -223,7 +234,8 @@
                     <img src="../shopsImage/wild.svg" alt="brandImage">
                 </div>
                 <p>Wildberries</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -231,7 +243,8 @@
                     <img src="../shopsImage/mango.svg" alt="brandImage">
                 </div>
                 <p>Mango</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="spain_id">
@@ -239,7 +252,8 @@
                     <img src="../shopsImage/zalan.svg" alt="brandImage">
                 </div>
                 <p>Zalando.be</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -247,7 +261,8 @@
                     <img src="../shopsImage/zara.svg" alt="brandImage">
                 </div>
                 <p>Zara</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -255,7 +270,8 @@
                     <img src="../shopsImage/mass.svg" alt="brandImage">
                 </div>
                 <p>Massimo Dutti</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -263,7 +279,8 @@
                     <img src="../shopsImage/amazon.svg" alt="brandImage">
                 </div>
                 <p>Amazon</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -271,7 +288,8 @@
                     <img src="../shopsImage/macys.svg" alt="brandImage">
                 </div>
                 <p>Macys</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -279,7 +297,8 @@
                     <img src="../shopsImage/yoox.svg" alt="brandImage">
                 </div>
                 <p>Yoox</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -287,7 +306,8 @@
                     <img src="../shopsImage/mich.svg" alt="brandImage">
                 </div>
                 <p>Michael Kors</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -295,7 +315,8 @@
                     <img src="../shopsImage/joma.svg" alt="brandImage">
                 </div>
                 <p>Jomashop</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -303,7 +324,8 @@
                     <img src="../shopsImage/armani.svg" alt="brandImage">
                 </div>
                 <p>Armani Exchange</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -311,7 +333,8 @@
                     <img src="../shopsImage/h_m.svg" alt="brandImage">
                 </div>
                 <p>H & M</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="usa_id">
@@ -319,7 +342,8 @@
                     <img src="../shopsImage/serh.svg" alt="brandImage">
                 </div>
                 <p>Sephora</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="china_id">
@@ -327,7 +351,8 @@
                     <img src="../shopsImage/numberr.svg" alt="brandImage">
                 </div>
                 <p>1688</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="rus_id">
@@ -335,7 +360,8 @@
                     <img src="../shopsImage/kidd.svg" alt="brandImage">
                 </div>
                 <p>Детский мир</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="spain_id">
@@ -343,7 +369,8 @@
                     <img src="../shopsImage/veep.svg" alt="brandImage">
                 </div>
                 <p>Veepee</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="rus_id">
@@ -351,7 +378,8 @@
                     <img src="../shopsImage/ozon.svg" alt="brandImage">
                 </div>
                 <p>Ozon</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
             <div class="mainDiv" id="rus_id">
@@ -359,10 +387,11 @@
                     <img src="../shopsImage/ozon2.svg" alt="brandImage">
                 </div>
                 <p>Ozon</p>
-                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների զեղչված
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
                     մեծ տեսականի: </span>
             </div>
-    
+
         </div>
     </div>
 
