@@ -192,8 +192,6 @@ form {
     gap: 8px;
 }
 
-
-
 .name_input {
     width: 100%;
     height: 50px;
@@ -233,7 +231,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 175px;
 }
 
 .section_4 h1 {
@@ -273,7 +271,7 @@ form {
 }
 
 .placees_custom_gray span,
-.placees_custom_white span{
+.placees_custom_white span {
     color: #000000 !important;
 }
 
@@ -293,4 +291,129 @@ form {
     width: 22px;
     height: 20px;
     align-self: center;
+}
+
+.section_6 {
+    width: 100%;
+    min-height: 600px;
+    background: #1DA99D;
+    margin-bottom: 120px;
+}
+
+.section_7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 103px;
+}
+
+.section_7 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.88px;
+    text-align: center;
+    color: #000000;
+}
+
+.marty_img_size {
+    align-self: center;
+    width: 175px;
+    height: 216px;
+}
+
+.shops_container img {
+    width: 220px;
+    height: 124px;
+}
+
+.conatiner_section_7 {
+    display: flex;
+    justify-content: center;
+}
+
+.shops_container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1180px;
+    flex-wrap: wrap;
+}
+
+.section_7 button {
+    width: 219px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: #1DA99D;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.section_8 {
+    width: 100%;
+    min-height: 500px;
+    background: #F1F1F1;
+    padding-top: 80px;
+}
+
+.section_8 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.88px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.main_section_8 {
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.container_section_8 {
+    width: 100%;
+    max-width: 742px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_section_8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item_section_8 span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: left;
+    color: #000000;
+}
+
+hr {
+    width: 100%;
+    max-width: 1420px;
+    margin: auto;
+    color: #1DA99D;
+    border: 1px solid #1DA99D;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.text_info {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    color: #3F3939;
 }
