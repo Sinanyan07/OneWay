@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Header_Footer_Styles/header.css">
+    <link rel="stylesheet" href="../Header_Footer_Styles/footer.css">
+    <link rel="stylesheet" href="buy.css">
+    <script src="../script.js" defer></script>
+    <title>One Way</title>
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <nav class="navbar">
+        <div class="contMainTop">
+            <div class="contTop">
+                <div class="topLeftNav">
+                    <div class="number">
+                        <img src="../img/call.svg" alt="call">
+                        <div class="span">
+                            +374 33 79 88 88
+                        </div>
+                    </div>
+                    <button class="signBut">
+                        <a href="#">Մուտք</a>
+                    </button>
+                    <button class="regBut"> <a href="#">Գրանցվել</a></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contBot">
+            <div class="contBotInn">
+                <div class="logoParent">
+                    <a href="../index.html">
+                        <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
+                        <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./about.html">Մեր մասին</a>
+                    </li>
+                    <div class="vert"></div>
+                    <li class="liMen">
+                        <button>
+                            <a href="#">Ծառայություններ</a>
+                            <img src="../img/downMen.svg" alt="down">
+                        </button>
+
+                    </li>
+                    <div class="vert"></div>
+                    <li>
+                        <a href="#">Սակագներ</a>
+                    </li>
+                    <div class="vert"></div>
+                    <li>
+                        <a href="../Shops/shop.html">Խանութներ</a>
+                    </li>
+                </ul>
+                <div class="eventRig">
+                    <button class="selDiv" onclick="openLang()">
+                        <img src="../img/arm.svg" alt="flag">
+                        <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
+                    </button>
+                    <div class="langDv">
+                        <button><img src="../img/usaLang.svg" alt="languages"></button>
+                        <button><img src="../img/rusLang.svg" alt="languages"></button>
+                    </div>
+
+                    <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <img src="../img/calculator.svg" alt="counter">
+                        <span>Հաշվիչ</span>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog countOpened">
+                            <div class="modal-content countOpInn">
+                                <div class="modal-header opInnFirst">
+                                    <h5 class="sendCount">Առաքման հաշվիչ</h5>
+                                    <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <img src="../img/closeIcon.svg" alt="closing">
+                                    </button>
+                                </div>
+                                <div class="modal-body opInnSec">
+
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/usa.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/china.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/spain.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/rus.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/luxe.svg" alt="country">
+                                    </button>
+                                </div>
+                                <div class=" opInnThrd">
+                                    <form>
+                                        <label for="weightInp">Քաշ (կգ)
+                                            <input type="number" min="0" placeholder="0" id="weightInp">
+                                        </label>
+                                    </form>
+                                </div>
+                                <div class=" opInnThrd">
+                                    <form>
+                                        <label for="weightInp">Առաքման արժեք (AMD)
+                                            <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal end -->
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- HEADER END -->
+
+
+    <!-- 
+    <section class="buyFor">
+        <div class="buyForInn">
+            <div class="buyForLeft">
+                <h1>Գնիր իմ փոխարեն</h1>
+                <span>Ուղարկեք մեզ ապրանքի հղումը և
+                    մենք կիրականացնենք գնումը Ձեր փոխարեն։</span>
+            </div>
+            <div class="abInnRight">
+                <img class="" src="../img/" alt="bigImage">
+                <img class="" src="../img/" alt="bigImage">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section_3">
+        <div class="main_section_3">
+            <div class="titel_section_3">
+                <h1>Լրացնել անհրաժեշտ դաշտերը</h1>
+            </div>
+            <form action="" class="">
+
+                <div class="buy_link">
+
+                    <div class="product_adds">
+                        <div class="input_group">
+                            <div class="input_container">
+                                <label for="name_input_Id" class="titel_label">Ապրանքի անունը</label>
+                                <input type="text" class="name_input" id="name_input_Id" placeholder="High heels">
+                            </div>
+                            <div class="input_container link_input">
+                                <label for="name_input_Id" class="titel_label">Ապրանքի հղումը</label>
+                                <input type="text" class="name_input" id="name_input_Id"
+                                    placeholder="https://en.zalando.de/versace-jeans-couture-high-heels-black-vei11b019-q11.html">
+                            </div>
+                            <button class="add_bnt"></button>
+                        </div>
+                        <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
+                    </div>
+
+                    <div class="product_adds">
+                        <div class="input_group">
+                            <div class="input_container">
+                                <label for="name_input_Id" class="titel_label">Ապրանքի անունը</label>
+                                <input type="text" class="name_input" id="name_input_Id" placeholder="High heels">
+                            </div>
+                            <div class="input_container link_input">
+                                <label for="name_input_Id" class="titel_label">Ապրանքի հղումը</label>
+                                <input type="text" class="name_input" id="name_input_Id"
+                                    placeholder="https://en.zalando.de/versace-jeans-couture-high-heels-black-vei11b019-q11.html">
+                            </div>
+                            <button class="add_bnt del_btn"></button>
+                        </div>
+                        <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
+                    </div>
+
+
+
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <section class="howTo">
+        <div class="howToInn">
+            <h1>Ինչպես օգտվել</h1>
+            <div class="howToItems">
+                <div class="itemsInn">
+                    <img src="../img/num1.svg" alt="sixAngleNumbers">
+                    <p>Ծառայության պայմաններ</p>
+                    <span>Անհրաժեշտ դաշտերը լրացնելուց հետո, վաճարեք Ձեր գնման դիմաց ( քարտով կամ Tellcell/MobiDram-ով՝
+                        օգտագործելով Ձեր Address 2-ը)։ Այնուհետև համալրեք Ձեր հաշիվը և մենք կկատարենք գնումը։ Ձեզ
+                        կտեղեկացնենք ապրանքը պահեստում լինելու դեպքում։</span>
+                </div>
+                <div class="itemsInn">
+                    <img src="../img/num2.svg" alt="sixAngleNumbers">
+                    <p>Ծառայության արժեք</p>
+                    <span>Ծառայության վճարը կազմում է ընդհանուր արժեքի %-ը։</span>
+                </div>
+                <div class="itemsInn">
+                    <img src="../img/num3.svg" alt="sixAngleNumbers">
+                    <p>Բեռնափոխադրման վճար</p>
+                    <span>Բեռնափոխադրման վճարը կատարում եք առաքանին պահեստից ստանալու ժամանակ։</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- AddBuyingInfoPageView1920 display: none start-->
+
+    <section class="fillField">
+        <div class="fillFieldInn">
+
+            <div class="fieldTitle">
+                <button>
+                    <img src="../img/back.svg" alt="backIcon">
+                    <span>Հետ</span>
+                </button>
+                <h1>Լրացնել անհրաժեշտ դաշտերը</h1>
+            </div>
+            <div class="fieldEvents">
+                <div class="itemName">
+                    <span>1․ Ապրանքի անունն է գրվելու</span>
+                </div>
+                <div class="formParent">
+                    <form>
+                        <div class="inpTop">
+                            <label>
+                                <span>Ապրանքի գինը *</span>
+                                <div class="prodPrice">
+                                    <input type="number" min="0" placeholder="0">
+                                    
+                                </div>
+                            </label>
+                            <label>
+                                <span>Քանակ *</span>
+                                <div class="prodPrice">
+                                    <input type="number" min="0" placeholder="0">
+                                    
+                                </div>
+                            </label>
+                            <label>
+                                <span>Չափս</span>
+                                <div class="prodPrice">
+                                    <input type="number" min="0" placeholder="0">
+                                    
+                                </div>
+                            </label>
+                            <label>
+                                <span>Գույն *</span>
+                                <div class="prodPrice">
+                                    <input type="text" min="0" placeholder="Գույն">
+                                    
+                                </div>
+                            </label>
+                        </div>
+                        <div class="inpBot">
+                            <label>
+                                <span>Հաղորդագրություն</span>
+                                <textarea ></textarea>
+                            </label>
+                        </div>
+                        <div class="according">
+                            <div class="accordLeft">
+                                <img src="../img/careful.svg" alt="carefull">
+                                <span>Համաձայն եք գնմանը, եթե գինը տատանվի 5%:</span>
+                            </div>
+                            <div class="container_for_chek">
+                                <div class="form-check2">
+                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio"
+                                        name="customerType" id="individualType" value="individual" checked>
+                                    <label class="form-check-label" for="individualType">
+                                        Այո
+                                    </label>
+                                </div>
+                                <div class="form-check2">
+                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio"
+                                        name="customerType" id="legalType" value="legal">
+                                    <label class="form-check-label" for="legalType">
+                                        Ոչ
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="eventBott">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AddBuyingInfoPageView1920 display: none end-->
+
+
+
+
+
+
+
+    <!-- Footer START -->
+    <footer>
+        <div class="footer_container">
+            <img src="../img/logoOneWay_Footer.svg" alt="" class="col logo_icon_footer">
+            <div class="footer_col">
+                <h3>Տեղեկատվություն</h3>
+                <ul class="footer_nav_bar">
+                    <li><a href="">Մեր մասին</a></li>
+                    <li><a href="">Ծառայություններ</a></li>
+                    <li><a href="">Սակագներ</a></li>
+                    <li><a href="">Խանութներ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h3 class="to_right">Կապ մեզ հետ</h3>
+                <ul class="contact_us">
+                    <li class="tel_num"><a href="">+374 33 79 88 88</a></li>
+                    <li class="tel_num"><a href="">+374 60 77 10 10</a></li>
+                    <li class="email_num"><a href="">info@oneway.am</a></li>
+                    <li class="map_num"><a href="">ք․Երևան, Բաշինջաղյան 198</a></li>
+                    <li class="time_num"><a href="">Երկ․ - Ուրբ․ - 10։30 - 19։30</a></li>
+                </ul>
+            </div>
+            <div class="footer_col_pay">
+                <div class="pay_container">
+                    <h3>Վճարման եղանակներ</h3>
+                    <div class="pay_cards">
+                        <img src="../img/viza.svg" alt="viza">
+                        <img src="../img/mastercard.svg" alt="mastercard">
+                        <img src="../img/arca.svg" alt="">
+                        <img src="../img/monet.svg" alt="">
+                    </div>
+                </div>
+                <div class="social_container">
+                    <h3>Գտեք մեզ</h3>
+                    <div class="content_social">
+                        <a href="" class="facebook"></a>
+                        <a href="" class="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="low_footer">
+            <h2>©2024 OneWay Logistics LLC։ Բոլոր իրավունքները պաշտպանված են։ Կայքը` Marksoft LLC:</h2>
+            <ul class="low_bar_content">
+                <li><a href="">Արգելված ապրանքատեսակներներ</a></li>
+                <div class="shtix"></div>
+                <li> <a href="">Գաղտնիության քաղաքականություն</a></li>
+                <div class="shtix"></div>
+                <li><a href="">Ընդհանուր դրույթներ և պայմաններ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer START -->
+</body>
+
+</html>
