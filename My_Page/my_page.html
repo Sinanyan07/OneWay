@@ -11,6 +11,8 @@
         crossorigin="anonymous"></script>
     <script src="home.js" defer></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="./my_page.js" defer></script>
+    <script src="../script.js" defer></script>
     <link rel="stylesheet" href="../Header_Footer_Styles/footer.css">
     <link rel="stylesheet" href="../Header_Footer_Styles/header.css">
     <link rel="stylesheet" href="./my_page.css">
@@ -169,11 +171,11 @@
         <hr>
     </div>
 
-    <form action="">
+    <form action="" class="my_check_form">
         <div>
             <div class="mb-3"><label for="exampleInputEmail1" class="form-label">Համալրվող գումար (AMD)</label>
-                <input type="email" class="form-control form_input" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" placeholder="0">
+                <input type="email" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="0">
             </div>
             <div class="mb-4"><label for="exampleInputEmail1" class="form-label">Քարտի համարը</label>
                 <input type="email" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -196,6 +198,141 @@
         <button>Համալրել հաշիվը</button>
     </form>
 
+</section>
+
+
+
+<section class="my_page">
+    <div class="my_account_container">
+        <h1>Իմ էջը</h1>
+        <hr>
+    </div>
+    <div class="main_container_mypage">
+
+        <div class="my_bar">
+            <!-- block_1 -->
+            <ul class="my_menu">
+                <div class="my_info_content">
+                    <span>Poghos Poghosyan</span>
+                    <span>poghos2@example.com</span>
+                    <span>ID:000032</span>
+                </div>
+                <li class="my_check_base my_acctive profile_icon">
+                    <a href="">Իմ հաշիվը</a>
+                </li>
+                <li class="my_check_base order_icon">
+                    <a href="">Իմ պատվերները</a>
+                </li>
+                <hr>
+                <li class="my_check_base map_icon">
+                    <a href="">Հասցեներ</a>
+                </li>
+                <hr>
+                <li class="my_check_base logout_icon">
+                    <a href="">Դուրս գալ</a>
+                </li>
+            </ul>
+
+            <button>
+                <img src="./img_my_page/add_icon.svg" alt="add">
+                <span>Ավելացնել պատվեր</span>
+            </button>
+        </div>
+
+
+        <!-- block_2 -->
+        <div class="my_info">
+
+            <!-- Person_1 -->
+            <form action="" class="my_page_form">
+                <h4 class="text-center textTitel">Անձնական տվյալներ</h4>
+
+                <div class="mb-3 ">
+                    <div class="container_for_chek_my_page">
+                        <div class="form-check">
+                            <input onchange="listenerChangeRadioMyPage(event)" class="form-check-input check_input"
+                                type="radio" name="customerType" id="individualType" value="individual" checked>
+                            <label class="form-check-label" for="individualType">
+                                Ֆիզիկական անձ
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input onchange="listenerChangeRadioMyPage(event)" class="form-check-input check_input"
+                                type="radio" name="customerType" id="legalType" value="legal">
+                            <label class="form-check-label" for="legalType">
+                                Իրավաբանական անձ
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conteiner_for_input">
+                    <div class="row_first">
+                        <div class="">
+                            <label for="name" class="form-label">Անուն *</label>
+                            <input type="text" class="form-control custom-input_form_my_page" id="name"
+                                placeholder="Լրացնել լատինատառ">
+                        </div>
+                        <div class="mb_custom_for_sing_btn" id="company_name_container_myPage">
+                            <label for="company_name" class="form-label">Ընկերության անվանում *</label>
+                            <input type="text" class="form-control custom-input_form_my_page" id="company_name"
+                                placeholder="Լրացնել լատինատառ">
+                        </div>
+                        <div class="mb_custom_for_sing_btn">
+                            <label for="surename" class="form-label">Քաղաք *</label>
+                            <select class="form-select custom-input_form_my_page" aria-label="Default select example">
+                                <option selected>Yerevan</option>
+                                <option value="1">Gyumri</option>
+                                <option value="2">Vanadzor</option>
+                                <option value="3">Qexarquniq</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row_first">
+                        <div class="mb_custom_for_sing_btn">
+                            <label for="surename" class="form-label">Ազգանուն *</label>
+                            <input type="text" class="form-control custom-input_form_my_page" id="surename"
+                                placeholder="Լրացնել լատինատառ">
+                        </div>
+                        <div class="mb_custom_for_sing_btn">
+                            <label for="addres" class="form-label">Հասցե *</label>
+                            <input type="text" class="form-control custom-input_form_my_page" id="addres"
+                                placeholder="Լրացնել լատինատառ">
+                        </div>
+                    </div>
+                </div>
+                <button class="save_changes">
+                    Պահպանել փոփոխությունները
+                </button>
+            </form>
+
+            <!-- Reset password -->
+            <div class="reset_password">
+                <h4>Վերականգնել գաղտնաբառը</h4>
+                <div class="reset_password_container">
+                    <div class="">
+                        <label for="old_password_Id" class="form-label">Հին գաղտնաբառ *</label>
+                        <input type="password" class="form-control custom-input_form_my_page" id="old_password_Id">
+                        <div class="see_password_my" onclick="for_see_password_type('old_password_Id')"></div>
+                    </div>
+                    <div class="">
+                        <label for="new_password_Id" class="form-label">Նոր գաղտնաբառ *</label>
+                        <input type="password" class="form-control custom-input_form_my_page" id="new_password_Id">
+                        <div class="see_password_my" onclick="for_see_password_type('new_password_Id')"></div>
+                    </div>
+                    <div class="">
+                        <label for="repeat_password" class="form-label">Կրկնել գաղտնաբառը *</label>
+                        <input type="password" class="form-control custom-input_form_my_page" id="repeat_password">
+                        <div class="see_password_my" onclick="for_see_password_type('repeat_password')"></div>
+                    </div>
+                    <span class="text_low">Մոռացե ՞լ եք գաղտնաբառը։</span>
+                </div>
+                <button class="save_changes_reset">Պահպանել փոփոխությունները</button>
+
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Main for My Page END -->
 
