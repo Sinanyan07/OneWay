@@ -1,9 +1,17 @@
+.notifications,
+.my_account {
+    display: none;
+}
+
+
+
 .notifications {
     width: 100%;
-    height: 991px;
+    height: 950px;
     margin: auto;
     z-index: -10;
     overflow: scroll;
+    background: #FBFBFB;
 }
 
 .container_norification {
@@ -125,4 +133,200 @@ hr {
     font-weight: 400;
     line-height: 21.09px;
     text-align: left;
+}
+
+
+.my_account {
+    width: 100%;
+    min-height: 730px;
+    margin: auto;
+    background: #FBFBFB;
+
+
+}
+
+/* this is 2x */
+.my_account_container {
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.my_account_container h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70.31px;
+    text-align: left;
+    color: #000000;
+}
+
+.my_prices {
+    width: 100%;
+    max-width: 1415px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.my_prices_tabel {
+    width: 100%;
+    max-width: 1105px;
+    min-height: 182px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+    border-radius: 8px;
+}
+
+.tabrl_line_1,
+.tabrl_line_2,
+.tabrl_line_3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+}
+
+
+
+.bg_green {
+    background: #26AA9D;
+}
+
+.bg_gray {
+    background: #F2F2F2;
+}
+
+.bg_white {
+    background: #ffffff;
+}
+
+.tabrl_line_1 span {
+    width: 135px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: center;
+}
+
+.tabrl_line_2 span {
+    width: 135px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+}
+
+.tabrl_line_3 span {
+    width: 135px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+}
+
+
+
+.my_prices_sum {
+    width: 100%;
+    max-width: 278px;
+    min-height: 20px;
+    padding: 20px 0px;
+    margin: -18px;
+    align-self: self-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.my_prices_sum h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #000000;
+}
+
+.sum {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.my_prices_sum button {
+    width: 197px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: #268E83;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+
+
+.my_check {
+    width: 100%;
+    min-height: 868px;
+    margin: auto;
+    background: #FBFBFB;
+}
+
+
+form {
+    width: 100%;
+    max-width: 580px;
+    min-height: 547px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 0px #1DA99D1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 30px;
+}
+
+.form_input {
+    width: 293px;
+    height: 51px;
+}
+
+.form-label {
+    margin-bottom: 0.3rem !important;
+}
+
+.text_card {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: #000000;
+    margin-top: 5px;
+}
+
+form button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #1DA99D;
+    width: 290px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
 }
