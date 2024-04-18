@@ -21,12 +21,12 @@ function for_see_password_type(id) {
 }
 
 
-{
+
     //header opening language
-  
+  {
     const openDv = document.querySelector('.langDv');
     const dropLang = document.querySelector('.dropDownLang');
-     const selDiv = document.querySelector('.selDiv');
+     const selDiv = document.getElementById('selDv');
   
     function openLang() {
       openDv.style.display = openDv.style.display === 'block' ? 'none' : 'block';
@@ -37,6 +37,23 @@ function for_see_password_type(id) {
         openDv.style.display = "none";
         dropLang.style.transform = "rotate(0deg)";
       }
-    
+    })
+  }
+  
+
+  {
+    const openDv1 = document.querySelector('.langDv1');
+    const dropLang1 = document.querySelector('.dropDownLangg');
+     const selDiv1 = document.getElementById('selDv1');
+  
+    function openRent() {
+      openDv1.style.display = openDv1.style.display === 'block' ? 'none' : 'block';
+      dropLang1.style.transform = dropLang1.style.transform === 'rotate(180deg)' ? 'rotate(0)' : 'rotate(180deg)';
+    }
+    window.addEventListener("click", function (event) {
+      if (!selDiv1.contains(event.target) && openDv1.style.display === "block") {
+        openDv1.style.display = "none";
+        dropLang1.style.transform = "rotate(0deg)";
+      }
     })
   }
