@@ -52,3 +52,17 @@
 }
 
 
+
+   // for input box shadow
+   const boxDv = document.querySelector('.searchInp');
+
+   function BoxShad() {
+     boxDv.style.boxShadow = '0px 0px 10px 0px #1DA99D80';
+   }
+   
+   window.addEventListener("click", function (event) {
+     if (!boxDv.contains(event.target)) {
+       boxDv.style.boxShadow = ' 0px 0px 8px 0px #00000033'
+     }
+   });
+

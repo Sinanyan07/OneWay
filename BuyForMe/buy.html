@@ -49,7 +49,7 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="./about.html">Մեր մասին</a>
+                        <a href="../AboutPage/about.html">Մեր մասին</a>
                     </li>
                     <div class="vert"></div>
                     <li class="liMen">
@@ -69,7 +69,7 @@
                     </li>
                 </ul>
                 <div class="eventRig">
-                    <button class="selDiv" onclick="openLang()">
+                    <button id="selDv" class="selDiv" onclick="openLang()">
                         <img src="../img/arm.svg" alt="flag">
                         <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
                     </button>
@@ -247,7 +247,10 @@
                 </button>
                 <h1>Լրացնել անհրաժեշտ դաշտերը</h1>
             </div>
+
             <div class="fieldEvents">
+
+                <!-- fow new prod st -->
                 <div class="itemName">
                     <span>1․ Ապրանքի անունն է գրվելու</span>
                 </div>
@@ -256,37 +259,44 @@
                         <div class="inpTop">
                             <label>
                                 <span>Ապրանքի գինը *</span>
-                                <div class="prodPrice">
-                                    <input type="number" min="0" placeholder="0">
-                                    
+                                <div class="prodPrice prodPr">
+                                    <input class="prodInp" type="number" min="0" placeholder="0">
+                                    <button class="selDv1" onclick="openRent()">
+                                        <img src="../img/doll.svg" alt="flag">
+                                        <img class="dropDownLangg" src="../img/down.svg" alt="vector">
+                                    </button>
+                                    <div class="langDv1">
+                                        <button><img src="../img/eur.svg" alt="languages"></button>
+                                        <button><img src="../img/rub.svg" alt="languages"></button>
+                                    </div>
                                 </div>
                             </label>
                             <label>
                                 <span>Քանակ *</span>
                                 <div class="prodPrice">
                                     <input type="number" min="0" placeholder="0">
-                                    
+
                                 </div>
                             </label>
                             <label>
                                 <span>Չափս</span>
                                 <div class="prodPrice">
                                     <input type="number" min="0" placeholder="0">
-                                    
+
                                 </div>
                             </label>
                             <label>
                                 <span>Գույն *</span>
                                 <div class="prodPrice">
                                     <input type="text" min="0" placeholder="Գույն">
-                                    
+
                                 </div>
                             </label>
                         </div>
                         <div class="inpBot">
                             <label>
                                 <span>Հաղորդագրություն</span>
-                                <textarea ></textarea>
+                                <textarea></textarea>
                             </label>
                         </div>
                         <div class="according">
@@ -296,15 +306,88 @@
                             </div>
                             <div class="container_for_chek">
                                 <div class="form-check2">
-                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio"
-                                        name="customerType" id="individualType" value="individual" checked>
+                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input"
+                                        type="radio" name="customerType" id="individualType" value="individual" checked>
                                     <label class="form-check-label" for="individualType">
                                         Այո
                                     </label>
                                 </div>
                                 <div class="form-check2">
-                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input" type="radio"
-                                        name="customerType" id="legalType" value="legal">
+                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input"
+                                        type="radio" name="customerType" id="legalType" value="legal">
+                                    <label class="form-check-label" for="legalType">
+                                        Ոչ
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- fow new prod end-->
+                <div class="itemName">
+                    <span>1․ Ապրանքի անունն է գրվելու</span>
+                </div>
+                <div class="formParent">
+                    <form>
+                        <div class="inpTop">
+                            <label>
+                                <span>Ապրանքի գինը *</span>
+                                <div class="prodPrice prodPr">
+                                    <input class="prodInp" type="number" min="0" placeholder="0">
+                                    <button class="selDv1" onclick="openRent()">
+                                        <img src="../img/doll.svg" alt="flag">
+                                        <img class="dropDownLangg" src="../img/down.svg" alt="vector">
+                                    </button>
+                                    <div class="langDv1">
+                                        <button><img src="../img/eur.svg" alt="languages"></button>
+                                        <button><img src="../img/rub.svg" alt="languages"></button>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <span>Քանակ *</span>
+                                <div class="prodPrice">
+                                    <input type="number" min="0" placeholder="0">
+
+                                </div>
+                            </label>
+                            <label>
+                                <span>Չափս</span>
+                                <div class="prodPrice">
+                                    <input type="number" min="0" placeholder="0">
+
+                                </div>
+                            </label>
+                            <label>
+                                <span>Գույն *</span>
+                                <div class="prodPrice">
+                                    <input type="text" min="0" placeholder="Գույն">
+
+                                </div>
+                            </label>
+                        </div>
+                        <div class="inpBot">
+                            <label>
+                                <span>Հաղորդագրություն</span>
+                                <textarea></textarea>
+                            </label>
+                        </div>
+                        <div class="according">
+                            <div class="accordLeft">
+                                <img src="../img/careful.svg" alt="carefull">
+                                <span>Համաձայն եք գնմանը, եթե գինը տատանվի 5%:</span>
+                            </div>
+                            <div class="container_for_chek">
+                                <div class="form-check2">
+                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input"
+                                        type="radio" name="customerType" id="individualType" value="individual" checked>
+                                    <label class="form-check-label" for="individualType">
+                                        Այո
+                                    </label>
+                                </div>
+                                <div class="form-check2">
+                                    <input onchange="listenerChangeRadio(event)" class="form-check-input check_input"
+                                        type="radio" name="customerType" id="legalType" value="legal">
                                     <label class="form-check-label" for="legalType">
                                         Ոչ
                                     </label>
@@ -314,9 +397,23 @@
                     </form>
                 </div>
                 <div class="eventBott">
-
+                    <label>
+                        <input type="checkbox" class="">
+                        <span class="agree">
+                            Համաձայն եմ
+                            <a href="#">ծառայության պայմաններին։</a>
+                        </span>
+                    </label>
+                </div>
+                <div class="acceptDv">
+                    <button class="acceptBut">Հաստատել պատվերը</button>
                 </div>
             </div>
+            <span class="warning">*Գնումը կատարվում է 24 ժամվա ընթացքում։ Հաստատման մասին կստանաք ծանուցում։</span>
+        </div>
+
+        <div class="doneDv">
+            
         </div>
 
     </section>

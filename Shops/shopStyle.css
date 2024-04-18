@@ -72,6 +72,7 @@ input {
     display: flex;
     align-items: center;
     padding-left: 16px;
+    
 
 }
 
@@ -88,10 +89,18 @@ input {
     line-height: 14.06px;
     text-align: left;
     color: #636363;
+    border-radius: 8px;
+    
 }
-
+input.hide-clear[type="search"]::-webkit-search-decoration,
+input.hide-clear[type="search"]::-webkit-search-cancel-button,
+input.hide-clear[type="search"]::-webkit-search-results-button,
+input.hide-clear[type="search"]::-webkit-search-results-decoration {
+  display: none; 
+}
 .searchInp label input:focus {
     outline: none;
+
 }
 
 /* shopping sect end */
