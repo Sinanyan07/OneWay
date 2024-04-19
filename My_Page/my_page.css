@@ -1,5 +1,6 @@
 .notifications,
-.my_account {
+.my_account,
+.my_check {
     display: none;
 }
 
@@ -288,7 +289,7 @@ hr {
 }
 
 
-form {
+.my_check_form {
     width: 100%;
     max-width: 580px;
     min-height: 547px;
@@ -329,4 +330,281 @@ form button {
     height: 45px;
     border-radius: 8px;
     border: none;
+}
+
+
+/* My Page START  */
+
+.main_container_mypage {
+    display: flex;
+    width: 100%;
+    max-width: 1420px;
+    margin: auto;
+    gap: 35px;
+
+    min-height: 150px;
+
+    margin-bottom: 80px;
+}
+
+
+/* <!-- block_1 --> */
+.my_bar {
+    width: 100%;
+    max-width: 285px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.my_menu {
+    background: #FFFFFF;
+    padding-left: 16px;
+    padding-top: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px -10px #1DA99D1A;
+}
+
+.my_info_content span:first-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #212121;
+}
+
+.my_info_content span:nth-child(2),
+.my_info_content span:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #787A80;
+}
+
+.my_info_content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+
+
+
+
+.my_check_base {
+    list-style-position: inside;
+    list-style-type: none;
+    text-decoration: none;
+    width: 100%;
+    max-width: 285px;
+    min-height: 50px;
+    text-align: start;
+    padding: 16px 15px;
+    list-style-position: inside;
+}
+
+.my_acctive {
+    background: #268E83;
+}
+
+.my_acctive a {
+    color: #FBFBFB !important;
+}
+
+.my_check_base a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: center;
+    color: #212121;
+}
+
+.profile_icon {
+    list-style-image: url(./img_my_page/my_check_icon.svg);
+}
+
+.order_icon {
+    list-style-image: url(./img_my_page/order_icon.svg);
+}
+
+.map_icon {
+    list-style-image: url(./img_my_page/map_icon.svg);
+}
+
+.logout_icon {
+    list-style-image: url(./img_my_page/logout_icon.svg);
+}
+
+.my_bar button {
+    width: 100%;
+    max-width: 285px;
+    min-height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: #1DA99D;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.my_bar button span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+
+
+/* <!-- Person_1 --> */
+.my_info {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.check_input {
+    color: #1DA99D;
+    border: 1px solid #1DA99D;
+}
+
+.form-check-input:checked {
+    border: 5px solid #1DA99D;
+    background-color: #ffffff;
+}
+
+
+.my_page_form {
+    width: 100%;
+    min-height: 460px;
+    box-shadow: 0px 0px 20px 0px #1DA99D1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 30px;
+    box-shadow: 0px 0px 20px 0px #1DA99D1A;
+    border-radius: 8px;
+
+}
+
+.container_for_chek_my_page {
+    display: flex;
+    gap: 24px;
+}
+
+.conteiner_for_input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding-inline: 50px;
+}
+
+.row_first {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.custom-input_form_my_page {
+    border: none;
+    box-shadow: 0px 0px 8px 0px #0000001A;
+    width: 450px;
+    height: 50px;
+}
+
+.save_changes {
+    width: 352px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+    align-self: self-end;
+    position: relative;
+    right: 50px;
+}
+
+.my_page_form h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: center;
+    color: #000000;
+}
+
+
+#company_name_container_myPage {
+    display: none;
+}
+
+
+/* <!-- Reset password --> */
+
+.reset_password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 550px;
+    border-radius: 8px;
+    gap: 40px;
+    padding-top: 50px;
+    box-shadow: 0px 0px 20px 0px #1DA99D1A;
+}
+
+.reset_password_container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.text_low {
+    text-align: end;
+    position: relative;
+    top: -16px;
+}
+
+.reset_password h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    color: #000000;
+}
+
+
+.save_changes_reset {
+    width: 100%;
+    max-width: 450px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+    align-self: center;
+    background: #1DA99D;
+}
+
+
+.see_password_my {
+    position: relative;
+    top: -32px;
+    left: 90%;
+    z-index: 5;
+    background-image: url('../img/eye_2.svg');
+    background-size: cover;
+    width: 22px;
+    height: 19px;
 }

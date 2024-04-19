@@ -113,10 +113,11 @@
 
 /* Main CSS END */
 
-#fill_in_the_data_Id,
-/* #welcome_Id, */
+/* #fill_in_the_data_Id, */
+#welcome_Id,
 #logIn_Id,
 #forgot_your_password,
+#password_change,
 #enter_the_code,
 #password_new {
     /* display: flex; */
@@ -150,7 +151,6 @@
 }
 
 .form-check-input:checked {
-
     border: 5px solid #1DA99D;
     background-color: #ffffff;
 }
