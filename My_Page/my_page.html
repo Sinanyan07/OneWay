@@ -299,8 +299,8 @@
         </div>
 
 
-        <!-- For Rander -->
-        <div class="my_info">
+        <!-- For Rander My Page Info -->
+        <div class="my_info" id="my_info_Id">
             <!-- Person_1 -->
             <form action="" class="my_page_form">
                 <h4 class="text-center textTitel">Անձնական տվյալներ</h4>
@@ -388,18 +388,132 @@
                 <button class="save_changes_reset">Պահպանել փոփոխությունները</button>
 
             </div>
-            <a href="#" class="del_chek">
-                <img src="../img/recycle.svg" alt="">
-                <span>Ջնջել հաշիվը</span>
-            </a>
-        </div>
-        <!-- For Rander -->
+            <!-- modal delete  count-->
+<!-- Button trigger modal -->
+<button type="button" class=" del_chek" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <img src="../img/recycle.svg" alt="">
+    <span>Ջնջել հաշիվը</span>
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close buttCloseDel" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="../img/closeIcon.svg" alt="closing">
+                </button>
+            </div>
+            <h1>Ցանկանու ՞մ եք ջնջել հաշիվը</h1>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ոչ</button>
+                <button type="button" class="btn btn-primary1"  data-bs-dismiss="modal">Այո</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal end -->
+        </div>
+        <!-- For Rander My Page Info -->
+
+
+        <!-- For Rander My Orders-->
+        <div class="my_orders_info" id="my_orders_info_Id">
+
+            <ul class="titel_orders">
+                <li class="acctive_Li">Պատվեր<span>(0)</span></li>
+                <li>Պահեստում է<span>(0)</span></li>
+                <li>Ճանապարհին է<span>(0)</span></li>
+                <li>Հայաստանում է<span>(0)</span></li>
+                <li>Մեզ մոտ է<span>(0)</span></li>
+            </ul>
+            <ul class="orders_info_container">
+                <li>Երկիր</li>
+                <li>Բեռնակրման համար</li>
+                <li>Անվանում</li>
+                <li>Ամսաթիվ</li>
+                <li>Քաշ (ԿԳ)</li>
+                <li>Առաքման գին (AMD)</li>
+            </ul>
+            <div class="emty_orders">
+                <img src="./img_my_page/order_none_box.svg" alt="">
+                <span>Չունեք նոր պատվերներ</span>
+            </div>
+
+        </div>
+        <!-- For Rander My Orders-->
+
+
+        <!-- For Rander My Addres-->
+        <div class="my_address" id="my_address_Id">
+            <div class="country_container">
+                <div class="cpontry_name">
+                    <img src="./img_my_page/flag-usa_addre.svg" alt="usa">
+                    <h2>Ձեր հասցեն ԱՄՆ-ում</h2>
+                </div>
+                <span>
+                    Ամերիկյան առցանց խանութներից գնումներ կատարելիս մուտքագրեք ներքևում նշված հասցեն՝ որպես առաքման
+                    հասցե
+                </span>
+            </div>
+
+
+            <div class="address_copy">
+
+
+                <div class="container_for_address" id="name">
+                    <h5>Ստացող</h5>
+                    <span>Poghos Poghosyan</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                </div>
+
+                <div class="container_for_address" id="name">
+                    <h5>Address 1:</h5>
+                    <span>11 Southgate Blvd C25</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                </div>
+
+                <div class="container_for_address" id="name">
+                    <h5>Address 2:</h5>
+                    <span>C256145</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                </div>
+
+                <div class="container_for_address" id="name">
+                    <h5>Zip Code:</h5>
+                    <span>1254</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                </div>
+
+                <div class="container_for_address" id="name">
+                    <h5>Country:</h5>
+                    <span>USA</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                </div>
+                <div class="container_for_address" id="name">
+                    <h5>Phone Number:</h5>
+                    <span>+7 (905) 000 11 11</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                </div>
+
+                <div class="copy_btn_all">
+                    <span>Copy All</span>
+                    <img src="./img_my_page/Copy.svg" alt="">
+                 </div>
+
+            </div>
+
+          
+
+
+        </div>
+        <!-- For Rander My Addres-->
 
 
 
     </div>
-
 </section>
 
 <!-- Main for My Page END -->
@@ -473,7 +587,7 @@
         </div>
     </div>
 </section> 
-<!-- AddOrderPageView1920 sect end
+<!-- AddOrderPageView1920 sect end-->
 
 
 

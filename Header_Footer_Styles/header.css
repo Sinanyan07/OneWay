@@ -306,8 +306,11 @@ ul {
     margin-bottom: 50px;
 }
 
-
-
+.buttClose {
+    position: absolute;
+    right: 31px;
+    top: 24px;
+}
 .opInnSec {
     max-width: 446px;
     width: 100%;
