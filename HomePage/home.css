@@ -206,6 +206,11 @@ form {
     box-shadow: 0px 0px 8px 0px #00000033;
 
 }
+.name_input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+}
 
 .link_input {
     width: 63%;

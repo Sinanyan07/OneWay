@@ -306,6 +306,12 @@ hr {
     width: 293px;
     height: 51px;
 }
+.form_input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    border: none;
+
+}
 
 .form-label {
     margin-bottom: 0.3rem !important;
@@ -518,6 +524,12 @@ form button {
     width: 450px;
     height: 50px;
 }
+.custom-input_form_my_page:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+}
 
 .save_changes {
     width: 352px;
@@ -608,3 +620,320 @@ form button {
     width: 22px;
     height: 19px;
 }
+
+
+
+
+
+
+.del_chek {
+    align-self: flex-end;
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.del_chek img {
+    width: 18px;
+    height: 18px;
+}
+
+.del_chek span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #FF4242;
+}
+
+
+
+
+/* 
+<!-- AddOrderPageView1920 sect start --> */
+.addOrd {
+    width: 100%;
+    background: #0000004D;
+    display: flex;
+    justify-content: center;
+}
+
+.addOrdInn {
+    max-width: 1428px;
+    width: 100%;
+}
+
+.opInnThrd1 form {
+    min-height: unset;
+}
+
+.countOpInn1 {
+    max-width: 1428px;
+    width: 100%;
+    min-height: 627px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-header .btn-close {
+    padding: unset;
+    margin: unset;
+}
+
+.opInnFirst1 {
+    max-width: 1428px;
+    width: 100%;
+    position: relative;
+    min-height: 28px;
+    padding: unset !important;
+    margin: unset;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
+    margin-bottom: 30px;
+
+}
+
+.sendCount {
+    position: unset;
+}
+
+.opInnFirst1 button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.sendCount {
+    margin-top: 40px;
+}
+
+#allCountry {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    border-radius: 4px;
+    padding-inline: 10px;
+    padding-block: 7px;
+    height: 44px;
+}
+
+
+.opInnThrd1 {
+    max-width: 696px;
+    width: 100%;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    gap: 8px;
+}
+
+.input_container {
+    width: 100%;
+}
+
+.input_container label input {
+    border: none;
+    outline: none;
+}
+
+.input_container input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+
+}
+
+.opInnThrd1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inpTop {
+    margin: unset;
+    padding: unset;
+    margin-top: 30px;
+    display: flex;
+    align-items: unset;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.inpTop label {
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 74px;
+}
+
+.inpTop label span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #212121;
+}
+
+.inpTop label input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 0px 8px 0px #00000033;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-block: 14.5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.inpTop label input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #929292;
+}
+
+
+.inpTop label input:focus {
+    outline: none;
+}
+
+.inpTop label input:focus {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+}
+
+
+
+.prodPr {
+    display: flex;
+    border-radius: unset;
+}
+
+.prodInp {
+    max-width: 190px;
+    width: 100%;
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+.selDv1 {
+    width: 70px;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 16px;
+    border: none;
+    border-left: 1px solid #848484;
+    box-shadow: 0px 0px 8px 0px #00000033;
+
+    position: relative;
+}
+
+
+
+.langDv1 {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    /* display: none; */
+    box-shadow: 0px 4px 8px 0px #00000040;
+
+}
+
+.langDv1 button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.langDv1 button:hover {
+    background-color: #F2F2F2;
+}
+
+.name_input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #929292;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0px 0px 8px 0px #00000033;
+
+}
+
+.inpTop span {
+    font-family: Mardoto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #000000;
+}
+
+
+.buttonsDv {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 25px;
+    margin-top: 58px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+    justify-content: flex-end;
+}
+
+.buttonsDv button {
+    max-width: 214px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.buttonsDv button:nth-child(1) {
+    background-color: #848484;
+}
+
+.buttonsDv button:nth-child(2) {
+    background-color: #1DA99D;
+}
+
+
+
+
+/* <!-- AddOrderPageView1920 sect end --> */

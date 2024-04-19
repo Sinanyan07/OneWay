@@ -160,9 +160,17 @@ form {
 
 }
 
+.name_input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+}
+
 .link_input {
     width: 63%;
 }
+
+
 
 .add_bnt {
     width: 4%;
@@ -275,7 +283,9 @@ form {
     width: 100%;
     padding-inline: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 80px;
     margin-bottom: 120px;
 }
@@ -408,7 +418,8 @@ form {
 .inpTop label input:focus {
     outline: none;
 }
-.inpTop label input:focus{
+
+.inpTop label input:focus {
     box-shadow: 0px 0px 10px 0px #1DA99D80;
 
 }
@@ -445,7 +456,8 @@ form {
 .inpBot label textarea:focus {
     outline: none;
 }
-.inpBot label textarea:focus{
+
+.inpBot label textarea:focus {
     box-shadow: 0px 0px 10px 0px #1DA99D80;
 
 }
@@ -601,7 +613,7 @@ form {
 .selDv1 {
     width: 70px;
     height: 100%;
-    border-radius:0px 8px 8px 0px;
+    border-radius: 0px 8px 8px 0px;
     background-color: #FFFFFF;
     padding-left: 10px;
     display: flex;
@@ -635,9 +647,9 @@ form {
     height: 50px;
     border: none;
     background-color: #FFFFFF;
- display: flex;
- justify-content: center;
- align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .langDv1 button:hover {
@@ -646,4 +658,67 @@ form {
 
 /* AddBuyingInfoPageView1920 display: none end */
 
-/* sect end */
+
+
+/* <!-- DonePageView1920 st --> */
+.doneSect {
+    margin-top: 80px;
+    margin-bottom: 77px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.doneDv {
+    max-width: 690px;
+    width: 100%;
+    min-height: 520px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px 0px #1DA99D33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doneDv h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.doneDv span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 93px;
+}
+
+
+
+
+.one_img {
+    width: 152px;
+    height: 152px;
+    margin-bottom: 81px;
+}
+
+.sign_up_form {
+    max-width: 451px;
+    width: 100%;
+    min-height: 45px;
+    background: #1DA99D;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+
+
+/* <!-- DonePageView1920 end --> */
