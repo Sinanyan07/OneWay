@@ -139,6 +139,7 @@
 </nav>
 <!-- HEADER END -->
 
+
 <!-- Main for My Page START -->
 <section class="notifications">
     <div class="container_norification">
@@ -262,10 +263,12 @@
 
 
 <section class="my_page">
+
     <div class="my_account_container">
         <h1>Իմ էջը</h1>
         <hr>
     </div>
+
     <div class="main_container_mypage">
 
         <div class="my_bar">
@@ -284,7 +287,12 @@
                 </li>
                 <hr>
                 <li class="my_check_base map_icon">
-                    <a href="">Հասցեներ</a>
+                    <select class="map_selector" aria-label="Default select example">
+                        <option selected>Հասցեներ</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                 </li>
                 <hr>
                 <li class="my_check_base logout_icon">
@@ -297,7 +305,6 @@
                 <span>Ավելացնել պատվեր</span>
             </button>
         </div>
-
 
         <!-- For Rander My Page Info -->
         <div class="my_info" id="my_info_Id">
@@ -389,32 +396,33 @@
 
             </div>
             <!-- modal delete  count-->
-<!-- Button trigger modal -->
-<button type="button" class=" del_chek" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    <img src="../img/recycle.svg" alt="">
-    <span>Ջնջել հաշիվը</span>
-</button>
+            <!-- Button trigger modal -->
+            <button type="button" class=" del_chek" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="../img/recycle.svg" alt="">
+                <span>Ջնջել հաշիվը</span>
+            </button>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close buttCloseDel" data-bs-dismiss="modal" aria-label="Close">
-                    <img src="../img/closeIcon.svg" alt="closing">
-                </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close buttCloseDel" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <img src="../img/closeIcon.svg" alt="closing">
+                            </button>
+                        </div>
+                        <h1>Ցանկանու ՞մ եք ջնջել հաշիվը</h1>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ոչ</button>
+                            <button type="button" class="btn btn-primary1" data-bs-dismiss="modal">Այո</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1>Ցանկանու ՞մ եք ջնջել հաշիվը</h1>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ոչ</button>
-                <button type="button" class="btn btn-primary1"  data-bs-dismiss="modal">Այո</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- modal end -->
+            <!-- modal end -->
         </div>
         <!-- For Rander My Page Info -->
 
@@ -501,17 +509,11 @@
                 <div class="copy_btn_all">
                     <span>Copy All</span>
                     <img src="./img_my_page/Copy.svg" alt="">
-                 </div>
+                </div>
 
             </div>
-
-          
-
-
         </div>
         <!-- For Rander My Addres-->
-
-
 
     </div>
 </section>
@@ -561,8 +563,8 @@
             </div>
             <div class=" opInnThrd1">
                 <form class="inpTop">
-    
-    
+
+
                     <label>
                         <span>Ապրանքի արժեքը</span>
                         <div class="prodPrice prodPr">
@@ -577,16 +579,16 @@
                             </div>
                         </div>
                     </label>
-    
+
                     <span>Ընդամենը։ 0․00 AMD</span>
             </div>
-         <div class="buttonsDv">
-            <button>Չեղարկել</button>
-            <button>Հաստատել</button>
-         </div>
+            <div class="buttonsDv">
+                <button>Չեղարկել</button>
+                <button>Հաստատել</button>
+            </div>
         </div>
     </div>
-</section> 
+</section>
 <!-- AddOrderPageView1920 sect end-->
 
 

@@ -442,6 +442,23 @@ form button {
     list-style-image: url(./img_my_page/logout_icon.svg);
 }
 
+.map_selector {
+    position: relative;
+    top: -5px;
+    width: 200px;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 12.586l-4.293-4.293a1 1 0 0 0-1.414 1.414l5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 1 0-1.414-1.414L10 12.586z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.4em center;
+    background-size: 20px 20px;
+    color: black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
 .my_bar button {
     width: 100%;
     max-width: 285px;
@@ -703,14 +720,17 @@ form button {
     text-align: center;
     color: #FFFFFF;
 }
-.btn-secondary:hover{
-      background-color: #67B7B1;
+
+.btn-secondary:hover {
+    background-color: #67B7B1;
 }
-.btn-secondary:active{
+
+.btn-secondary:active {
     background-color: #67B7B1;
     box-shadow: none !important;
 }
-.btn-secondary:focus{
+
+.btn-secondary:focus {
     background-color: #268E83;
     box-shadow: none !important;
 }
@@ -728,15 +748,17 @@ form button {
     text-align: center;
     color: #1DA99D;
 }
-.btn-primary1:hover{
+
+.btn-primary1:hover {
     background-color: #67B7B1;
-     border: 1px solid #1DA99D;
-     border: none !important;
+    border: 1px solid #1DA99D;
+    border: none !important;
 }
-.btn-primary1:focus{
-  background-color: #268E83;
-  box-shadow: none !important;
-  border: none !important;
+
+.btn-primary1:focus {
+    background-color: #268E83;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 
@@ -1234,9 +1256,6 @@ form button {
 .copy_btn_all img {
     width: 24px;
     height: 24px;
- }
+}
 
 /* For Rander My Addres END */
-
-
-
