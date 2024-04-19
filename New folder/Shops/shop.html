@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Header_Footer_Styles/header.css">
+    <link rel="stylesheet" href="../Header_Footer_Styles/footer.css">
+    <link rel="stylesheet" href="shopStyle.css">
+    <script src="./shops.js" defer></script>
+    <script src="../script.js" defer></script>
+    <title>ShopPage</title>
+</head>
+<body>
+<!-- HEADER START -->
+<nav class="navbar">
+    <div class="contMainTop">
+        <div class="contTop">
+            <div class="topLeftNav">
+                <div class="number">
+                    <img src="../img/call.svg" alt="call">
+                    <div class="span">
+                        +374 33 79 88 88
+                    </div>
+                </div>
+                <button class="signBut">
+                    <a href="#">Մուտք</a>
+                </button>
+                <button class="regBut"> <a href="#">Գրանցվել</a></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contBot">
+        <div class="contBotInn">
+            <div class="logoParent">
+                <a href="../index.html">
+                    <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
+                    <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="../AboutPage/about.html">Մեր մասին</a>
+                </li>
+                <div class="vert"></div>
+                <li class="liMen">
+                    <button>
+                        <a href="#">Ծառայություններ</a>
+                        <img src="../img/downMen.svg" alt="down">
+                    </button>
+
+                </li>
+                <div class="vert"></div>
+                <li>
+                    <a href="#">Սակագներ</a>
+                </li>
+                <div class="vert"></div>
+                <li>
+                    <a href="./shop.html">Խանութներ</a>
+                </li>
+            </ul>
+            <div class="eventRig">
+                <button class="selDiv" onclick="openLang()">
+                    <img src="../img/arm.svg" alt="flag">
+                    <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
+                </button>
+                <div class="langDv">
+                    <button><img src="../img/usaLang.svg" alt="languages"></button>
+                    <button><img src="../img/rusLang.svg" alt="languages"></button>
+                </div>
+
+                <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <img src="../img/calculator.svg" alt="counter">
+                    <span>Հաշվիչ</span>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog countOpened">
+                        <div class="modal-content countOpInn">
+                            <div class="modal-header opInnFirst">
+                                <h5 class="sendCount">Առաքման հաշվիչ</h5>
+                                <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                    <img src="../img/closeIcon.svg" alt="closing">
+                                </button>
+                            </div>
+                            <div class="modal-body opInnSec">
+
+                                <button id="allCountry">
+                                    <img src="../shopsImage/usa.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/china.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/spain.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/rus.svg" alt="country">
+                                </button>
+                                <button id="allCountry">
+                                    <img src="../shopsImage/luxe.svg" alt="country">
+                                </button>
+                            </div>
+                            <div class=" opInnThrd">
+                                <form>
+                                    <label for="weightInp">Քաշ (կգ)
+                                        <input type="number" min="0" placeholder="0" id="weightInp">
+                                    </label>
+                                </form>
+                            </div>
+                            <div class=" opInnThrd">
+                                <form>
+                                    <label for="weightInp">Առաքման արժեք (AMD)
+                                        <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal end -->
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<!-- HEADER END -->
+
+
+
+<!-- Main Content START -->
+
+<!-- <section class="shops">
+    <div class="innShop">
+        <div class="leftShop">
+            <h1>Կատարիր առցանց գնումներ աշխարհի թոփ խանութներից։</h1>
+        </div>
+        <div class="rightShop">
+            <img src="../img/onlinetore.svg" alt="storeImg">
+        </div>
+    </div>
+</section> -->
+
+<section class="shopping">
+    <div class="shoppingInn">
+
+        <div class="searchInp" onclick="BoxShad()">
+            <form>
+                <label for="search">
+                    <img src="../img/searchIcon.svg" alt="searchIcon">
+                    <input placeholder="Փնտրել խանութը" type="search" id="search" name="search">
+                </label>
+            </form>
+        </div>
+        <div class="countryType">
+            <button id="allCountry" class="allCountry countryAll">
+                <img class="whiteGl" src="../shopsImage/globe.svg" alt="globeImg">
+                <img class="greenGl" src="../shopsImage/globe2.svg" alt="globeImg">
+                <span>Բոլորը</span>
+            </button>
+            <button id="allCountry" class="allCountry" onclick="toFindCategory('usa_id')">
+                <img src="../shopsImage/usa.svg" alt="country">
+                <span>ԱՄՆ</span>
+            </button>
+            <button id="allCountry" class="allCountry" onclick="toFindCategory('china_id')">
+                <img src="../shopsImage/china.svg" alt="country">
+                <span>Չինաստան</span>
+            </button>
+            <button id="allCountry" class="allCountry" onclick="toFindCategory('spain_id')">
+                <img src="../shopsImage/spain.svg" alt="country">
+                <span>Իսպանիա</span>
+            </button>
+            <button id="allCountry" class="allCountry" onclick="toFindCategory('rus_id')">
+                <img src="../shopsImage/rus.svg" alt="country">
+                <span>Ռուսաստան</span>
+            </button>
+            <button id="allCountry" class="allCountry" onclick="toFindCategory('luxe_id')">
+                <img src="../shopsImage/luxe.svg" alt="country">
+                <span>Լյուքսեմբուրգ</span>
+            </button>
+        </div>
+        <div class="brands">
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/pm6.svg" alt="brandImage">
+                </div>
+                <p>6pm</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="china_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/taobao.svg" alt="brandImage">
+                </div>
+                <p>Taobao</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="china_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/ali.svg" alt="brandImage">
+                </div>
+                <p>Aliexpress</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="china_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/pind.svg" alt="brandImage">
+                </div>
+                <p>Pinduoduo</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="rus_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/wild.svg" alt="brandImage">
+                </div>
+                <p>Wildberries</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/mango.svg" alt="brandImage">
+                </div>
+                <p>Mango</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="spain_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/zalan.svg" alt="brandImage">
+                </div>
+                <p>Zalando.be</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/zara.svg" alt="brandImage">
+                </div>
+                <p>Zara</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/mass.svg" alt="brandImage">
+                </div>
+                <p>Massimo Dutti</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/amazon.svg" alt="brandImage">
+                </div>
+                <p>Amazon</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/macys.svg" alt="brandImage">
+                </div>
+                <p>Macys</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/yoox.svg" alt="brandImage">
+                </div>
+                <p>Yoox</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/mich.svg" alt="brandImage">
+                </div>
+                <p>Michael Kors</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/joma.svg" alt="brandImage">
+                </div>
+                <p>Jomashop</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/armani.svg" alt="brandImage">
+                </div>
+                <p>Armani Exchange</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/h_m.svg" alt="brandImage">
+                </div>
+                <p>H & M</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="usa_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/serh.svg" alt="brandImage">
+                </div>
+                <p>Sephora</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="china_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/numberr.svg" alt="brandImage">
+                </div>
+                <p>1688</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="rus_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/kidd.svg" alt="brandImage">
+                </div>
+                <p>Детский мир</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="spain_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/veep.svg" alt="brandImage">
+                </div>
+                <p>Veepee</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="rus_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/ozon.svg" alt="brandImage">
+                </div>
+                <p>Ozon</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+            <div class="mainDiv" id="rus_id">
+                <div class="imageDv">
+                    <img src="../shopsImage/ozon2.svg" alt="brandImage">
+                </div>
+                <p>Ozon</p>
+                <span>Ամենահայտնի խանութը, որտեղ կարող եք գտնել օրգինալ բրենդային կոշիկի, հագուստի և աքսեսուարների
+                    զեղչված
+                    մեծ տեսականի: </span>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Main Content END -->
+
+<!-- Footer START -->
+<footer>
+    <div class="footer_container">
+        <img src="../img/logoOneWay_Footer.svg" alt="" class="col logo_icon_footer">
+        <div class="footer_col">
+            <h3>Տեղեկատվություն</h3>
+            <ul class="footer_nav_bar">
+                <li><a href="">Մեր մասին</a></li>
+                <li><a href="">Ծառայություններ</a></li>
+                <li><a href="">Սակագներ</a></li>
+                <li><a href="">Խանութներ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_col">
+            <h3 class="to_right">Կապ մեզ հետ</h3>
+            <ul class="contact_us">
+                <li class="tel_num"><a href="">+374 33 79 88 88</a></li>
+                <li class="tel_num"><a href="">+374 60 77 10 10</a></li>
+                <li class="email_num"><a href="">info@oneway.am</a></li>
+                <li class="map_num"><a href="">ք․Երևան, Բաշինջաղյան 198</a></li>
+                <li class="time_num"><a href="">Երկ․ - Ուրբ․ - 10։30 - 19։30</a></li>
+            </ul>
+        </div>
+        <div class="footer_col_pay">
+            <div class="pay_container">
+                <h3>Վճարման եղանակներ</h3>
+                <div class="pay_cards">
+                    <img src="../img/viza.svg" alt="viza">
+                    <img src="../img/mastercard.svg" alt="mastercard">
+                    <img src="../img/arca.svg" alt="">
+                    <img src="../img/monet.svg" alt="">
+                </div>
+            </div>
+            <div class="social_container">
+                <h3>Գտեք մեզ</h3>
+                <div class="content_social">
+                    <a href="" class="facebook"></a>
+                    <a href="" class="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="low_footer">
+        <h2>©2024 OneWay Logistics LLC։ Բոլոր իրավունքները պաշտպանված են։ Կայքը` Marksoft LLC:</h2>
+        <ul class="low_bar_content">
+            <li><a href="">Արգելված ապրանքատեսակներներ</a></li>
+            <div class="shtix"></div>
+            <li> <a href="">Գաղտնիության քաղաքականություն</a></li>
+            <div class="shtix"></div>
+            <li><a href="">Ընդհանուր դրույթներ և պայմաններ</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- Footer START -->
+
+
+
+</body>
+
+</html>

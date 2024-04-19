@@ -1,0 +1,313 @@
+/* Main CSS START */
+
+
+.custom_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 130px;
+    gap: 240px;
+    /* justify-content: space-around; */
+    /* padding-inline: 305px; */
+}
+
+
+.marty_icon {
+    align-self: end;
+}
+
+.custom_section form {
+    width: 100%;
+    max-width: 540px;
+    min-height: 585px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px 0px #1DA99D33;
+    padding: 50px 45px;
+}
+
+
+
+.custom_section form h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 40px;
+}
+#dropdownMenuButton1:focus {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    outline: none;
+}
+.custom_btn {
+    padding-inline: 5px;
+    width: 88px;
+    height: 48px;
+    border-radius: 8px 0px 0px 8px;
+    border-right: 1px solid #D8D8D8
+}
+
+.sign_up_form {
+    width: 100%;
+    min-height: 45px;
+    background: #1DA99D;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.custom-input_form {
+    border: none;
+    box-shadow: 0px 0px 8px 0px #0000001A;
+    height: 50px;
+}
+.custom-input_form:focus {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    outline: none;
+}
+
+.mb_custom_for_sing_btn {
+    margin-bottom: 30px;
+}
+
+.custom-bnt_country_code {
+    width: 88px;
+    height: 50px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #0000001A;
+    border-right: 1px solid #D8D8D8;
+    background-position: right 119px center;
+}
+
+.toggle-password {
+    padding: 10px;
+    /* Задаем отступ кнопке */
+    border-left: 0;
+    /* Убираем границу слева */
+    cursor: pointer;
+    /* Делаем курсор указателем при наведении */
+}
+
+.custom-input_form {
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #808080;
+    /* Задаем скругление углов справа */
+}
+
+.form-controlform-control:focus {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    outline: none;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.see_password {
+    position: relative;
+    top: -32px;
+    left: 90%;
+    z-index: 5;
+    background-image: url('./img/eye_2.svg');
+    background-size: cover;
+    width: 22px;
+    height: 19px;
+}
+
+
+/* Main CSS END */
+
+#fill_in_the_data_Id,
+/* #welcome_Id, */
+#logIn_Id,
+#forgot_your_password,
+#enter_the_code,
+#password_new {
+    /* display: flex; */
+    /* display: none; */
+}
+
+
+/* For step 2 CSS START */
+
+.textTitel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.textTitel span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+}
+
+.container_for_chek {
+    display: flex;
+    justify-content: space-around;
+}
+
+.check_input {
+    color: #1DA99D;
+    border: 1px solid #1DA99D;
+}
+
+.form-check-input:checked {
+
+    border: 5px solid #1DA99D;
+    background-color: #ffffff;
+}
+
+#company_name_container {
+    display: none;
+}
+
+/* For step 2 CSS END */
+
+/* For step 2 CSS START */
+
+.container_forgotPassword {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+/* Cheack BOX START */
+.main_check {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: unset;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #1DA99D;
+}
+
+
+.main_check input:checked~.geekmark {
+    background-color: #1DA99D;
+    border: none;
+}
+
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.main_check input:checked~.geekmark:after {
+    display: block;
+}
+
+.main_check .geekmark:after {
+    left: 8px;
+    bottom: 6px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Cheack BOX END */
+
+
+.container_forgotPassword span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.41px;
+    text-align: left;
+    color: #000000;
+}
+
+.h_size_login {
+    min-height: 440px !important;
+}
+
+/* For step 2 CSS START */
+
+
+/* For step forgot_your_password CSS START */
+.forgot_span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: #808080;
+}
+
+.gap_unset_custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 130px;
+    gap: unset;
+}
+
+.marty_icon_special {
+    align-self: center;
+    position: relative;
+    left: 10px;
+}
+
+.h_size_login_sm {
+    min-height: 345px !important;
+}
+
+.one_img {
+    width: 152px;
+    height: 152px;
+    margin-bottom: 20px;
+}
+
+.one_new_paswword_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* For step forgot_your_password CSS END */
+
+
+
+
+@media (max-width: 1570px) {
+    .custom_section {
+        gap: unset;
+        justify-content: space-around;
+        padding-inline: 135px;
+    }
+
+    .gap_unset_custom {
+        justify-content: center !important;
+    }
+}
