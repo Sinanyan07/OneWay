@@ -1,0 +1,628 @@
+.notifications,
+.my_account {
+    display: none;
+}
+
+
+
+.notifications {
+    width: 100%;
+    height: 950px;
+    margin: auto;
+    z-index: -10;
+    overflow: scroll;
+    background: #FBFBFB;
+}
+
+.container_norification {
+    padding-top: 60px;
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container_norification h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70.31px;
+    text-align: left;
+    color: #000000;
+}
+
+hr {
+    width: 100%;
+    max-width: 1420px;
+    margin: auto;
+    color: #1DA99D;
+    border: 1px solid #1DA99D;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.text_container_1,
+.text_container_2,
+.text_container_3_A,
+.text_container_3_B {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 16px 16px;
+}
+
+.text_container_1 span:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #353432;
+}
+
+.text_container_1 span:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #000000;
+}
+
+.text_container_2,
+.text_container_3_A,
+.text_container_3_B,
+.text_container_3 {
+    background: #F2F2F2;
+}
+
+.text_container_2 span:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18.75px;
+    text-align: left;
+    color: #353432;
+}
+
+.text_container_2 span:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #000000;
+}
+
+.text_container_3_main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.text_container_3_A span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    color: #000000;
+}
+
+.text_container_3_A p {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    color: #000000;
+}
+
+.text_container_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text_container_3_B span:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.09px;
+    text-align: left;
+    color: #000000;
+}
+
+.text_container_3_B span:nth-of-type(2) {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+}
+
+
+.my_account {
+    width: 100%;
+    min-height: 730px;
+    margin: auto;
+    background: #FBFBFB;
+
+
+}
+
+/* this is 2x */
+.my_account_container {
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.my_account_container h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70.31px;
+    text-align: left;
+    color: #000000;
+}
+
+.my_prices {
+    width: 100%;
+    max-width: 1415px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.my_prices_tabel {
+    width: 100%;
+    max-width: 1105px;
+    min-height: 182px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+    border-radius: 8px;
+}
+
+.tabrl_line_1,
+.tabrl_line_2,
+.tabrl_line_3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+}
+
+
+
+.bg_green {
+    background: #26AA9D;
+}
+
+.bg_gray {
+    background: #F2F2F2;
+}
+
+.bg_white {
+    background: #ffffff;
+}
+
+.tabrl_line_1 span {
+    width: 135px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: center;
+}
+
+.tabrl_line_2 span {
+    width: 135px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+}
+
+.tabrl_line_3 span {
+    width: 135px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+}
+
+
+
+.my_prices_sum {
+    width: 100%;
+    max-width: 278px;
+    min-height: 20px;
+    padding: 20px 0px;
+    margin: -18px;
+    align-self: self-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.my_prices_sum h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #000000;
+}
+
+.sum {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.my_prices_sum button {
+    width: 197px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: #268E83;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+
+
+.my_check {
+    width: 100%;
+    min-height: 868px;
+    margin: auto;
+    background: #FBFBFB;
+}
+
+
+form {
+    width: 100%;
+    max-width: 580px;
+    min-height: 547px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 0px #1DA99D1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 30px;
+}
+
+.form_input {
+    width: 293px;
+    height: 51px;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px #00000033;
+    border: none;
+}
+.form_input:focus {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    outline: none;
+}
+
+.form-label {
+    margin-bottom: 0.3rem !important;
+}
+
+.text_card {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: #000000;
+    margin-top: 5px;
+}
+
+form button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #1DA99D;
+    width: 290px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* 
+<!-- AddOrderPageView1920 sect start --> */
+.addOrd {
+    width: 100%;
+    background: #0000004D;
+    display: flex;
+    justify-content: center;
+}
+
+.addOrdInn {
+    max-width: 1428px;
+    width: 100%;
+}
+
+.opInnThrd1 form {
+    min-height: unset;
+}
+
+.countOpInn1 {
+    max-width: 1428px;
+    width: 100%;
+    min-height: 627px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-header .btn-close {
+    padding: unset;
+    margin: unset;
+}
+
+.opInnFirst1 {
+    max-width: 1428px;
+    width: 100%;
+    position: relative;
+    min-height: 28px;
+    padding: unset !important;
+    margin: unset;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
+    margin-bottom: 30px;
+
+}
+
+.sendCount {
+    position: unset;
+}
+
+.opInnFirst1 button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.sendCount {
+    margin-top: 40px;
+}
+
+#allCountry {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+    border-radius: 4px;
+    padding-inline: 10px;
+    padding-block: 7px;
+    height: 44px;
+}
+
+
+.opInnThrd1 {
+    max-width: 696px;
+    width: 100%;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    gap: 8px;
+}
+
+.input_container {
+    width: 100%;
+}
+
+.input_container label input {
+    border: none;
+    outline: none;
+}
+
+.input_container input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+
+}
+
+.opInnThrd1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inpTop {
+    margin: unset;
+    padding: unset;
+    margin-top: 30px;
+    display: flex;
+    align-items: unset;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.inpTop label {
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 74px;
+}
+
+.inpTop label span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #212121;
+}
+
+.inpTop label input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 0px 8px 0px #00000033;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-block: 14.5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.inpTop label input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #929292;
+}
+
+
+.inpTop label input:focus {
+    outline: none;
+}
+
+.inpTop label input:focus {
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+
+}
+
+
+
+.prodPr {
+    display: flex;
+    border-radius: unset;
+}
+
+.prodInp {
+    max-width: 190px;
+    width: 100%;
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+.selDv1 {
+    width: 70px;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 16px;
+    border: none;
+    border-left: 1px solid #848484;
+    box-shadow: 0px 0px 8px 0px #00000033;
+
+    position: relative;
+}
+
+
+
+.langDv1 {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    display: none;
+    box-shadow: 0px 4px 8px 0px #00000040;
+
+}
+
+.langDv1 button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.langDv1 button:hover {
+    background-color: #F2F2F2;
+}
+
+.name_input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: #929292;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0px 0px 8px 0px #00000033;
+
+}
+
+.inpTop span {
+    font-family: Mardoto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #000000;
+}
+
+
+.buttonsDv {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 25px;
+    margin-top: 58px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+    justify-content: flex-end;
+}
+
+.buttonsDv button {
+    max-width: 214px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.buttonsDv button:nth-child(1) {
+    background-color: #848484;
+}
+
+.buttonsDv button:nth-child(2) {
+    background-color: #1DA99D;
+}
+
+
+
+
+/* <!-- AddOrderPageView1920 sect end --> */
