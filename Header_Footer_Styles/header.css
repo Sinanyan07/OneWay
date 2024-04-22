@@ -159,7 +159,7 @@ ul {
     /* justify-content: space-between; */
     height: 40px;
     gap: 26px;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
 
 }
 
@@ -220,6 +220,7 @@ ul {
     text-align: center;
     color: #FFFFFF;
 }
+
 #allCountry {
     /* max-width: 112px; */
     width: auto;
@@ -230,7 +231,7 @@ ul {
     border-radius: 20px;
     border: none;
     background-color: #FBFBFB;
-        /* background-color: #1DA99D; */
+    /* background-color: #1DA99D; */
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
@@ -311,6 +312,7 @@ ul {
     right: 31px;
     top: 24px;
 }
+
 .opInnSec {
     max-width: 446px;
     width: 100%;
@@ -387,10 +389,17 @@ input::-webkit-inner-spin-button {
 
 /* calculator end */
 
+
+/*boot nav button  */
+.dropdown {
+    display: none;
+}
+
 /* media start */
 @media(max-width:1440px) {
     .contBotInn ul {
-        margin-left: 65px;
+        margin-left: 50px;
+        max-width: 615px;
     }
 
     .contTop {
@@ -407,6 +416,14 @@ input::-webkit-inner-spin-button {
         max-width: 1340px;
         padding-inline: 100px;
     }
+
+    .pageLogo19 {
+        display: none;
+    }
+
+    .pageLogo12 {
+        display: block;
+    }
 }
 
 
@@ -419,20 +436,16 @@ input::-webkit-inner-spin-button {
         justify-content: space-between;
         max-width: 615px;
     }
+
     .contBotInn {
         gap: 20px;
     }
+
     .contBot {
         height: 80px;
     }
 
-    .pageLogo19 {
-        display: none;
-    }
 
-    .pageLogo12 {
-        display: block;
-    }
 
     .contBotInn ul li a {
         font-size: 18px;
@@ -440,7 +453,114 @@ input::-webkit-inner-spin-button {
         line-height: 21.09px;
 
     }
+
     .langDv {
         top: 135px;
     }
 }
+
+@media(max-width:1000px) {
+    .contBotInn ul {
+        display: none;
+    }
+
+    .eventRig {
+        max-width: 263px;
+        align-items: center;
+    }
+
+    /* boot nav butt menu st */
+    .dropdown {
+        margin: unset;
+        padding: unset;
+        position: unset;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-menu {
+        margin: unset !important;
+        padding: unset !important;
+    }
+
+    .dropdown .btn {
+        box-shadow: 0px 0px 8px 0px #FFFFFF;
+        width: 32px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+
+    }
+
+    .dropdown-menu {
+        background: #1DA99D;
+
+    }
+
+    .contBotInn ul {
+        max-width: 100%;
+    }
+
+    .dropdown-menu {
+        height: 430px !important;
+        border-top: 1px solid #FFFFFF;
+        border-radius: unset;
+        padding-inline: 100px !important;
+        padding-top: 20px !important;
+    }
+
+
+    .dropdown-item {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.09px;
+        text-align: left !important;
+        color: #FBFBFB;
+        padding: unset;
+        margin-top: 20px;
+    }
+    .liMen{
+        margin-top: 20px;
+    }
+    .liMen button{
+        padding: unset;
+
+    }
+
+
+.forX{
+    display: none;
+}
+
+    /* boot nav butt menu st */
+}
+
+
+
+@media(max-width: 678px) {
+    .contMainTop {
+        padding-inline: 50px;
+    }
+
+    .regBut {
+        max-width: 106px;
+    }
+
+    .signBut {
+        max-width: 74px;
+    }
+
+    .contBotInn {
+        padding-inline: 50px;
+    }
+}
+
+
+/* div{
+    border: solid 1px;
+    
+} */
