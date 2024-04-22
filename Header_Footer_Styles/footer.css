@@ -176,3 +176,33 @@ footer {
 }
 
 /* Footer CSS END */
+
+/* The responsive 1920px - 320px START */
+
+@media (max-width: 1440px) {
+  .footer_col h3,
+  .pay_container h3,
+  .social_container h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+  }
+
+  .footer_col ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+  }
+
+  .footer_container {
+    padding-inline: 100px;
+    max-width: 1335px;
+    grid-template-columns: 250px auto auto 195px;
+  }
+
+  .footer_col ul {
+    gap: 7px;
+  }
+}
