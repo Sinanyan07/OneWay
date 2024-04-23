@@ -159,7 +159,7 @@ ul {
     /* justify-content: space-between; */
     height: 40px;
     gap: 26px;
-    /* flex-direction: row-reverse; */
+    /* flex-direction: row; */
 
 }
 
@@ -187,7 +187,7 @@ ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 140px;
     display: none;
 }
@@ -401,6 +401,9 @@ input::-webkit-inner-spin-button {
         margin-left: 50px;
         max-width: 615px;
     }
+    .contBot {
+        height: 80px;
+    }
 
     .contTop {
         max-width: 1140px;
@@ -423,6 +426,9 @@ input::-webkit-inner-spin-button {
 
     .pageLogo12 {
         display: block;
+    }
+    .langDv{
+    top: 135px;
     }
 }
 
@@ -471,10 +477,10 @@ input::-webkit-inner-spin-button {
 
     /* boot nav butt menu st */
     .dropdown {
-        margin: unset;
+        order: 3;
         padding: unset;
         position: unset;
-
+z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;

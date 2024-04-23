@@ -1,123 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="home.js" defer></script>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../Header_Footer_Styles/footer.css" />
-    <link rel="stylesheet" href="../Header_Footer_Styles/header.css" />
-    <link rel="stylesheet" href="./home.css" />
-    <title>One Way</title>
-  </head>
 
-  <!-- HEADER START -->
-  <nav class="navbar">
-    <div class="contTop">
-      <div class="topLeftNav">
-        <div class="number">
-          <img src="../img/call.svg" alt="call" />
-          <div class="span">+374 33 79 88 88</div>
-        </div>
-        <button class="signBut">
-          <a href="#">Մուտք</a>
-        </button>
-        <button class="regBut"><a href="#">Գրանցվել</a></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="home.js" defer></script>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../Header_Footer_Styles/footer.css" />
+  <link rel="stylesheet" href="../Header_Footer_Styles/header.css" />
+  <link rel="stylesheet" href="./home.css" />
+  <title>One Way</title>
+</head>
+
+<!-- HEADER START -->
+<nav class="navbar">
+  <div class="contMainTop">
+      <div class="contTop">
+          <div class="topLeftNav">
+              <div class="number">
+                  <img src="../img/call.svg" alt="call">
+                  <div class="span">
+                      +374 33 79 88 88
+                  </div>
+              </div>
+              <button class="signBut">
+                  <a href="#">Մուտք</a>
+              </button>
+              <button class="regBut"> <a href="#">Գրանցվել</a></button>
+          </div>
+
       </div>
-    </div>
-    <div class="contBot">
+  </div>
+
+  <div class="contBot">
       <div class="contBotInn">
-        <div class="logoParent">
-          <a href="./index.html">
-            <img src="../img/mainLogo.svg" alt="logoPage" />
-          </a>
-        </div>
-        <ul>
-          <li>
-            <a href="#">Մեր մասին</a>
-          </li>
-          <div class="vert"></div>
-          <li class="liMen">
-            <button>
-              <a href="#">Ծառայություններ</a>
-              <img src="../img/downMen.svg" alt="down" />
-            </button>
-          </li>
-          <div class="vert"></div>
-          <li>
-            <a href="#">Սակագներ</a>
-          </li>
-          <div class="vert"></div>
-          <li>
-            <a href="#">Խանութներ</a>
-          </li>
-        </ul>
-        <div class="eventRig">
-          <button class="selDiv">
-            <img src="../img/arm.svg" alt="flag" />
-            <img src="../img/dropdown.svg" alt="vector" />
-          </button>
-          <button class="counter">
-            <img src="../img/calculator.svg" alt="counter" />
-            <span>Հաշվիչ</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- HEADER END -->
-
-  <!-- Main Content START -->
-  <section class="section_1">
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active bg-warning"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-          class="bg-warning"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-          class="bg-warning"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active container_home">
-          <div class="slider_content slid_1">
-            <h1>Բեռնափոխադրումներ աշխարհի ցանկացած վայրից։</h1>
+          <div class="logoParent">
+              <a href="../index.html">
+                  <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
+                  <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
+              </a>
           </div>
-        </div>
+          <ul>
+              <li>
+                  <a href="../AboutPage/about.html">Մեր մասին</a>
+              </li>
+              <div class="vert"></div>
+              <li class="liMen">
+                  <button>
+                      <a href="#">Ծառայություններ</a>
+                      <img src="../img/downMen.svg" alt="down">
+                  </button>
 
-        <!-- Any Slid  -->
-        <!-- <div class="carousel-item ">
+              </li>
+              <div class="vert"></div>
+              <li>
+                  <a href="#">Սակագներ</a>
+              </li>
+              <div class="vert"></div>
+              <li>
+                  <a href="../Shops/shop.html">Խանութներ</a>
+              </li>
+          </ul>
+          <div class="eventRig">
+              
+              <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  <img src="../img/calculator.svg" alt="counter">
+                  <span>Հաշվիչ</span>
+              </button>
+              <div class="parentDv">
+                  <div class="langDv">
+                      <button><img src="../img/usaLang.svg" alt="languages"></button>
+                      <button><img src="../img/rusLang.svg" alt="languages"></button>
+                  </div>
+                  <button class="selDiv" onclick="openLang()">
+                      <img src="../img/arm.svg" alt="flag">
+                      <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
+                  </button>
+
+              </div>
+
+
+              <!-- header bar menu st -->
+              <div class="dropdown">
+                  <button  onclick="barX()" class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img class="forBar" src="../img/menuBar.svg" alt="menuNav">
+                      <img class="forX" src="../img/menuX.svg" alt="menuNav">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                      <li>
+                          <a class="dropdown-item" href="./about.html">Մեր մասին</a>
+                      </li>
+                      <li class="liMen">
+                          <button>
+                              <a href="#">Ծառայություններ</a>
+                              <img src="../img/downMen.svg" alt="down">
+                          </button>
+
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="#">Սակագներ</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="../Shops/shop.html">Խանութներ</a>
+                      </li>
+                  </ul>
+
+              </div>
+              <!-- header bar menu end -->
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog countOpened">
+                      <div class="modal-content countOpInn">
+                          <div class="modal-header opInnFirst">
+                              <h5 class="sendCount">Առաքման հաշվիչ</h5>
+                              <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
+                                  aria-label="Close">
+                                  <img src="../img/closeIcon.svg" alt="closing">
+                              </button>
+                          </div>
+                          <div class="modal-body opInnSec">
+
+                              <button id="allCountry">
+                                  <img src="../shopsImage/usa.svg" alt="country">
+                              </button>
+                              <button id="allCountry">
+                                  <img src="../shopsImage/china.svg" alt="country">
+                              </button>
+                              <button id="allCountry">
+                                  <img src="../shopsImage/spain.svg" alt="country">
+                              </button>
+                              <button id="allCountry">
+                                  <img src="../shopsImage/rus.svg" alt="country">
+                              </button>
+                              <button id="allCountry">
+                                  <img src="../shopsImage/luxe.svg" alt="country">
+                              </button>
+                          </div>
+                          <div class=" opInnThrd">
+                              <form>
+                                  <label for="weightInp">Քաշ (կգ)
+                                      <input type="number" min="0" placeholder="0" id="weightInp">
+                                  </label>
+                              </form>
+                          </div>
+                          <div class=" opInnThrd">
+                              <form>
+                                  <label for="weightInp">Առաքման արժեք (AMD)
+                                      <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                  </label>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- modal end -->
+          </div>
+      </div>
+  </div>
+
+</nav>
+<!-- HEADER END -->
+
+<!-- Main Content START -->
+<section class="section_1">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-warning"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+        class="bg-warning"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+        class="bg-warning"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active container_home">
+        <div class="slider_content slid_1">
+          <h1>Բեռնափոխադրումներ աշխարհի ցանկացած վայրից։</h1>
+        </div>
+      </div>
+
+      <!-- Any Slid  -->
+      <!-- <div class="carousel-item ">
                 <div class="slider_content slid_1">
                     <h1>Բեռնափոխադրումներ
                         աշխարհի ցանկացած վայրից։
@@ -125,8 +198,8 @@
                     <img src="../img/martyMain.svg" alt="">
                 </div>
             </div> -->
-        <!-- Any Slid  -->
-        <!-- <div class="carousel-item ">
+      <!-- Any Slid  -->
+      <!-- <div class="carousel-item ">
                 <div class="slider_content slid_1">
                     <h1>Բեռնափոխադրումներ
                         աշխարհի ցանկացած վայրից։
@@ -134,329 +207,295 @@
                     <img src="../img/martyMain.svg" alt="">
                 </div>
             </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="section_2">
+  <div class="main_section_2">
+    <h1>Ինչպես կատարել գնում</h1>
+    <div class="container_section_2">
+      <div class="steps">
+        <img src="./img_home/step_1.svg" alt="" />
+        <h3>Գրանցվել</h3>
+        <span> Գրանցվեք մեր կայքում և ստացեք առաքման հասցեն։ </span>
+      </div>
+      <div class="line_arrow"></div>
+      <div class="steps">
+        <img src="./img_home/step_2.svg" alt="" />
+        <h3>Կատարել գնում</h3>
+        <span> Կատարեք գնում և օգտագործեք Ձեր հասցեն։ </span>
+      </div>
+      <div class="line_arrow_1"></div>
+      <div class="steps">
+        <img src="./img_home/step_3.svg" alt="" />
+        <h3>Ստանալ առաքանին</h3>
+        <span> Ստացեք Ձեր առաքանին հաշված օրերի ընթացքում։ </span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section_2">
-    <div class="main_section_2">
-      <h1>Ինչպես կատարել գնում</h1>
-      <div class="container_section_2">
-        <div class="steps">
-          <img src="./img_home/step_1.svg" alt="" />
-          <h3>Գրանցվել</h3>
-          <span> Գրանցվեք մեր կայքում և ստացեք առաքման հասցեն։ </span>
-        </div>
-        <div class="line_arrow"></div>
-        <div class="steps">
-          <img src="./img_home/step_2.svg" alt="" />
-          <h3>Կատարել գնում</h3>
-          <span> Կատարեք գնում և օգտագործեք Ձեր հասցեն։ </span>
-        </div>
-        <div class="line_arrow_1"></div>
-        <div class="steps">
-          <img src="./img_home/step_3.svg" alt="" />
-          <h3>Ստանալ առաքանին</h3>
-          <span> Ստացեք Ձեր առաքանին հաշված օրերի ընթացքում։ </span>
-        </div>
-      </div>
+<section class="section_3">
+  <div class="main_section_3">
+    <div class="titel_section_3">
+      <img src="../img/marty_3.svg" alt="" />
+      <h1>Գնիր իմ փոխարեն</h1>
     </div>
-  </section>
-
-  <section class="section_3">
-    <div class="main_section_3">
-      <div class="titel_section_3">
-        <img src="../img/marty_3.svg" alt="" />
-        <h1>Գնիր իմ փոխարեն</h1>
-      </div>
-      <form action="" class="">
-        <div class="buy_link">
-          <div class="product_adds">
-            <div class="input_group">
-              <div class="input_container">
-                <label for="name_input_Id" class="titel_label"
-                  >Ապրանքի անունը</label
-                >
-                <input
-                  type="text"
-                  class="name_input"
-                  id="name_input_Id"
-                  placeholder="High heels"
-                />
-              </div>
-              <div class="input_container link_input">
-                <label for="name_input_Id" class="titel_label"
-                  >Ապրանքի հղումը</label
-                >
-                <input
-                  type="text"
-                  class="name_input"
-                  id="name_input_Id"
-                  placeholder="https://en.zalando.de/versace-jeans-couture-high-heels-black-vei11b019-q11.html"
-                />
-              </div>
-              <button class="add_bnt"></button>
+    <form action="" class="">
+      <div class="buy_link">
+        <div class="product_adds">
+          <div class="input_group">
+            <div class="input_container">
+              <label for="name_input_Id" class="titel_label">Ապրանքի անունը</label>
+              <input type="text" class="name_input" id="name_input_Id" placeholder="High heels" />
             </div>
-            <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
-          </div>
-
-          <div class="product_adds">
-            <div class="input_group">
-              <div class="input_container">
-                <label for="name_input_Id" class="titel_label"
-                  >Ապրանքի անունը</label
-                >
-                <input
-                  type="text"
-                  class="name_input"
-                  id="name_input_Id"
-                  placeholder="High heels"
-                />
-              </div>
-              <div class="input_container link_input">
-                <label for="name_input_Id" class="titel_label"
-                  >Ապրանքի հղումը</label
-                >
-                <input
-                  type="text"
-                  class="name_input"
-                  id="name_input_Id"
-                  placeholder="https://en.zalando.de/versace-jeans-couture-high-heels-black-vei11b019-q11.html"
-                />
-              </div>
-              <button class="add_bnt del_btn"></button>
+            <div class="input_container link_input">
+              <label for="name_input_Id" class="titel_label">Ապրանքի հղումը</label>
+              <input type="text" class="name_input" id="name_input_Id"
+                placeholder="https://en.zalando.de/versace-jeans-couture-high-heels-black-vei11b019-q11.html" />
             </div>
-            <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
+            <button class="add_bnt"></button>
           </div>
+          <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
         </div>
-      </form>
+
+        <div class="product_adds">
+          <div class="input_group">
+            <div class="input_container">
+              <label for="name_input_Id" class="titel_label">Ապրանքի անունը</label>
+              <input type="text" class="name_input" id="name_input_Id" placeholder="High heels" />
+            </div>
+            <div class="input_container link_input">
+              <label for="name_input_Id" class="titel_label">Ապրանքի հղումը</label>
+              <input type="text" class="name_input" id="name_input_Id"
+                placeholder="https://en.zalando.de/versace-jeans-couture-high-heels-black-vei11b019-q11.html" />
+            </div>
+            <button class="add_bnt del_btn"></button>
+          </div>
+          <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section_4">
+  <h1>Սակագներ</h1>
+  <div class="section_4_content">
+    <div class="placees">
+      <span>Երկրներ</span>
+      <span>Առաքման տևողություն</span>
+      <span>Սակագին (1կգ)</span>
     </div>
-  </section>
 
-  <section class="section_4">
-    <h1>Սակագներ</h1>
-    <div class="section_4_content">
-      <div class="placees">
-        <span>Երկրներ</span>
-        <span>Առաքման տևողություն</span>
-        <span>Սակագին (1կգ)</span>
+    <div class="placees placees_custom_gray">
+      <div class="d-flex gap-2 costom_size">
+        <img src="./img_home/flag-usa.svg" alt="usa" />
+        <span>ԱՄՆ</span>
       </div>
-
-      <div class="placees placees_custom_gray">
-        <div class="d-flex gap-2 costom_size">
-          <img src="./img_home/flag-usa.svg" alt="usa" />
-          <span>ԱՄՆ</span>
-        </div>
-        <div class="d-flex gap-2 costom_for_days">
-          <img src="./img_home/airplane.svg" alt="usa" />
-          <span>5 - 10 աշխ․ օր</span>
-        </div>
-        <span>5500 դր</span>
+      <div class="d-flex gap-2 costom_for_days">
+        <img src="./img_home/airplane.svg" alt="usa" />
+        <span>5 - 10 աշխ․ օր</span>
       </div>
+      <span>5500 դր</span>
+    </div>
 
-      <div class="placees placees_custom_white">
-        <div class="d-flex gap-2 costom_size">
-          <img src="./img_home/russia.svg" alt="usa" />
-          <span>Ռուսաստան</span>
-        </div>
-        <div class="d-flex gap-2 costom_for_days">
-          <img src="./img_home/airplane.svg" alt="usa" />
-          <span>8 - 10 աշխ․ օր</span>
-        </div>
-        <span>1000 դր</span>
+    <div class="placees placees_custom_white">
+      <div class="d-flex gap-2 costom_size">
+        <img src="./img_home/russia.svg" alt="usa" />
+        <span>Ռուսաստան</span>
       </div>
-
-      <div class="placees placees_custom_gray">
-        <div class="d-flex gap-2 costom_size">
-          <img src="./img_home/spain.svg" alt="usa" />
-          <span>Իսպանիա</span>
-        </div>
-        <div class="d-flex gap-2 costom_for_days">
-          <img src="./img_home/airplane.svg" alt="usa" />
-          <span>5 - 10 աշխ․ օր</span>
-        </div>
-        <span>4800 դր</span>
+      <div class="d-flex gap-2 costom_for_days">
+        <img src="./img_home/airplane.svg" alt="usa" />
+        <span>8 - 10 աշխ․ օր</span>
       </div>
+      <span>1000 դր</span>
+    </div>
 
-      <div class="placees placees_custom_white">
-        <div class="d-flex gap-2 costom_size">
-          <img src="./img_home/chinas.svg" alt="usa" />
-          <span>Չինաստան</span>
-        </div>
-        <div class="d-flex gap-2 costom_for_days">
-          <img src="./img_home/airplane.svg" alt="usa" />
-          <span>25 - 30 աշխ․ օր</span>
-        </div>
-        <span>5000 դր</span>
+    <div class="placees placees_custom_gray">
+      <div class="d-flex gap-2 costom_size">
+        <img src="./img_home/spain.svg" alt="usa" />
+        <span>Իսպանիա</span>
       </div>
-
-      <div class="placees placees_custom_gray">
-        <div class="d-flex gap-2 costom_size">
-          <img src="./img_home/Flag_L.svg" alt="usa" />
-          <span>Լյուքսեմբուրգ</span>
-        </div>
-        <div class="d-flex gap-2 costom_for_days">
-          <img src="./img_home/airplane.svg" alt="usa" />
-          <span>5 - 10 աշխ․ օր</span>
-        </div>
-        <span>4800 դր</span>
+      <div class="d-flex gap-2 costom_for_days">
+        <img src="./img_home/airplane.svg" alt="usa" />
+        <span>5 - 10 աշխ․ օր</span>
       </div>
+      <span>4800 դր</span>
+    </div>
 
-      <div class="placees placees_custom_white">
-        <div class="d-flex gap-2 costom_size">
-          <img src="./img_home/grace.svg" alt="usa" />
-          <span>Հունաստան</span>
-          <img src="img_home/info_icon.png" alt="" class="info_icon" />
-        </div>
-        <div class="d-flex gap-2 costom_for_days">
-          <img src="./img_home/airplane.svg" alt="usa" />
-          <span>շուտով</span>
-        </div>
+    <div class="placees placees_custom_white">
+      <div class="d-flex gap-2 costom_size">
+        <img src="./img_home/chinas.svg" alt="usa" />
+        <span>Չինաստան</span>
+      </div>
+      <div class="d-flex gap-2 costom_for_days">
+        <img src="./img_home/airplane.svg" alt="usa" />
+        <span>25 - 30 աշխ․ օր</span>
+      </div>
+      <span>5000 դր</span>
+    </div>
+
+    <div class="placees placees_custom_gray">
+      <div class="d-flex gap-2 costom_size">
+        <img src="./img_home/Flag_L.svg" alt="usa" />
+        <span>Լյուքսեմբուրգ</span>
+      </div>
+      <div class="d-flex gap-2 costom_for_days">
+        <img src="./img_home/airplane.svg" alt="usa" />
+        <span>5 - 10 աշխ․ օր</span>
+      </div>
+      <span>4800 դր</span>
+    </div>
+
+    <div class="placees placees_custom_white">
+      <div class="d-flex gap-2 costom_size">
+        <img src="./img_home/grace.svg" alt="usa" />
+        <span>Հունաստան</span>
+        <img src="img_home/info_icon.png" alt="" class="info_icon" />
+      </div>
+      <div class="d-flex gap-2 costom_for_days">
+        <img src="./img_home/airplane.svg" alt="usa" />
         <span>շուտով</span>
       </div>
+      <span>շուտով</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section_5">
-    <div class="to_see_map">
+<section class="section_5">
+  <div class="to_see_map">
 
-      <div class="text_bnt_container">
-        <div class="text_section_5">
-          <h2>Ինչպես օգտվել</h2>
-          <span
-            >Ինչպես կատարել առցանց գնուներ Չինաստանից և ստանալ Հայաստանում։
-          </span>
-        </div>
-        <button>Տեսնել ճանապարհային քարտեզը</button>
+    <div class="text_bnt_container">
+      <div class="text_section_5">
+        <h2>Ինչպես օգտվել</h2>
+        <span>Ինչպես կատարել առցանց գնուներ Չինաստանից և ստանալ Հայաստանում։
+        </span>
       </div>
+      <button>Տեսնել ճանապարհային քարտեզը</button>
+    </div>
 
-      <div class="video_content_steps">
-
-      </div>
+    <div class="video_content_steps">
 
     </div>
-  </section>
 
-  <section class="section_6"></section>
+  </div>
+</section>
 
-  <section class="section_7">
-    <h1 class="text-center">Խանութներ</h1>
-    <div class="conatiner_section_7">
-      <img
-        src="./img_home/marty_shop.svg"
-        alt="Mary One Way"
-        class="marty_img_size"
-      />
-      <div class="shops_container">
-        <img src="./img_home/shop_1.svg" alt="shop" />
-        <img src="./img_home/shop_2.svg" alt="shop" />
-        <img src="./img_home/shop_3.svg" alt="shop" />
-        <img src="./img_home/shop_4.svg" alt="shop" />
-        <img src="./img_home/shop_5.svg" alt="shop" />
-        <img src="./img_home/shop_6.svg" alt="shop" />
-        <img src="./img_home/shop_7.svg" alt="shop" />
-        <img src="./img_home/shop_8.svg" alt="shop" />
-        <img src="./img_home/shop_9.svg" alt="shop" />
-        <img src="./img_home/shop_10.svg" alt="shop" />
-      </div>
+<section class="section_6"></section>
+
+<section class="section_7">
+  <h1 class="text-center">Խանութներ</h1>
+  <div class="conatiner_section_7">
+    <img src="./img_home/marty_shop.svg" alt="Mary One Way" class="marty_img_size" />
+    <div class="shops_container">
+      <img src="./img_home/shop_1.svg" alt="shop" />
+      <img src="./img_home/shop_2.svg" alt="shop" />
+      <img src="./img_home/shop_3.svg" alt="shop" />
+      <img src="./img_home/shop_4.svg" alt="shop" />
+      <img src="./img_home/shop_5.svg" alt="shop" />
+      <img src="./img_home/shop_6.svg" alt="shop" />
+      <img src="./img_home/shop_7.svg" alt="shop" />
+      <img src="./img_home/shop_8.svg" alt="shop" />
+      <img src="./img_home/shop_9.svg" alt="shop" />
+      <img src="./img_home/shop_10.svg" alt="shop" />
     </div>
-    <button>Տեսնել բոլորը</button>
-  </section>
+  </div>
+  <button>Տեսնել բոլորը</button>
+</section>
 
-  <section class="section_8">
-    <h1>Առաքում ՀՀ տարածքում</h1>
-    <div class="main_section_8">
-      <img src="./img_home/withMartybox_1.svg" alt="" />
-      <div class="container_section_8">
-        <div class="item_section_8">
-          <img src="./img_home/dil_car_icon.svg" alt="" />
-          <span>Արագ</span>
-        </div>
-
-        <div class="item_section_8">
-          <img src="./img_home/box_icon.svg" alt="" />
-          <span>Ապահով</span>
-        </div>
-
-        <div class="item_section_8">
-          <img src="./img_home/love_box_icon.svg" alt="" />
-          <span>Հուսալի</span>
-        </div>
-      </div>
-      <img src="./img_home/withMartybox_2.svg" alt="" />
-    </div>
-    <hr />
-    <span class="text_info">
-      * Առաքումը կատարվում է ք․Երևանի տարածքում 1-3 աշխ․ օրվա, իսկ դեպի մարզեր
-      3-5 աշխ․ օրվա ընթացքում (մինչև 10 կգ - 1000 դրամ, 10-30 կգ - 3000 դրամ,
-      30կգ և ավել - 10․000 դրամ)։
-    </span>
-  </section>
-
-  <!-- Main Content END -->
-
-  <!-- Footer START -->
-  <footer>
-    <div class="footer_container">
-      <img
-        src="../img/logoOneWay_Footer.svg"
-        alt=""
-        class="col logo_icon_footer"
-      />
-      <div class="footer_col">
-        <h3>Տեղեկատվություն</h3>
-        <ul class="footer_nav_bar">
-          <li><a href="">Մեր մասին</a></li>
-          <li><a href="">Ծառայություններ</a></li>
-          <li><a href="">Սակագներ</a></li>
-          <li><a href="">Խանութներ</a></li>
-        </ul>
+<section class="section_8">
+  <h1>Առաքում ՀՀ տարածքում</h1>
+  <div class="main_section_8">
+    <img src="./img_home/withMartybox_1.svg" alt="" />
+    <div class="container_section_8">
+      <div class="item_section_8">
+        <img src="./img_home/dil_car_icon.svg" alt="" />
+        <span>Արագ</span>
       </div>
 
-      <div class="footer_col">
-        <h3 class="to_right">Կապ մեզ հետ</h3>
-        <ul class="contact_us">
-          <li class="tel_num"><a href="">+374 33 79 88 88</a></li>
-          <li class="tel_num"><a href="">+374 60 77 10 10</a></li>
-          <li class="email_num"><a href="">info@oneway.am</a></li>
-          <li class="map_num"><a href="">ք․Երևան, Բաշինջաղյան 198</a></li>
-          <li class="time_num"><a href="">Երկ․ - Ուրբ․ - 10։30 - 19։30</a></li>
-        </ul>
+      <div class="item_section_8">
+        <img src="./img_home/box_icon.svg" alt="" />
+        <span>Ապահով</span>
       </div>
-      <div class="footer_col_pay">
-        <div class="pay_container">
-          <h3>Վճարման եղանակներ</h3>
-          <div class="pay_cards">
-            <img src="../img/viza.svg" alt="viza" />
-            <img src="../img/mastercard.svg" alt="mastercard" />
-            <img src="../img/arca.svg" alt="" />
-            <img src="../img/monet.svg" alt="" />
-          </div>
-        </div>
-        <div class="social_container">
-          <h3>Գտեք մեզ</h3>
-          <div class="content_social">
-            <a href="" class="facebook"></a>
-            <a href="" class="instagram"></a>
-          </div>
-        </div>
+
+      <div class="item_section_8">
+        <img src="./img_home/love_box_icon.svg" alt="" />
+        <span>Հուսալի</span>
       </div>
     </div>
-    <div class="low_footer">
-      <h2>
-        ©2024 OneWay Logistics LLC։ Բոլոր իրավունքները պաշտպանված են։ Կայքը`
-        Marksoft LLC:
-      </h2>
-      <ul class="low_bar_content">
-        <li><a href="">Արգելված ապրանքատեսակներներ</a></li>
-        <div class="shtix"></div>
-        <li><a href="">Գաղտնիության քաղաքականություն</a></li>
-        <div class="shtix"></div>
-        <li><a href="">Ընդհանուր դրույթներ և պայմաններ</a></li>
+    <img src="./img_home/withMartybox_2.svg" alt="" />
+  </div>
+  <hr />
+  <span class="text_info">
+    * Առաքումը կատարվում է ք․Երևանի տարածքում 1-3 աշխ․ օրվա, իսկ դեպի մարզեր
+    3-5 աշխ․ օրվա ընթացքում (մինչև 10 կգ - 1000 դրամ, 10-30 կգ - 3000 դրամ,
+    30կգ և ավել - 10․000 դրամ)։
+  </span>
+</section>
+
+<!-- Main Content END -->
+
+<!-- Footer START -->
+<footer>
+  <div class="footer_container">
+    <img src="../img/logoOneWay_Footer.svg" alt="" class="col logo_icon_footer" />
+    <div class="footer_col">
+      <h3>Տեղեկատվություն</h3>
+      <ul class="footer_nav_bar">
+        <li><a href="">Մեր մասին</a></li>
+        <li><a href="">Ծառայություններ</a></li>
+        <li><a href="">Սակագներ</a></li>
+        <li><a href="">Խանութներ</a></li>
       </ul>
     </div>
-  </footer>
-  <!-- Footer START -->
 
-  <body></body>
+    <div class="footer_col">
+      <h3 class="to_right">Կապ մեզ հետ</h3>
+      <ul class="contact_us">
+        <li class="tel_num"><a href="">+374 33 79 88 88</a></li>
+        <li class="tel_num"><a href="">+374 60 77 10 10</a></li>
+        <li class="email_num"><a href="">info@oneway.am</a></li>
+        <li class="map_num"><a href="">ք․Երևան, Բաշինջաղյան 198</a></li>
+        <li class="time_num"><a href="">Երկ․ - Ուրբ․ - 10։30 - 19։30</a></li>
+      </ul>
+    </div>
+    <div class="footer_col_pay">
+      <div class="pay_container">
+        <h3>Վճարման եղանակներ</h3>
+        <div class="pay_cards">
+          <img src="../img/viza.svg" alt="viza" />
+          <img src="../img/mastercard.svg" alt="mastercard" />
+          <img src="../img/arca.svg" alt="" />
+          <img src="../img/monet.svg" alt="" />
+        </div>
+      </div>
+      <div class="social_container">
+        <h3>Գտեք մեզ</h3>
+        <div class="content_social">
+          <a href="" class="facebook"></a>
+          <a href="" class="instagram"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="low_footer">
+    <h2>
+      ©2024 OneWay Logistics LLC։ Բոլոր իրավունքները պաշտպանված են։ Կայքը`
+      Marksoft LLC:
+    </h2>
+    <ul class="low_bar_content">
+      <li><a href="">Արգելված ապրանքատեսակներներ</a></li>
+      <div class="shtix"></div>
+      <li><a href="">Գաղտնիության քաղաքականություն</a></li>
+      <div class="shtix"></div>
+      <li><a href="">Ընդհանուր դրույթներ և պայմաններ</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- Footer START -->
+
+<body></body>
+
 </html>

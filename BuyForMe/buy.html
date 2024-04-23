@@ -69,20 +69,54 @@
                     </li>
                 </ul>
                 <div class="eventRig">
-                    <button id="selDv" class="selDiv" onclick="openLang()">
-                        <img src="../img/arm.svg" alt="flag">
-                        <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
-                    </button>
-                    <div class="langDv">
-                        <button><img src="../img/usaLang.svg" alt="languages"></button>
-                        <button><img src="../img/rusLang.svg" alt="languages"></button>
-                    </div>
-
+                    
                     <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         <img src="../img/calculator.svg" alt="counter">
                         <span>Հաշվիչ</span>
                     </button>
+                    <div class="parentDv">
+                        <div class="langDv">
+                            <button><img src="../img/usaLang.svg" alt="languages"></button>
+                            <button><img src="../img/rusLang.svg" alt="languages"></button>
+                        </div>
+                        <button class="selDiv" onclick="openLang()">
+                            <img src="../img/arm.svg" alt="flag">
+                            <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
+                        </button>
+
+                    </div>
+
+
+                    <!-- header bar menu st -->
+                    <div class="dropdown">
+                        <button  onclick="barX()" class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="forBar" src="../img/menuBar.svg" alt="menuNav">
+                            <img class="forX" src="../img/menuX.svg" alt="menuNav">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                            <li>
+                                <a class="dropdown-item" href="./about.html">Մեր մասին</a>
+                            </li>
+                            <li class="liMen">
+                                <button>
+                                    <a href="#">Ծառայություններ</a>
+                                    <img src="../img/downMen.svg" alt="down">
+                                </button>
+
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Սակագներ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Shops/shop.html">Խանութներ</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- header bar menu end -->
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -166,7 +200,7 @@
 
                 <div class="buy_link">
 
-                    <div class="product_adds">
+                    <!-- <div class="product_adds">
                         <div class="input_group">
                             <div class="input_container">
                                 <label for="name_input_Id" class="titel_label">Ապրանքի անունը</label>
@@ -179,8 +213,7 @@
                             </div>
                             <button class="add_bnt"></button>
                         </div>
-                        <button class="buy_for_mr_bnt">Գնիր իմ փոխարեն</button>
-                    </div>
+                    </div> -->
 
                     <div class="product_adds">
                         <div class="input_group">
@@ -237,7 +270,7 @@
 
     <!-- AddBuyingInfoPageView1920 display: none start-->
 
-    <section class="fillField">
+    <!-- <section class="fillField">
         <div class="fillFieldInn">
 
             <div class="fieldTitle">
@@ -334,7 +367,7 @@
                             <label>
                                 <span>Ապրանքի գինը *</span>
                                 <div class="prodPrice prodPr">
-                                    <input class="prodInp" type="number" min="0" placeholder="0">
+                                    <input class="prodInp" type="number" min="0" placeholder="0"> -->
                                     <!-- <button class="selDv1" onclick="openRent()">
                                         <img src="../img/doll.svg" alt="flag">
                                         <img class="dropDownLangg" src="../img/down.svg" alt="vector">
@@ -343,7 +376,7 @@
                                         <button><img src="../img/eur.svg" alt="languages"></button>
                                         <button><img src="../img/rub.svg" alt="languages"></button>
                                     </div> -->
-                                </div>
+                                <!-- </div>
                             </label>
                             <label>
                                 <span>Քանակ *</span>
@@ -412,7 +445,7 @@
             </div>
             <span class="warning">*Գնումը կատարվում է 24 ժամվա ընթացքում։ Հաստատման մասին կստանաք ծանուցում։</span>
         </div>
-    </section>
+    </section> -->
 
     <!-- AddBuyingInfoPageView1920 display: none end-->
 
