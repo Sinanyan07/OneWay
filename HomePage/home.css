@@ -519,6 +519,13 @@ hr {
   .slid_1 {
     height: 37.5vw;
   }
+  .main_section_2 {
+    padding-top: 110px;
+  }
+
+  .to_see_map {
+    max-width: 1135px;
+  }
 
   .section_1 {
     margin-bottom: 10px;
@@ -532,7 +539,7 @@ hr {
     max-width: 1342px;
     padding-inline: 100px;
     margin: auto;
-    margin-bottom: 94px;
+    margin-bottom: 70px;
   }
 
   .section_3 {
@@ -554,6 +561,7 @@ hr {
 
   .section_5 {
     margin-bottom: 120px;
+    padding-inline: 100px;
   }
 
   .section_7 {
@@ -592,4 +600,230 @@ hr {
     max-width: 1230px;
     padding-inline: 64px;
   }
+}
+
+@media (max-width: 1280px) {
+  .slid_1 {
+    background-size: 115%;
+    height: 42.188vw;
+  }
+  .section_2 {
+    margin-bottom: 80px;
+  }
+
+  .video_content_steps {
+    max-width: 53.854vw;
+    height: 45vw;
+  }
+
+  .shops_container img {
+    width: 160px;
+  }
+
+  .section_7 {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 968px) {
+  .slid_1 {
+    background-size: 120%;
+    height: 44.421vw;
+  }
+
+  .slid_1 h1 {
+    left: 100px;
+    top: 0px;
+    max-width: 423px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .main_section_2 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+  }
+
+  .section_2 {
+    max-width: 885px;
+  }
+
+  .steps h3 {
+    width: 160%;
+  }
+
+  .steps span {
+    width: 170%;
+  }
+
+  .line_arrow {
+    position: relative;
+    background-size: 322%;
+    top: -57px;
+    left: 24px;
+  }
+  .line_arrow_1 {
+    background-size: 240%;
+    top: -64px;
+  }
+
+  .input_group {
+    display: grid;
+    width: 100%;
+    justify-content: unset;
+    gap: 2px 50px;
+  }
+
+  .input_container {
+    width: 103%;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .link_input {
+    width: 100%;
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 2;
+  }
+
+  .add_bnt {
+    width: 100%;
+    grid-row: 2 / span 2;
+  }
+
+  .buy_link {
+    padding: 35px 30px;
+  }
+
+  .section_2 {
+    margin-bottom: 30px;
+  }
+
+  .titel_section_3 img {
+    width: 77px;
+    height: 65px;
+  }
+
+  .main_section_3 {
+    gap: 25px;
+  }
+
+  .titel_section_3 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    text-align: center;
+  }
+
+  .main_section_3 {
+    margin-bottom: 123px;
+  }
+
+  .section_4 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    text-align: center;
+  }
+
+  .price_size {
+    width: 100px;
+  }
+
+  .section_4 {
+    max-width: 1338px;
+    margin: auto;
+    padding-inline: 100px;
+    margin-bottom: 120px;
+  }
+
+  .section_5 {
+    padding-inline: unset;
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+
+  .text_section_5 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+  }
+
+  .text_section_5 span {
+    width: 39vw;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+  }
+  .conatiner_section_7 {
+    display: flex;
+    justify-content: center;
+    align-self: baseline;
+  }
+
+  .shops_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+  .section_8 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+  }
+
+  .main_section_8 img,
+  .container_section_8 img {
+    width: 108px;
+    height: 180px;
+  }
+  .container_section_8 {
+    max-width: 463px;
+    height: 144px;
+  }
+
+  hr {
+    margin-top: 62px;
+    margin-bottom: 14px;
+  }
+  .text_info {
+    padding-inline: unset;
+  }
+
+  .section_7 {
+    gap: 46px;
+  }
+  .section_7 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+  }
+
+  .conatiner_section_7 {
+    max-width: 778px;
+    overflow: hidden;
+    align-self: unset;
+  }
+  .marty_img_size {
+    z-index: 1;
+  }
+  .shops_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    max-width: 762px;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .section_8 {
+    margin-bottom: -30px;
+    padding-top: 55px;
+  }
+}
+
+.ItIsDis {
+  display: none;
 }
