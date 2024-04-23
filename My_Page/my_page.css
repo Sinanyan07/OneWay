@@ -774,7 +774,7 @@ form button {
     background: #0000004D;
     display: flex;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 
 .addOrdInn {

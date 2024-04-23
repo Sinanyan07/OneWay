@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    position: relative;
 }
 
 .abInLeft {
@@ -25,6 +26,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 197px;
+    position: absolute;
+    z-index: 1;
 }
 
 .abInLeft h1 {
@@ -56,16 +59,24 @@
 }
 
 .abInLeft ul {
-    margin-left: 56px;
+    margin-left: 73px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     list-style-type: none;
     list-style-image: url(../img/ulLi.svg);
 }
 
 .abInnRight {
+    width: 909px;
     height: 700px;
+    background-image: url(../img/martyMain.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    right: 0;
+    z-index: 0;
 }
 
 .martyMain14 {
@@ -133,8 +144,23 @@
 
 @media (max-width: 1440px) {
 
+    .contBot {
+        height: 80px;
+    }
+
     .aboutInn {
-        min-height: 530px;
+        min-height: 540px;
+    }
+
+
+    .abInLeft p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.09px;
+        text-align: left;
+        color: #000000;
+        margin-left: 25px;
+        margin-bottom: 20px;
     }
 
     .abInLeft {
@@ -152,14 +178,14 @@
     }
 
     .abInLeft ul {
-        gap: 12px;
+        gap: 16px;
     }
 
     .abInLeft span {
         font-size: 16px;
         font-weight: 400;
         line-height: 18.75px;
-        margin-bottom: 40px;
+        margin-bottom: 47px;
     }
 
 
@@ -170,17 +196,25 @@
 
     }
 
-    .martyMain19 {
-        display: none;
+    .abInnRight {
+        width: 644px;
+        height: 540px;
     }
 
-    .martyMain14 {
-        display: block;
-    }
+    /* .abInnRight {
+        width: 909px;
+        height: 700px;
+        background-image: url(../img/martyMain.svg);
+    } */
 
 
     /* sec sect start */
+    .marty {
+        padding-inline: 100px;
+    }
+
     .martyInn {
+        max-width: 1140px;
         min-height: 774px;
         gap: 20px;
 
@@ -193,7 +227,8 @@
         width: 100%;
         height: 560px;
     }
-    .mInnLeft img{
+
+    .mInnLeft img {
         width: max-content;
         max-width: 560px;
     }
@@ -204,3 +239,73 @@
     }
 
 }
+
+@media (max-width: 1280px) {
+    .mInnLeft {
+        margin-top: 131px;
+        max-width: 490px;
+    }
+
+    .martyInn {
+        max-width: 1140px;
+        min-height: 744px;
+    }
+
+
+    .mInnLeft img {
+        max-width: 490px;
+    }
+}
+
+@media (max-width: 1008px) {
+    .mInnLeft {
+        margin-top: 120px;
+        height: 490px;
+    }
+
+    .martyInn {
+        min-height: 610px;
+        gap: 10px;
+    }
+
+
+    .mInnLeft img {
+        max-width: 367px;
+    }
+
+    .mInnRight {
+        margin-top: 142px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 876px) {
+    .marty {
+        padding-inline: 150px;
+    }
+    .martyInn {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .mInnLeft {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        height: unset;
+    }
+    .mInnLeft img {
+        max-width: 367px;
+        height: 370px;
+    }
+    .mInnRight {
+        margin-top: 0px;
+        gap: 12px;
+        margin-bottom: 60px;
+    }
+
+}
+
+
+@media (max-width: 678px) {}

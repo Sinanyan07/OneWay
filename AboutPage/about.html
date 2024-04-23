@@ -16,134 +16,166 @@
     <script src="../script.js" defer></script>
     <title>One Way</title>
 </head>
+
 <body>
 
-<!-- HEADER START -->
-<nav class="navbar">
-    <div class="contMainTop">
-        <div class="contTop">
-            <div class="topLeftNav">
-                <div class="number">
-                    <img src="../img/call.svg" alt="call">
-                    <div class="span">
-                        +374 33 79 88 88
+    <!-- HEADER START -->
+    <nav class="navbar">
+        <div class="contMainTop">
+            <div class="contTop">
+                <div class="topLeftNav">
+                    <div class="number">
+                        <img src="../img/call.svg" alt="call">
+                        <div class="span">
+                            +374 33 79 88 88
+                        </div>
                     </div>
+                    <button class="signBut">
+                        <a href="#">Մուտք</a>
+                    </button>
+                    <button class="regBut"> <a href="#">Գրանցվել</a></button>
                 </div>
-                <button class="signBut">
-                    <a href="#">Մուտք</a>
-                </button>
-                <button class="regBut"> <a href="#">Գրանցվել</a></button>
-            </div>
 
+            </div>
         </div>
-    </div>
 
-    <div class="contBot">
-        <div class="contBotInn">
-            <div class="logoParent">
-                <a href="../index.html">
-                    <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
-                    <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
-                </a>
-            </div>
-            <ul>
-                <li>
-                    <a href="./about.html">Մեր մասին</a>
-                </li>
-                <div class="vert"></div>
-                <li class="liMen">
-                    <button>
-                        <a href="#">Ծառայություններ</a>
-                        <img src="../img/downMen.svg" alt="down">
+        <div class="contBot">
+            <div class="contBotInn">
+                <div class="logoParent">
+                    <a href="../index.html">
+                        <img class="pageLogo19" src="../img/mainLogo.svg" alt="logoPage">
+                        <img class="pageLogo12" src="../img/mainLogo12.svg" alt="logoPage">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./about.html">Մեր մասին</a>
+                    </li>
+                    <div class="vert"></div>
+                    <li class="liMen">
+                        <button>
+                            <a href="#">Ծառայություններ</a>
+                            <img src="../img/downMen.svg" alt="down">
+                        </button>
+
+                    </li>
+                    <div class="vert"></div>
+                    <li>
+                        <a href="#">Սակագներ</a>
+                    </li>
+                    <div class="vert"></div>
+                    <li>
+                        <a href="../Shops/shop.html">Խանութներ</a>
+                    </li>
+                </ul>
+                <div class="eventRig">
+                    <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <img src="../img/calculator.svg" alt="counter">
+                        <span>Հաշվիչ</span>
                     </button>
 
-                </li>
-                <div class="vert"></div>
-                <li>
-                    <a href="#">Սակագներ</a>
-                </li>
-                <div class="vert"></div>
-                <li>
-                    <a href="../Shops/shop.html">Խանութներ</a>
-                </li>
-            </ul>
-            <div class="eventRig">
-                <button class="selDiv" onclick="openLang()">
-                    <img src="../img/arm.svg" alt="flag">
-                    <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
-                </button>
-                <div class="langDv">
-                    <button><img src="../img/usaLang.svg" alt="languages"></button>
-                    <button><img src="../img/rusLang.svg" alt="languages"></button>
-                </div>
-                
-                <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <img src="../img/calculator.svg" alt="counter">
-                    <span>Հաշվիչ</span>
-                </button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog countOpened">
-                        <div class="modal-content countOpInn">
-                            <div class="modal-header opInnFirst">
-                                <h5 class="sendCount">Առաքման հաշվիչ</h5>
-                                <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
-                                    aria-label="Close">
-                                    <img src="../img/closeIcon.svg" alt="closing">
-                                </button>
-                            </div>
-                            <div class="modal-body opInnSec">
+                    <button class="selDiv" onclick="openLang()">
+                        <img src="../img/arm.svg" alt="flag">
+                        <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
+                    </button>
+                    <div class="langDv">
+                        <button><img src="../img/usaLang.svg" alt="languages"></button>
+                        <button><img src="../img/rusLang.svg" alt="languages"></button>
+                    </div>
 
-                                <button id="allCountry">
-                                    <img src="../shopsImage/usa.svg" alt="country">
+                    <!-- header bar menu st -->
+                    <div class="dropdown">
+                        <button  onclick="barX()" class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="forBar" src="../img/menuBar.svg" alt="menuNav">
+                            <img class="forX" src="../img/menuX.svg" alt="menuNav">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                            <li>
+                                <a class="dropdown-item" href="./about.html">Մեր մասին</a>
+                            </li>
+                            <li class="liMen">
+                                <button>
+                                    <a href="#">Ծառայություններ</a>
+                                    <img src="../img/downMen.svg" alt="down">
                                 </button>
-                                <button id="allCountry">
-                                    <img src="../shopsImage/china.svg" alt="country">
-                                </button>
-                                <button id="allCountry">
-                                    <img src="../shopsImage/spain.svg" alt="country">
-                                </button>
-                                <button id="allCountry">
-                                    <img src="../shopsImage/rus.svg" alt="country">
-                                </button>
-                                <button id="allCountry">
-                                    <img src="../shopsImage/luxe.svg" alt="country">
-                                </button>
-                            </div>
-                            <div class=" opInnThrd">
-                                <form>
-                                    <label for="weightInp">Քաշ (կգ)
-                                        <input type="number" min="0" placeholder="0" id="weightInp">
-                                    </label>
-                                </form>
-                            </div>
-                            <div class=" opInnThrd">
-                                <form>
-                                    <label for="weightInp">Առաքման արժեք (AMD)
-                                        <input type="number" min="0.00" placeholder="0.00" id="weightInp">
-                                    </label>
-                                </form>
+
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Սակագներ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Shops/shop.html">Խանութներ</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- header bar menu end -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog countOpened">
+                            <div class="modal-content countOpInn">
+                                <div class="modal-header opInnFirst">
+                                    <h5 class="sendCount">Առաքման հաշվիչ</h5>
+                                    <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <img src="../img/closeIcon.svg" alt="closing">
+                                    </button>
+                                </div>
+                                <div class="modal-body opInnSec">
+
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/usa.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/china.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/spain.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/rus.svg" alt="country">
+                                    </button>
+                                    <button id="allCountry">
+                                        <img src="../shopsImage/luxe.svg" alt="country">
+                                    </button>
+                                </div>
+                                <div class=" opInnThrd">
+                                    <form>
+                                        <label for="weightInp">Քաշ (կգ)
+                                            <input type="number" min="0" placeholder="0" id="weightInp">
+                                        </label>
+                                    </form>
+                                </div>
+                                <div class=" opInnThrd">
+                                    <form>
+                                        <label for="weightInp">Առաքման արժեք (AMD)
+                                            <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                        </label>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- modal end -->
                 </div>
-                <!-- modal end -->
             </div>
         </div>
-    </div>
 
-</nav>
+    </nav>
 
-<!-- HEADER END -->
-
+    <!-- HEADER END -->
 
 
-<!-- Main Content START -->
 
-<section class="aboutUs">
+    <!-- Main Content START -->
+
+    <!-- <section class="aboutUs">
     <div class="aboutInn">
         <div class="abInLeft">
             <h1>Մեր մասին</h1>
@@ -158,88 +190,90 @@
             </ul>
         </div>
         <div class="abInnRight">
-            <img class="martyMain19" src="../img/martyMain.svg" alt="bigImage">
-            <img class="martyMain14" src="../img/martyMain.svg" alt="bigImage">
         </div>
 
     </div>
-</section>
+</section> -->
 
 
-<section class="marty">
-    <div class="martyInn">
-        <div class="mInnLeft">
-            <img src="../img/mix.svg" alt="martyPicture">
-        </div>
-        <div class="mInnRight">
-            <p>Ո ՞վ է Մարթին</p>
-            <span>Ես Մարթին եմ, OneWay-ի ճանապարհն անցնելու ենք միասին։
-                Ես շրջագայում եմ ամբողջ աշխարհով և հավաքելով ձեր պատվերները բեռնափոխադրում եմ Հայաստան 🇦🇲:Լինում եմ
-                Չինաստանում 🇨🇳 , արդեն շատ ընկերներ ունեմ այնտեղ: Ռուսաստանի 🇷🇺 Wildberries-ի պահեստում ինձ զգում եմ
-                արդեն ինչպես տանը: Հասցրել եմ այցելել Եվրոպայի մի քանի երկրներ` Իսպանիա 🇪🇸 , Հունաստան🇬🇷 և
-                Լյուքսեմբուրգ 🇱🇺 : Եվ չմոռանանք ԱՄՆ-ի մասին 🇺🇸 , որին մենք բոլորս միասին այդքան սպասում էինք:Իհարկե
-                դեռ վայրերը շատ են, որ պետք է գնամ: Ես միշտ լսում և փորձում եմ իրականացնել ձեր ցանկությունները:✨</span>
-        </div>
-    </div>
-</section>
-
-<!-- Main Content END -->
-
-<!-- Footer START -->
-<footer>
-    <div class="footer_container">
-        <img src="../img/logoOneWay_Footer.svg" alt="" class="col logo_icon_footer">
-        <div class="footer_col">
-            <h3>Տեղեկատվություն</h3>
-            <ul class="footer_nav_bar">
-                <li><a href="">Մեր մասին</a></li>
-                <li><a href="">Ծառայություններ</a></li>
-                <li><a href="">Սակագներ</a></li>
-                <li><a href="">Խանութներ</a></li>
-            </ul>
-        </div>
-
-        <div class="footer_col">
-            <h3 class="to_right">Կապ մեզ հետ</h3>
-            <ul class="contact_us">
-                <li class="tel_num"><a href="">+374 33 79 88 88</a></li>
-                <li class="tel_num"><a href="">+374 60 77 10 10</a></li>
-                <li class="email_num"><a href="">info@oneway.am</a></li>
-                <li class="map_num"><a href="">ք․Երևան, Բաշինջաղյան 198</a></li>
-                <li class="time_num"><a href="">Երկ․ - Ուրբ․ - 10։30 - 19։30</a></li>
-            </ul>
-        </div>
-        <div class="footer_col_pay">
-            <div class="pay_container">
-                <h3>Վճարման եղանակներ</h3>
-                <div class="pay_cards">
-                    <img src="../img/viza.svg" alt="viza">
-                    <img src="../img/mastercard.svg" alt="mastercard">
-                    <img src="../img/arca.svg" alt="">
-                    <img src="../img/monet.svg" alt="">
-                </div>
+    <section class="marty">
+        <div class="martyInn">
+            <div class="mInnLeft">
+                <img src="../img/mix.svg" alt="martyPicture">
             </div>
-            <div class="social_container">
-                <h3>Գտեք մեզ</h3>
-                <div class="content_social">
-                    <a href="" class="facebook"></a>
-                    <a href="" class="instagram"></a>
-                </div>
+            <div class="mInnRight">
+                <p>Ո ՞վ է Մարթին</p>
+                <span>Ես Մարթին եմ, OneWay-ի ճանապարհն անցնելու ենք միասին։
+                    Ես շրջագայում եմ ամբողջ աշխարհով և հավաքելով ձեր պատվերները բեռնափոխադրում եմ Հայաստան 🇦🇲:Լինում
+                    եմ
+                    Չինաստանում 🇨🇳 , արդեն շատ ընկերներ ունեմ այնտեղ: Ռուսաստանի 🇷🇺 Wildberries-ի պահեստում ինձ
+                    զգում եմ
+                    արդեն ինչպես տանը: Հասցրել եմ այցելել Եվրոպայի մի քանի երկրներ` Իսպանիա 🇪🇸 , Հունաստան🇬🇷 և
+                    Լյուքսեմբուրգ 🇱🇺 : Եվ չմոռանանք ԱՄՆ-ի մասին 🇺🇸 , որին մենք բոլորս միասին այդքան սպասում
+                    էինք:Իհարկե
+                    դեռ վայրերը շատ են, որ պետք է գնամ: Ես միշտ լսում և փորձում եմ իրականացնել ձեր
+                    ցանկությունները:✨</span>
             </div>
         </div>
-    </div>
-    <div class="low_footer">
-        <h2>©2024 OneWay Logistics LLC։ Բոլոր իրավունքները պաշտպանված են։ Կայքը` Marksoft LLC:</h2>
-        <ul class="low_bar_content">
-            <li><a href="">Արգելված ապրանքատեսակներներ</a></li>
-            <div class="shtix"></div>
-            <li> <a href="">Գաղտնիության քաղաքականություն</a></li>
-            <div class="shtix"></div>
-            <li><a href="">Ընդհանուր դրույթներ և պայմաններ</a></li>
-        </ul>
-    </div>
-</footer>
-<!-- Footer START -->
+    </section>
+
+    <!-- Main Content END -->
+
+    <!-- Footer START -->
+    <!-- <footer>
+        <div class="footer_container">
+            <img src="../img/logoOneWay_Footer.svg" alt="" class="col logo_icon_footer">
+            <div class="footer_col">
+                <h3>Տեղեկատվություն</h3>
+                <ul class="footer_nav_bar">
+                    <li><a href="">Մեր մասին</a></li>
+                    <li><a href="">Ծառայություններ</a></li>
+                    <li><a href="">Սակագներ</a></li>
+                    <li><a href="">Խանութներ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h3 class="to_right">Կապ մեզ հետ</h3>
+                <ul class="contact_us">
+                    <li class="tel_num"><a href="">+374 33 79 88 88</a></li>
+                    <li class="tel_num"><a href="">+374 60 77 10 10</a></li>
+                    <li class="email_num"><a href="">info@oneway.am</a></li>
+                    <li class="map_num"><a href="">ք․Երևան, Բաշինջաղյան 198</a></li>
+                    <li class="time_num"><a href="">Երկ․ - Ուրբ․ - 10։30 - 19։30</a></li>
+                </ul>
+            </div>
+            <div class="footer_col_pay">
+                <div class="pay_container">
+                    <h3>Վճարման եղանակներ</h3>
+                    <div class="pay_cards">
+                        <img src="../img/viza.svg" alt="viza">
+                        <img src="../img/mastercard.svg" alt="mastercard">
+                        <img src="../img/arca.svg" alt="">
+                        <img src="../img/monet.svg" alt="">
+                    </div>
+                </div>
+                <div class="social_container">
+                    <h3>Գտեք մեզ</h3>
+                    <div class="content_social">
+                        <a href="" class="facebook"></a>
+                        <a href="" class="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="low_footer">
+            <h2>©2024 OneWay Logistics LLC։ Բոլոր իրավունքները պաշտպանված են։ Կայքը` Marksoft LLC:</h2>
+            <ul class="low_bar_content">
+                <li><a href="">Արգելված ապրանքատեսակներներ</a></li>
+                <div class="shtix"></div>
+                <li> <a href="">Գաղտնիության քաղաքականություն</a></li>
+                <div class="shtix"></div>
+                <li><a href="">Ընդհանուր դրույթներ և պայմաններ</a></li>
+            </ul>
+        </div>
+    </footer> -->
+    <!-- Footer START -->
 
 
 
