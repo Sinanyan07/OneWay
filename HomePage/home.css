@@ -807,9 +807,15 @@ hr {
   }
 
   .conatiner_section_7 {
+<<<<<<< HEAD
+    max-width: 778px;
+    overflow: hidden;
+    align-self: unset;
+=======
     max-width: 78.306vw;
     overflow: hidden;
     align-self: self-start;
+>>>>>>> e1b8c69f899686a9bae7b8b49c19a252fbd2b691
   }
   .marty_img_size {
     z-index: 1;
@@ -830,6 +836,8 @@ hr {
   }
 }
 
+<<<<<<< HEAD
+=======
 @media (max-width: 701px) {
   .line_arrow,
   .line_arrow_1 {
@@ -921,6 +929,7 @@ hr {
   }
 }
 
+>>>>>>> e1b8c69f899686a9bae7b8b49c19a252fbd2b691
 .ItIsDis {
   display: none;
 }

@@ -283,6 +283,7 @@
     .marty {
         padding-inline: 150px;
     }
+
     .martyInn {
         flex-direction: column;
         gap: 30px;
@@ -295,10 +296,12 @@
         justify-content: center;
         height: unset;
     }
+
     .mInnLeft img {
         max-width: 367px;
         height: 370px;
     }
+
     .mInnRight {
         margin-top: 0px;
         gap: 12px;
@@ -308,4 +311,47 @@
 }
 
 
-@media (max-width: 678px) {}
+@media (max-width: 678px) {
+    .marty {
+        padding-inline: 30px;
+    }
+
+    .martyInn {
+        max-width: 367px;
+    }
+
+    .martyInn {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 428px) {
+    .mInnLeft img {
+        width: 100%;
+        height: unset;
+    }
+    .mInnLeft{
+        height: auto;
+    }
+
+    .martyInn {
+        max-width: 367px;
+    }
+
+    .marty {
+        padding-inline: 20px;
+    }
+
+    .martyInn {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 428px) {
+    .martyInn {
+        gap: 34px;
+    }
+}

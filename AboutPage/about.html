@@ -69,21 +69,24 @@
                     </li>
                 </ul>
                 <div class="eventRig">
+                    
                     <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         <img src="../img/calculator.svg" alt="counter">
                         <span>Հաշվիչ</span>
                     </button>
+                    <div class="parentDv">
 
-
-                    <button class="selDiv" onclick="openLang()">
-                        <img src="../img/arm.svg" alt="flag">
-                        <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
-                    </button>
-                    <div class="langDv">
-                        <button><img src="../img/usaLang.svg" alt="languages"></button>
-                        <button><img src="../img/rusLang.svg" alt="languages"></button>
+                        <div class="langDv">
+                            <button><img src="../img/usaLang.svg" alt="languages"></button>
+                            <button><img src="../img/rusLang.svg" alt="languages"></button>
+                        </div>
+                        <button id="selDv" class="selDiv" onclick="openLang()">
+                            <img src="../img/arm.svg" alt="flag">
+                            <img class="dropDownLang" src="../img/dropdown.svg" alt="vector">
+                        </button>
                     </div>
+
 
                     <!-- header bar menu st -->
                     <div class="dropdown">
