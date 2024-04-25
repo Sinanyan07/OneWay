@@ -625,6 +625,12 @@ hr {
   }
 }
 
+@media (max-width: 1000px) {
+  .video_content_steps {
+    left: 14px;
+  }
+}
+
 @media (max-width: 968px) {
   .slid_1 {
     background-size: 120%;
