@@ -33,7 +33,7 @@ function for_see_password_type(id) {
       dropLang.style.transform = dropLang.style.transform === 'rotate(180deg)' ? 'rotate(0)' : 'rotate(180deg)';
     }
     window.addEventListener("click", function (event) {
-      if (!selDiv.contains(event.target) && openDv.style.display === "block") {
+      if (!selDiv.contains(event.target) && openDv.style.display === "flex") {
         openDv.style.display = "none";
         dropLang.style.transform = "rotate(0deg)";
       }
@@ -42,20 +42,26 @@ function for_see_password_type(id) {
   
 
   {
-    const openDv1 = document.querySelector('.langDv1');
-    const dropLang1 = document.querySelector('.dropDownLangg');
-     const selDiv1 = document.getElementById('selDv1');
-  
-    function openRent() {
-      openDv1.style.display = openDv1.style.display === 'block' ? 'none' : 'block';
-      dropLang1.style.transform = dropLang1.style.transform === 'rotate(180deg)' ? 'rotate(0)' : 'rotate(180deg)';
-    }
-    window.addEventListener("click", function (event) {
-      if (!selDiv1.contains(event.target) && openDv1.style.display === "block") {
-        openDv1.style.display = "none";
-        dropLang1.style.transform = "rotate(0deg)";
-      }
-    })
+const openDv1 = document.querySelector('.langDv1');
+const dropLang1 = document.querySelector('.dropDownLangg');
+const selDiv1 = document.getElementById('selDv1');
+
+function openRent() {
+  if (openDv1.style.display === 'block') {
+    openDv1.style.display = 'none';
+    dropLang1.style.transform = 'rotate(0)';
+  } else {
+    openDv1.style.display = 'block';
+    dropLang1.style.transform = 'rotate(180deg)';
+  }
+}
+
+window.addEventListener('click', function(event) {
+  if (!selDiv1.contains(event.target) && openDv1.style.display === 'block') {
+    openDv1.style.display = 'none';
+    dropLang1.style.transform = 'rotate(0)';
+  }
+})
   }
 
 
@@ -75,6 +81,13 @@ function for_see_password_type(id) {
         menBar.style.display = "block";
         menX.style.display = "none";
       }
+      let butBoot = document.getElementById('dropdownMenuButton1');
+      window.addEventListener("click", function (event) {
+        if (!butBoot.contains(event.target) && menX.style.display === "block") {
+          menX.style.display = "none";
+          menBar.style.display = "block";
+        }
+      })
     }
     
     }
