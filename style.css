@@ -78,8 +78,12 @@ video {
 }
 
 @font-face {
-    font-family: "Mardoto-Regular";
+    font-family: "Mardoto-Medium";
     src: url(./fonter.am_mardoto/Mardoto-Medium.ttf)
+}
+@font-face {
+    font-family: "Mardoto-Regular";
+    src: url(./fonter.am_mardoto/Mardoto-Regular.ttf);
 }
 
 body {
