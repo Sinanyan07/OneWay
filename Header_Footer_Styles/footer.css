@@ -224,20 +224,19 @@ footer {
     gap: 30px;
   }
 }
-<<<<<<< HEAD
-=======
 @media (max-width: 1025px) {
   .footer_container {
     grid-template-columns: 180px auto auto 195px;
   }
 }
->>>>>>> e1b8c69f899686a9bae7b8b49c19a252fbd2b691
 
 @media (max-width: 968px) {
   .footer_container {
     grid-template-rows: auto auto;
     grid-template-columns: 29.595vw auto 190px;
     gap: 30px 0px;
+    padding-inline: 50px;
+    max-width: 880px;
   }
   .footer_col {
     grid-row: 2;
@@ -267,8 +266,6 @@ footer {
     gap: 35px;
   }
 }
-<<<<<<< HEAD
-=======
 
 @media (max-width: 701px) {
   .footer_container {
@@ -295,16 +292,85 @@ footer {
   }
 
   .footer_col_pay {
-    width: 100%;
+    width: calc(100vw - 100px);
     gap: 40px;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     justify-content: space-between;
-    position: relative;
-    right: 135px;
   }
   .logo_icon_footer {
     right: 110px;
   }
+  .info_custom_md {
+    justify-self: self-start;
+  }
+  .low_footer h2 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: left;
+  }
+  .low_bar_content li a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+  }
+  .low_bar_content {
+    padding-inline: 25px;
+  }
 }
->>>>>>> e1b8c69f899686a9bae7b8b49c19a252fbd2b691
+
+@media (max-width: 500px) {
+  .footer_col_pay {
+    width: calc(100vw - 50px);
+  }
+  .footer_container {
+    padding-inline: 25px;
+  }
+}
+
+@media (max-width: 428px) {
+  .low_footer {
+    padding-inline: 24px;
+  }
+
+  .low_bar_content {
+    padding-inline: 0;
+    justify-content: start;
+  }
+
+  .shtix {
+    display: none;
+  }
+  .logo_icon_footer {
+    right: 60px;
+  }
+}
+
+@media (max-width: 410px) {
+  .footer_col_pay {
+    align-items: self-start;
+    flex-direction: column;
+  }
+  .footer_container {
+    padding-inline: 25px;
+    justify-content: center;
+    /* width: 159px; */
+    grid-template-columns: 70%;
+  }
+  .info_custom_md {
+    grid-row: 3 !important;
+    justify-self: self-start !important;
+  }
+  .footer_col {
+    grid-row: 4;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .special_foooter {
+    position: relative;
+    left: 8.482vw;
+  }
+}
