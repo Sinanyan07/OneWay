@@ -56,12 +56,12 @@ function openRent() {
   }
 }
 
-window.addEventListener('click', function(event) {
-  if (!selDiv1.contains(event.target) && openDv1.style.display === 'block') {
-    openDv1.style.display = 'none';
-    dropLang1.style.transform = 'rotate(0)';
-  }
-})
+// window.addEventListener('click', function(event) {
+//   if (!selDiv1.contains(event.target) && openDv1.style.display === 'block') {
+//     openDv1.style.display = 'none';
+//     dropLang1.style.transform = 'rotate(0)';
+//   }
+// })
   }
 
 

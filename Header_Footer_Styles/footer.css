@@ -180,6 +180,7 @@ footer {
 /* The responsive 1920px - 320px START */
 
 @media (max-width: 1440px) {
+
   .footer_col h3,
   .pay_container h3,
   .social_container h3 {
@@ -213,9 +214,11 @@ footer {
     max-width: 1335px;
     grid-template-columns: 243px auto auto 195px;
   }
+
   .section_8 {
     margin-bottom: -17px;
   }
+
   .footer_col {
     gap: 20px;
   }
@@ -224,6 +227,7 @@ footer {
     gap: 30px;
   }
 }
+
 @media (max-width: 1025px) {
   .footer_container {
     grid-template-columns: 180px auto auto 195px;
@@ -238,6 +242,7 @@ footer {
     padding-inline: 50px;
     max-width: 880px;
   }
+
   .footer_col {
     grid-row: 2;
   }
@@ -257,6 +262,7 @@ footer {
     position: relative;
     right: 50px;
   }
+
   .pay_container,
   .social_container {
     gap: 15px;
@@ -271,6 +277,7 @@ footer {
   .footer_container {
     padding-inline: 50px;
   }
+
   .low_bar_content {
     display: flex;
     gap: 10px;
@@ -284,9 +291,15 @@ footer {
     grid-row: 3;
     justify-self: end;
   }
+
   .footer_col_pay {
     flex-direction: unset;
   }
+
+  .low_footer {
+    padding-inline: 24px;
+  }
+
   .footer_container {
     grid-template-columns: 29.595vw auto;
   }
@@ -298,23 +311,28 @@ footer {
     grid-row: 2;
     justify-content: space-between;
   }
+
   .logo_icon_footer {
-    right: 110px;
+    right: 25%;
   }
+
   .info_custom_md {
     justify-self: self-start;
   }
+
   .low_footer h2 {
     font-size: 12px;
     font-weight: 500;
     line-height: 14.06px;
     text-align: left;
   }
+
   .low_bar_content li a {
     font-size: 12px;
     font-weight: 400;
     line-height: 14.06px;
   }
+
   .low_bar_content {
     padding-inline: 25px;
   }
@@ -324,6 +342,7 @@ footer {
   .footer_col_pay {
     width: calc(100vw - 50px);
   }
+
   .footer_container {
     padding-inline: 25px;
   }
@@ -342,6 +361,7 @@ footer {
   .shtix {
     display: none;
   }
+
   .logo_icon_footer {
     right: 60px;
   }
@@ -352,16 +372,25 @@ footer {
     align-items: self-start;
     flex-direction: column;
   }
+
+
+
+  .logo_icon_footer {
+    right: 120px;
+  }
+
   .footer_container {
     padding-inline: 25px;
     justify-content: center;
     /* width: 159px; */
     grid-template-columns: 70%;
   }
+
   .info_custom_md {
     grid-row: 3 !important;
     justify-self: self-start !important;
   }
+
   .footer_col {
     grid-row: 4;
     justify-self: center;
@@ -372,5 +401,11 @@ footer {
   .special_foooter {
     position: relative;
     left: 8.482vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo_icon_footer {
+    right: 95px;
   }
 }
