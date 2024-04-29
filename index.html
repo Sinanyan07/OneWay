@@ -229,6 +229,7 @@
 </section>
 
 <section class="custom_section" id="welcome_Id">
+
     <div class="icon__martin">
         <img src="./img/marty_2.svg" alt="Marty" class="marty_icon">
     </div>
@@ -256,32 +257,35 @@
                 </div>
             </div>
         </div>
-        <div class="mb-3">
-            <label for="name" class="form-label">Անուն *</label>
-            <input type="text" class="form-control custom-input_form" id="name" placeholder="Լրացնել լատինատառ">
+        <div class="old__wrapper">
+            <div class="wrapper__content">
+                <label for="name" class="form-label">Անուն *</label>
+                <input type="text" class="form-control custom-input_form" id="name" placeholder="Լրացնել լատինատառ">
+            </div>
+            <div class="wrapper__content">
+                <label for="surename" class="form-label">Ազգանուն *</label>
+                <input type="text" class="form-control custom-input_form" id="surename" placeholder="Լրացնել լատինատառ">
+            </div>
+            <div class="wrapper__content" id="company_name_container">
+                <label for="company_name" class="form-label">Ընկերության անվանում *</label>
+                <input type="text" class="form-control custom-input_form" id="company_name" placeholder="Լրացնել լատինատառ">
+            </div>
+            <div class="wrapper__content">
+                <label for="surename" class="form-label">Քաղաք *</label>
+                <select class="form-select custom-input_form" aria-label="Default select example">
+                    <option selected>Yerevan</option>
+                    <option value="1">Gyumri</option>
+                    <option value="2">Vanadzor</option>
+                    <option value="3">Qexarquniq</option>
+                </select>
+            </div>
+            <div class="wrapper__content">
+                <label for="addres" class="form-label">Հասցե *</label>
+                <input type="text" class="form-control custom-input_form" id="addres" placeholder="Լրացնել լատինատառ">
+            </div>
         </div>
-        <div class="mb_custom_for_sing_btn">
-            <label for="surename" class="form-label">Ազգանուն *</label>
-            <input type="text" class="form-control custom-input_form" id="surename" placeholder="Լրացնել լատինատառ">
-        </div>
-        <div class="mb_custom_for_sing_btn" id="company_name_container">
-            <label for="company_name" class="form-label">Ընկերության անվանում *</label>
-            <input type="text" class="form-control custom-input_form" id="company_name" placeholder="Լրացնել լատինատառ">
-        </div>
-        <div class="mb_custom_for_sing_btn">
-            <label for="surename" class="form-label">Քաղաք *</label>
-            <select class="form-select custom-input_form" aria-label="Default select example">
-                <option selected>Yerevan</option>
-                <option value="1">Gyumri</option>
-                <option value="2">Vanadzor</option>
-                <option value="3">Qexarquniq</option>
-            </select>
-        </div>
-        <div class="mb_custom_for_sing_btn">
-            <label for="addres" class="form-label">Հասցե *</label>
-            <input type="text" class="form-control custom-input_form" id="addres" placeholder="Լրացնել լատինատառ">
-        </div>
-        <button class="sign_up_form">
+        
+        <button class="sign_up_form btn__log">
             Գրանցվել
         </button>
     </form>

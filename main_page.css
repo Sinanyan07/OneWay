@@ -107,6 +107,7 @@ color: #212121;
     line-height: 18.75px;
     text-align: left;
     color: #808080;
+    padding: 15px 16px;
     /* Задаем скругление углов справа */
 }
 
@@ -146,6 +147,8 @@ color: #212121;
 
 /* For step 2 CSS START */
 
+
+
 .textTitel {
     display: flex;
     flex-direction: column;
@@ -163,8 +166,11 @@ color: #212121;
 .container_for_chek {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 11px;
     margin-top: 14px;
+}
+.form-check{
+    padding-left: 2.5rem;
 }
 
 .check_input {
@@ -180,7 +186,30 @@ color: #212121;
 #company_name_container {
     display: none;
 }
+.form-label{
+    font-family: "Mardoto-Medium";
+font-size: 14px;
+font-weight: 400;
+line-height: 16.41px;
+text-align: left;
+color: #212121;
+}
+.old__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+    margin-top: 20px;
+}
+button.sign_up_form.btn__log {
+    font-family: "Mardoto-Medium";
+    margin-top: 28px;
+    margin-bottom: 26px;
+font-size: 18px;
+font-weight: 500;
+line-height: 23px;
+text-align: center;
 
+}
 /* For step 2 CSS END */
 
 /* For step 2 CSS START */
@@ -310,17 +339,26 @@ input[type=checkbox] {
 /* For step forgot_your_password CSS END */
 
 
-
+.form-check-input{
+    margin-top: 0;
+}
 
 @media (max-width: 1570px) {
     .custom_section {
-        gap: unset;
-        justify-content: space-around;
+        gap: 97px;
+        justify-content: center;
         padding-inline: 135px;
     }
 
     .gap_unset_custom {
         justify-content: center !important;
+    }
+    .custom_section form {
+        position: unset;
+    }
+    .custom_section form h4 {
+        font-family: "Mardoto-Medium";
+        font-size: 24px;
     }
 }
 
