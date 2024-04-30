@@ -1,6 +1,7 @@
-.notifications,
 .my_account,
-.my_check {
+.my_check,
+.addOrd .addOrdInn,
+.my_page {
     display: none;
 }
 
@@ -13,6 +14,7 @@
     z-index: -10;
     overflow: scroll;
     background: #FBFBFB;
+    padding-inline: 150px;
 }
 
 .container_norification {
@@ -1259,3 +1261,47 @@ form button {
 }
 
 /* For Rander My Addres END */
+
+
+
+
+/* Thsi is a Responsive Block start */
+@media (max-width: 1440px) {
+
+    .notifications {
+        max-width: 1340px;
+        padding-inline: 100px;
+    }
+
+    .container_norification h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 46.88px;
+    }
+}
+
+@media (max-width: 968px) {
+    .container_norification h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.16px;
+    }
+}
+
+@media (max-width: 678px) {
+
+    .notifications {
+        padding-inline: 24px;
+        max-width: 628px;
+    }
+
+}
+
+@media (max-width: 428px) {
+    .notifications {
+        padding-inline: 20px;
+        max-width: 420px
+    }
+}
+
+/* Thsi is a Responsive Block end */
