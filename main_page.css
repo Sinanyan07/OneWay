@@ -7,8 +7,8 @@
     justify-content: center;
     margin-bottom: 121px;
     gap: 246px;
-   padding-top: 70px;
-   max-width: 1920px;
+    padding-top: 70px;
+    max-width: 1920px;
 }
 
 
@@ -44,24 +44,28 @@
     border-radius: 8px 0px 0px 8px;
     border-right: 1px solid #D8D8D8
 }
-.form-check-label{
-font-size: 14px;
-font-weight: 400;
-line-height: 16.41px;
-text-align: left;
-color: #212121;
+
+.form-check-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #212121;
 }
+
 .content__rezerv {
     margin-top: 19px;
 }
-.content__registr{
+
+.content__registr {
     font-family: "Mardoto-Medium";
-font-size: 14px;
-font-weight: 500;
-line-height: 16.41px;
-text-align: left;
-color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: left;
+    color: #212121;
 }
+
 .sign_up_form {
     width: 100%;
     min-height: 45px;
@@ -93,27 +97,37 @@ color: #212121;
 
 .toggle-password {
     padding: 10px;
-    /* Задаем отступ кнопке */
     border-left: 0;
-    /* Убираем границу слева */
     cursor: pointer;
-    /* Делаем курсор указателем при наведении */
 }
+.btn__log:hover{
+    transition: .3s ease 0s;
+    background: #67B7B1;
+}
+.btn__log:active{
+    transition: .1s ease 0s;
+    background: #268E83;
+
+}
+.custom-input_form:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #1DA99D80;
+}
+.custom-input_form
 
 .custom-input_form {
-    border-radius: 0 4px 4px 0;
+    border-radius: 08px;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.75px;
     text-align: left;
     color: #808080;
     padding: 15px 16px;
-    /* Задаем скругление углов справа */
 }
 
-.form-control:focus {
+/* .form-control:focus {
     box-shadow: 0px 0px 8px 0px #0000001A;
-}
+} */
 
 .form-check-input:focus {
     box-shadow: none;
@@ -133,8 +147,8 @@ color: #212121;
 
 /* Main CSS END */
 
-#fill_in_the_data_Id,
-/* #welcome_Id, */
+/* #fill_in_the_data_Id, */
+#welcome_Id,
 #logIn_Id,
 #forgot_your_password,
 #password_change,
@@ -156,7 +170,7 @@ color: #212121;
 }
 
 .textTitel span {
-    
+
     font-size: 12px;
     font-weight: 400;
     line-height: 14.06px;
@@ -169,7 +183,8 @@ color: #212121;
     gap: 11px;
     margin-top: 14px;
 }
-.form-check{
+
+.form-check {
     padding-left: 2.5rem;
 }
 
@@ -186,30 +201,34 @@ color: #212121;
 #company_name_container {
     display: none;
 }
-.form-label{
+
+.form-label {
     font-family: "Mardoto-Medium";
-font-size: 14px;
-font-weight: 400;
-line-height: 16.41px;
-text-align: left;
-color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #212121;
 }
-.old__wrapper{
+
+.old__wrapper {
     display: flex;
     flex-direction: column;
     gap: 13px 0;
     margin-top: 20px;
 }
+
 button.sign_up_form.btn__log {
     font-family: "Mardoto-Medium";
     margin-top: 28px;
     margin-bottom: 26px;
-font-size: 18px;
-font-weight: 500;
-line-height: 23px;
-text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
 
 }
+
 /* For step 2 CSS END */
 
 /* For step 2 CSS START */
@@ -339,9 +358,13 @@ input[type=checkbox] {
 /* For step forgot_your_password CSS END */
 
 
-.form-check-input{
+.form-check-input {
     margin-top: 0;
 }
+
+
+
+
 
 @media (max-width: 1570px) {
     .custom_section {
@@ -353,14 +376,89 @@ input[type=checkbox] {
     .gap_unset_custom {
         justify-content: center !important;
     }
+
     .custom_section form {
         position: unset;
     }
+
     .custom_section form h4 {
         font-family: "Mardoto-Medium";
         font-size: 24px;
     }
 }
 
+@media screen and (max-width:1280px) {
+    .custom_section {
+        padding-inline: 50px;
+    }
+}
 
+@media screen and (max-width:968px) {
+    .marty_icon {
+        width: 165px;
+        height: 247px;
+    }
 
+    .custom_section form {
+        max-width: 505px;
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width:845px) {
+    .custom_section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .custom_section form {
+        margin: auto;
+    }
+
+    .marty_icon {
+        width: 57px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width:678px) {
+    .custom_section {
+        padding-inline: 24px;
+
+    }
+}
+
+@media screen and (max-width:540px) {
+    .custom_section {
+        margin-bottom: 60px;
+        padding-inline: 0;
+    }
+
+    .custom_section form {
+        max-width: 380px;
+        min-height: 561px;
+        padding: 16px 10px;
+    }
+
+    .custom-input_form {
+        height: 45px;
+
+    }
+
+    .form-check {
+        padding-left: 1.5rem;
+    }
+}
+@media screen and (max-width:390px) {
+    .custom_section form{
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+    .container_for_chek{
+        flex-direction: column;
+        gap: 0;
+    }
+}
