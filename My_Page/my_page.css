@@ -1,6 +1,10 @@
+.notifications,
 .my_account,
-.my_check,
-.addOrd .addOrdInn,
+
+/* .my_check, */
+
+.addOrd,
+.addOrdInn,
 .my_page {
     display: none;
 }
@@ -144,8 +148,8 @@ hr {
     min-height: 730px;
     margin: auto;
     background: #FBFBFB;
-
-
+    margin-top: 80px;
+    padding-inline: 150px;
 }
 
 /* this is 2x */
@@ -288,6 +292,8 @@ hr {
     min-height: 868px;
     margin: auto;
     background: #FBFBFB;
+    margin-top: 80px;
+    padding-inline: 150px;
 }
 
 
@@ -300,6 +306,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
     padding: 30px 0px;
     gap: 30px;
 }
@@ -1268,12 +1275,16 @@ form button {
 /* Thsi is a Responsive Block start */
 @media (max-width: 1440px) {
 
-    .notifications {
+    .notifications,
+    .my_account,
+    .my_check {
         max-width: 1340px;
         padding-inline: 100px;
     }
 
-    .container_norification h1 {
+    .container_norification h1,
+    .my_account_container h1,
+    .my_account_container h1 {
         font-size: 40px;
         font-weight: 500;
         line-height: 46.88px;
@@ -1281,7 +1292,9 @@ form button {
 }
 
 @media (max-width: 968px) {
-    .container_norification h1 {
+
+    .container_norification h1,
+    .my_account_container h1 {
         font-size: 30px;
         font-weight: 500;
         line-height: 35.16px;
@@ -1290,7 +1303,8 @@ form button {
 
 @media (max-width: 678px) {
 
-    .notifications {
+    .notifications,
+    .my_check {
         padding-inline: 24px;
         max-width: 628px;
     }
@@ -1298,7 +1312,9 @@ form button {
 }
 
 @media (max-width: 428px) {
-    .notifications {
+
+    .notifications,
+    .my_check {
         padding-inline: 20px;
         max-width: 420px
     }
