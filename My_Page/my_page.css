@@ -1,11 +1,9 @@
 .notifications,
 .my_account,
-
-/* .my_check, */
-
+.my_check,
+/* .my_page, */
 .addOrd,
-.addOrdInn,
-.my_page {
+.addOrdInn {
     display: none;
 }
 
@@ -510,6 +508,21 @@ form button {
     background-color: #ffffff;
 }
 
+.my_page {
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+    margin-top: 80px;
+    padding-inline: 150px;
+}
+
+.input_container_size {
+    width: 100%;
+}
+
+.row_first {
+    width: 100%;
+}
 
 .my_page_form {
     width: 100%;
@@ -548,7 +561,7 @@ form button {
 .custom-input_form_my_page {
     border: none;
     box-shadow: 0px 0px 8px 0px #0000001A;
-    width: 450px;
+    width: 100%;
     height: 50px;
 }
 
@@ -1267,6 +1280,10 @@ form button {
     height: 24px;
 }
 
+.back_clike {
+    display: none;
+}
+
 /* For Rander My Addres END */
 
 
@@ -1277,7 +1294,8 @@ form button {
 
     .notifications,
     .my_account,
-    .my_check {
+    .my_chec,
+    .my_page {
         max-width: 1340px;
         padding-inline: 100px;
     }
@@ -1293,6 +1311,10 @@ form button {
 
 @media (max-width: 968px) {
 
+    .my_bar {
+        max-width: 242px;
+    }
+
     .container_norification h1,
     .my_account_container h1 {
         font-size: 30px;
@@ -1301,22 +1323,105 @@ form button {
     }
 }
 
+@media (max-width: 940px) {
+/* 
+    #my_bar_Id {
+        display: none;
+    } */
+
+    #my_info_Id {
+        display: none;
+    }
+
+    .my_bar {
+        max-width: 578px;
+    }
+
+    .my_check_base {
+        max-width: none;
+    }
+
+    .map_selector {
+        width: 70%;
+    }
+}
+
 @media (max-width: 678px) {
 
     .notifications,
-    .my_check {
+    .my_check,
+    .my_page {
         padding-inline: 24px;
         max-width: 628px;
     }
 
+    .reset_password_container {
+        padding-inline: 50px;
+    }
+
+    .save_changes_reset {
+        width: 77%;
+    }
+
+    .reset_password h4 {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .conteiner_for_input {
+        flex-direction: column;
+    }
+
+    .save_changes {
+        width: 77%;
+        align-self: center;
+        right: 0px;
+    }
 }
 
 @media (max-width: 428px) {
+    .my_account_container {
+        padding-inline: 24px;
+    }
+
 
     .notifications,
-    .my_check {
+    .my_check,
+    .my_page {
         padding-inline: 20px;
         max-width: 420px
+    }
+
+    .my_check,
+    .my_page {
+        padding-inline: 0px;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    .container_for_chek_my_page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .see_password_my {
+        position: relative;
+        top: -32px;
+        left: 85%;
+    }
+}
+
+
+
+
+@media (max-width: 320px) {
+    .form_input {
+        width: 91.563vw;
+        height: 15.938vw;
     }
 }
 
