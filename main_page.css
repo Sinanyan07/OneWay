@@ -147,18 +147,23 @@
 
 /* Main CSS END */
 
-/* #fill_in_the_data_Id, */
+#fill_in_the_data_Id,
 #welcome_Id,
 #logIn_Id,
 #forgot_your_password,
 #password_change,
-#enter_the_code,
-#password_new {
+#enter_the_code
+/* #password_new  */
+{
     /* display: flex; */
     display: none;
 }
-
-
+.text_to__pass,.new_texx_mb{
+    margin-bottom: 40px;
+}
+.log_mb{
+    margin-top: 40px;
+}
 /* For step 2 CSS START */
 
 
@@ -347,6 +352,7 @@ input[type=checkbox] {
     width: 152px;
     height: 152px;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .one_new_paswword_container {
@@ -363,7 +369,12 @@ input[type=checkbox] {
 }
 
 
-
+.change__response{
+    display: none;
+}
+.to_bot{
+    margin-top: 30px;
+}
 
 
 @media (max-width: 1570px) {
@@ -375,6 +386,7 @@ input[type=checkbox] {
 
     .gap_unset_custom {
         justify-content: center !important;
+        gap: 0;
     }
 
     .custom_section form {
@@ -406,6 +418,18 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width:845px) {
+    .pass_wrap{
+        margin-top: 80px;
+    }
+    .gap_unset_custom{
+        gap: 0 !important;
+    }
+    .none__tom{
+        display: none;
+    }
+    .change__response{
+        display: block;
+    }
     .custom_section {
         flex-direction: column;
         align-items: flex-start;
@@ -421,16 +445,39 @@ input[type=checkbox] {
         width: 57px;
         height: 85px;
     }
+    img.change__response {
+        position: relative;
+        left: 167px;
+        margin-top: 15px;
+    }
 }
-
+@media screen and (max-width:770px) {
+    img.change__response {
+        left: 127px;
+    }
+}
+@media screen and (max-width:700px) {
+    img.change__response {
+        left: 84px;
+    }
+}
 @media screen and (max-width:678px) {
     .custom_section {
         padding-inline: 24px;
 
     }
+    .pass_wrap{
+        margin-top: 70px;
+    }
 }
 
 @media screen and (max-width:540px) {
+    .pass_wrap{
+        margin-top: 60px;
+    }
+    img.change__response {
+        left: 110px;
+    }
     .custom_section {
         margin-bottom: 60px;
         padding-inline: 0;
@@ -452,6 +499,9 @@ input[type=checkbox] {
     }
 }
 @media screen and (max-width:390px) {
+    img.change__response {
+        left: 12px;
+    }
     .custom_section form{
         width: 100%;
         max-width: none;
