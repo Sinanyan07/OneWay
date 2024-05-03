@@ -2,8 +2,7 @@
 .my_account,
 .my_check,
 /* .my_page, */
-.addOrd,
-.addOrdInn {
+.addOrd {
     display: none;
 }
 
@@ -161,6 +160,8 @@ hr {
 }
 
 .my_account_container h1 {
+    display: flex;
+    gap: 5px;
     font-size: 60px;
     font-weight: 500;
     line-height: 70.31px;
@@ -697,10 +698,12 @@ form button {
     padding-inline: 24px;
     padding-top: 24px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-bottom: none;
     margin-bottom: 10px;
 }
+
+
 
 .modal-footer {
     border-top: none;
@@ -708,8 +711,32 @@ form button {
 
 .modal-content {
     border: #848484 solid 1px;
-    height: 230px;
-    margin-top: 170px;
+    height: 627px !important;
+}
+.countOpened{
+    display: flex;
+    justify-content: center;
+}
+.modal-dialog {
+    max-width: 1428px  !important;
+    margin: 170px auto  !important;
+}
+
+.modDi{
+    display: flex;
+    justify-content: center;
+}
+.counterDv {
+    height: 440px !important;
+}
+.modHed{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delDv{
+    height: 230px  !important;
+    width: 492px  !important;
 }
 
 .modal-content h1 {
@@ -844,7 +871,7 @@ form button {
 .opInnFirst1 button {
     position: absolute;
     right: 24px;
-    top: 24px;
+    top: -16px;
     width: 24px;
     height: 24px;
 }
@@ -1280,7 +1307,7 @@ form button {
     height: 24px;
 }
 
-.back_clike {
+#back_clike_id {
     display: none;
 }
 
@@ -1324,12 +1351,9 @@ form button {
 }
 
 @media (max-width: 940px) {
-/* 
-    #my_bar_Id {
-        display: none;
-    } */
+    
 
-    #my_info_Id {
+    .my_info {
         display: none;
     }
 

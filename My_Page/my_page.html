@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="home.js" defer></script>
+    <!-- <script src="home.js" defer></script> -->
     <link rel="stylesheet" href="../style.css">
     <script src="./my_page.js" defer></script>
     <script src="../script.js" defer></script>
@@ -69,7 +69,6 @@
                 </li>
             </ul>
             <div class="eventRig">
-
                 <button type="button" class="btn btn-primary counter" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     <img src="../img/calculator.svg" alt="counter">
@@ -122,7 +121,7 @@
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog countOpened">
-                        <div class="modal-content countOpInn">
+                        <div class="modal-content countOpInn counterDv">
                             <div class="modal-header opInnFirst">
                                 <h5 class="sendCount">Առաքման հաշվիչ</h5>
                                 <button type="button" class="btn-close buttClose" data-bs-dismiss="modal"
@@ -268,25 +267,25 @@
 
     <form action="" class="my_check_form">
         <div>
-            <div class="mb-3"><label for="exampleInputEmail1" class="form-label">Համալրվող գումար (AMD)</label>
-                <input type="email" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="0">
+            <div class="mb-3"><label for="exampleInputEmail_1" class="form-label">Համալրվող գումար (AMD)</label>
+                <input type="email" class="form-control form_input" id="exampleInputEmail_1"
+                    aria-describedby="emailHelp" placeholder="0">
             </div>
-            <div class="mb-4"><label for="exampleInputEmail1" class="form-label">Քարտի համարը</label>
-                <input type="email" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="XXXX XXXX XXXX XXXX">
+            <div class="mb-4"><label for="exampleInputEmail_2" class="form-label">Քարտի համարը</label>
+                <input type="email" class="form-control form_input" id="exampleInputEmail_2"
+                    aria-describedby="emailHelp" placeholder="XXXX XXXX XXXX XXXX">
                 <span class="text_card">Լրացրեք քարտի վրայի 16 նիշանոց թվերը։</span>
             </div>
             <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Անուն Ազգանուն</label>
-                <input type="email" class="form-control form_input" id="exampleInputEmail1"
+                <label for="exampleInputEmail_3" class="form-label">Անուն Ազգանուն</label>
+                <input type="email" class="form-control form_input" id="exampleInputEmail_3"
                     aria-describedby="emailHelp">
                 <span class="text_card">Ինչպես գրված է քարտի վրա:</span>
             </div>
             <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">CVV/CVC</label>
-                <input type="email" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="XXX">
+                <label for="exampleInputEmail_4" class="form-label">CVV/CVC</label>
+                <input type="email" class="form-control form_input" id="exampleInputEmail_4"
+                    aria-describedby="emailHelp" placeholder="XXX">
                 <span class="text_card">Լրացնել քարտի հակառակ կողմում գրված 3 նիշը։</span>
             </div>
         </div>
@@ -299,8 +298,9 @@
 
     <div class="my_account_container">
         <h1>
-            <img src="./img_my_page/arrow_for_md.svg" alt="" class="back_clike">
-            Իմ էջը</h1>
+            <img src="./img_my_page/arrow_for_md.svg" alt="" id="back_clike_id" onclick="closeResponsiveMyInfo()">
+            Իմ էջը
+        </h1>
         <hr>
     </div>
 
@@ -314,7 +314,7 @@
                     <span>poghos2@example.com</span>
                     <span>ID:000032</span>
                 </div>
-                <li class="my_check_base my_acctive profile_icon">
+                <li class="my_check_base my_acctive profile_icon" onclick="openResponsiveMyInfo()">
                     <a href="">Իմ հաշիվը</a>
                 </li>
                 <li class="my_check_base order_icon">
@@ -335,10 +335,13 @@
                 </li>
             </ul>
 
-            <button>
-                <img src="./img_my_page/add_icon.svg" alt="add">
-                <span>Ավելացնել պատվեր</span>
-            </button>
+          <!-- Button trigger modal -->
+          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+            <img src="./img_my_page/add_icon.svg" alt="add">
+            <span>Ավելացնել պատվեր</span>
+        </button>
+
+        <!-- Modal -->
 
         </div>
 
@@ -441,9 +444,9 @@
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
+                <div class="modal-dialog modDi">
+                    <div class="modal-content delDv">
+                        <div class="modal-header modHed">
                             <button type="button" class="btn-close buttCloseDel" data-bs-dismiss="modal"
                                 aria-label="Close">
                                 <img src="../img/closeIcon.svg" alt="closing">
@@ -559,76 +562,83 @@
 
 
 <!-- AddOrderPageView1920 sect start -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="addOrdInn">
 
-<section class="addOrd">
-    <div class="addOrdInn">
-
-        <div class="modal-content countOpInn1">
-            <div class="modal-header opInnFirst1">
-                <h5 class="sendCount">Ավելացնել պատվեր</h5>
-                <button type="button" class="btn-close buttClose" data-bs-dismiss="modal" aria-label="Close">
-                    <img src="../img/closeIcon.svg" alt="closing">
-                </button>
-            </div>
-            <div class="modal-body opInnSec">
-                <button id="allCountry" class="allCountry">
-                    <img src="../shopsImage/usa.svg" alt="country">
-                </button>
-                <button id="allCountry" class="allCountry">
-                    <img src="../shopsImage/china.svg" alt="country">
-                </button>
-                <button id="allCountry" class="allCountry">
-                    <img src="../shopsImage/spain.svg" alt="country">
-                </button>
-                <button id="allCountry" class="allCountry">
-                    <img src="../shopsImage/rus.svg" alt="country">
-                </button>
-                <button id="allCountry" class="allCountry">
-                    <img src="../shopsImage/luxe.svg" alt="country">
-                </button>
-            </div>
-            <div class=" opInnThrd1">
-                <div class="input_container">
-                    <label for="name_input_Id" class="titel_label">Բեռնակրման համար</label>
-                    <input type="text" class="name_input" id="name_input_Id" placeholder="High heels">
-                </div>
-                <div class="input_container">
-                    <label for="name_input_Id" class="titel_label">Ապրանքի անվանումը</label>
-                    <input type="text" class="name_input" id="name_input_Id" placeholder="High heels">
-                </div>
-            </div>
-            <div class=" opInnThrd1">
-                <form class="inpTop">
-
-
-                    <label>
-                        <span>Ապրանքի արժեքը</span>
-                        <div class="prodPrice prodPr">
-                            <input class="prodInp" type="number" min="0" placeholder="0">
-                            <button class="selDv1" onclick="openRent()">
-                                <img src="../img/doll.svg" alt="flag">
-                                <img class="dropDownLangg" src="../img/down.svg" alt="vector">
-                            </button>
-                            <!-- <div class="langDv1">
-                                <button><img src="../img/eur.svg" alt="languages"></button>
-                                <button><img src="../img/rub.svg" alt="languages"></button>
-                            </div> -->
+                <div class="modal-content countOpInn1">
+                    <div class="modal-header opInnFirst1">
+                        <h5 class="sendCount">Ավելացնել պատվեր</h5>
+                        <button type="button" class="btn-close buttClose" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="../img/closeIcon.svg" alt="closing">
+                        </button>
+                    </div>
+                    <div class="modal-body opInnSec">
+                        <button id="allCountry" class="allCountry">
+                            <img src="../shopsImage/usa.svg" alt="country">
+                        </button>
+                        <button id="allCountry" class="allCountry">
+                            <img src="../shopsImage/china.svg" alt="country">
+                        </button>
+                        <button id="allCountry" class="allCountry">
+                            <img src="../shopsImage/spain.svg" alt="country">
+                        </button>
+                        <button id="allCountry" class="allCountry">
+                            <img src="../shopsImage/rus.svg" alt="country">
+                        </button>
+                        <button id="allCountry" class="allCountry">
+                            <img src="../shopsImage/luxe.svg" alt="country">
+                        </button>
+                    </div>
+                    <div class=" opInnThrd1">
+                        <div class="input_container">
+                            <label for="name_input_Id_1" class="titel_label">Բեռնակրման համար</label>
+                            <input type="text" class="name_input" id="name_input_Id_1" placeholder="High heels">
                         </div>
-                    </label>
+                        <div class="input_container">
+                            <label for="name_input_Id" class="titel_label">Ապրանքի անվանումը</label>
+                            <input type="text" class="name_input" id="name_input_Id" placeholder="High heels">
+                        </div>
+                    </div>
+                    <div class=" opInnThrd1">
+                        <form class="inpTop">
 
-                    <span>Ընդամենը։ 0․00 AMD</span>
-            </div>
-            <div class="buttonsDv">
-                <button>Չեղարկել</button>
-                <button>Հաստատել</button>
+
+                            <label>
+                                <span>Ապրանքի արժեքը</span>
+                                <div class="prodPrice prodPr">
+                                    <input class="prodInp" type="number" min="0" placeholder="0">
+                                    <button class="selDv1" onclick="openRent()">
+                                        <img src="../img/doll.svg" alt="flag">
+                                        <img class="dropDownLangg" src="../img/down.svg" alt="vector">
+                                    </button>
+                                    <!-- <div class="langDv1">
+                                    <button><img src="../img/eur.svg" alt="languages"></button>
+                                    <button><img src="../img/rub.svg" alt="languages"></button>
+                                </div> -->
+                                </div>
+                            </label>
+
+                            <span>Ընդամենը։ 0․00 AMD</span>
+                    </div>
+                    <div class="buttonsDv">
+                        <button>Չեղարկել</button>
+                        <button>Հաստատել</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+
+
 
 
 
 <!-- AddOrderPageView1920 sect end-->
+
 
 
 
