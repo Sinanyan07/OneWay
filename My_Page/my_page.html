@@ -156,8 +156,8 @@
                             </div>
                             <div class=" opInnThrd">
                                 <form>
-                                    <label for="weightInp">Առաքման արժեք (AMD)
-                                        <input type="number" min="0.00" placeholder="0.00" id="weightInp">
+                                    <label for="weightInp_1">Առաքման արժեք (AMD)
+                                        <input type="number" min="0.00" placeholder="0.00" id="weightInp_1">
                                     </label>
                                 </form>
                             </div>
@@ -315,10 +315,10 @@
                     <span>ID:000032</span>
                 </div>
                 <li class="my_check_base my_acctive profile_icon" onclick="openResponsiveMyInfo()">
-                    <a href="">Իմ հաշիվը</a>
+                    <a>Իմ հաշիվը</a>
                 </li>
-                <li class="my_check_base order_icon">
-                    <a href="">Իմ պատվերները</a>
+                <li class="my_check_base order_icon" onclick="openResponsiveMyOrders()">
+                    <a>Իմ պատվերները</a>
                 </li>
                 <hr>
                 <li class="my_check_base map_icon">
@@ -335,13 +335,13 @@
                 </li>
             </ul>
 
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-            <img src="./img_my_page/add_icon.svg" alt="add">
-            <span>Ավելացնել պատվեր</span>
-        </button>
+            <!-- Button trigger modal -->
+            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                <img src="./img_my_page/add_icon.svg" alt="add">
+                <span>Ավելացնել պատվեր</span>
+            </button>
 
-        <!-- Modal -->
+            <!-- Modal -->
 
         </div>
 
@@ -356,14 +356,14 @@
                         <div class="form-check">
                             <input onchange="listenerChangeRadioMyPage(event)" class="form-check-input check_input"
                                 type="radio" name="customerType" id="individualType" value="individual" checked>
-                            <label class="form-check-label" for="individualType">
+                            <label class="form-check-label text_type_font" for="individualType">
                                 Ֆիզիկական անձ
                             </label>
                         </div>
                         <div class="form-check">
                             <input onchange="listenerChangeRadioMyPage(event)" class="form-check-input check_input"
                                 type="radio" name="customerType" id="legalType" value="legal">
-                            <label class="form-check-label" for="legalType">
+                            <label class="form-check-label text_type_font" for="legalType">
                                 Իրավաբանական անձ
                             </label>
                         </div>
@@ -373,17 +373,17 @@
                 <div class="conteiner_for_input">
                     <div class="row_first">
                         <div class="input_container_size">
-                            <label for="name" class="form-label">Անուն *</label>
+                            <label for="name" class="form-label text_font_in">Անուն *</label>
                             <input type="text" class="form-control custom-input_form_my_page" id="name"
                                 placeholder="Լրացնել լատինատառ">
                         </div>
                         <div class="mb_custom_for_sing_btn" id="company_name_container_myPage">
-                            <label for="company_name" class="form-label">Ընկերության անվանում *</label>
+                            <label for="company_name" class="form-label text_font_in">Ընկերության անվանում *</label>
                             <input type="text" class="form-control custom-input_form_my_page" id="company_name"
                                 placeholder="Լրացնել լատինատառ">
                         </div>
                         <div class="mb_custom_for_sing_btn">
-                            <label for="surename" class="form-label">Քաղաք *</label>
+                            <label for="surename" class="form-label text_font_in">Քաղաք *</label>
                             <select class="form-select custom-input_form_my_page" aria-label="Default select example">
                                 <option selected>Yerevan</option>
                                 <option value="1">Gyumri</option>
@@ -395,12 +395,12 @@
 
                     <div class="row_first">
                         <div class="mb_custom_for_sing_btn">
-                            <label for="surename" class="form-label">Ազգանուն *</label>
+                            <label for="surename" class="form-label text_font_in">Ազգանուն *</label>
                             <input type="text" class="form-control custom-input_form_my_page" id="surename"
                                 placeholder="Լրացնել լատինատառ">
                         </div>
                         <div class="mb_custom_for_sing_btn">
-                            <label for="addres" class="form-label">Հասցե *</label>
+                            <label for="addres" class="form-label text_font_in">Հասցե *</label>
                             <input type="text" class="form-control custom-input_form_my_page" id="addres"
                                 placeholder="Լրացնել լատինատառ">
                         </div>
@@ -415,17 +415,17 @@
                 <h4>Վերականգնել գաղտնաբառը</h4>
                 <div class="reset_password_container">
                     <div class="">
-                        <label for="old_password_Id" class="form-label">Հին գաղտնաբառ *</label>
+                        <label for="old_password_Id" class="form-label text_font_in">Հին գաղտնաբառ *</label>
                         <input type="password" class="form-control custom-input_form_my_page" id="old_password_Id">
                         <div class="see_password_my" onclick="for_see_password_type('old_password_Id')"></div>
                     </div>
                     <div class="">
-                        <label for="new_password_Id" class="form-label">Նոր գաղտնաբառ *</label>
+                        <label for="new_password_Id" class="form-label text_font_in">Նոր գաղտնաբառ *</label>
                         <input type="password" class="form-control custom-input_form_my_page" id="new_password_Id">
                         <div class="see_password_my" onclick="for_see_password_type('new_password_Id')"></div>
                     </div>
                     <div class="">
-                        <label for="repeat_password" class="form-label">Կրկնել գաղտնաբառը *</label>
+                        <label for="repeat_password" class="form-label text_font_in">Կրկնել գաղտնաբառը *</label>
                         <input type="password" class="form-control custom-input_form_my_page" id="repeat_password">
                         <div class="see_password_my" onclick="for_see_password_type('repeat_password')"></div>
                     </div>
@@ -468,7 +468,6 @@
 
         <!-- For Rander My Orders-->
         <div class="my_orders_info" id="my_orders_info_Id">
-
             <ul class="titel_orders">
                 <li class="acctive_Li">Պատվեր<span>(0)</span></li>
                 <li>Պահեստում է<span>(0)</span></li>
@@ -484,6 +483,7 @@
                 <li>Քաշ (ԿԳ)</li>
                 <li>Առաքման գին (AMD)</li>
             </ul>
+
             <div class="emty_orders">
                 <img src="./img_my_page/order_none_box.svg" alt="">
                 <span>Չունեք նոր պատվերներ</span>

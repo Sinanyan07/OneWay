@@ -139,6 +139,21 @@ hr {
     text-align: left;
 }
 
+.text_type_font {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #848484;
+}
+
+.text_font_in {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #000000;
+}
 
 .my_account {
     width: 100%;
@@ -453,7 +468,7 @@ form button {
 .map_selector {
     position: relative;
     top: -5px;
-    width: 200px;
+    width: 75%;
     padding-right: 30px;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 12.586l-4.293-4.293a1 1 0 0 0-1.414 1.414l5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 1 0-1.414-1.414L10 12.586z"/></svg>');
     background-repeat: no-repeat;
@@ -713,30 +728,34 @@ form button {
     border: #848484 solid 1px;
     height: 627px !important;
 }
-.countOpened{
+
+.countOpened {
     display: flex;
     justify-content: center;
-}
-.modal-dialog {
-    max-width: 1428px  !important;
-    margin: 170px auto  !important;
 }
 
-.modDi{
+.modal-dialog {
+    max-width: 1428px !important;
+    margin: 170px auto !important;
+}
+
+.modDi {
     display: flex;
     justify-content: center;
 }
+
 .counterDv {
     height: 440px !important;
 }
-.modHed{
+
+.modHed {
     display: flex;
     justify-content: flex-end;
 }
 
-.delDv{
-    height: 230px  !important;
-    width: 492px  !important;
+.delDv {
+    height: 230px !important;
+    width: 492px !important;
 }
 
 .modal-content h1 {
@@ -1108,8 +1127,8 @@ form button {
 
 /* My order info START */
 
-/* #my_info_Id, */
-#my_orders_info_Id,
+#my_info_Id,
+/* #my_orders_info_Id, */
 #my_address_Id {
     display: none;
 }
@@ -1127,6 +1146,7 @@ form button {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+
 }
 
 .titel_orders {
@@ -1150,8 +1170,8 @@ form button {
     color: #FFFFFF;
 }
 
+
 .orders_info_container {
-    width: 100%;
     display: flex;
     background: #26AA9D;
     justify-content: space-between;
@@ -1317,6 +1337,47 @@ form button {
 
 
 /* Thsi is a Responsive Block start */
+
+@media (max-width: 1580px) {
+    .my_bar {
+        max-width: 270px;
+    }
+
+    .main_container_mypage {
+        gap: 23px;
+    }
+
+    .my_orders_info {
+        padding: 25px 16px;
+    }
+
+    .titel_orders li {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.09px;
+        text-align: center;
+    }
+
+    .orders_info_container li {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.09px;
+        text-align: left;
+    }
+
+    .orders_info_container {
+        padding-inline: 9px;
+    }
+
+    .titel_orders li {
+        font-size: 17px;
+    }
+}
+
+
+
+
+
 @media (max-width: 1440px) {
 
     .notifications,
@@ -1336,6 +1397,32 @@ form button {
     }
 }
 
+@media (max-width: 1300px) {
+    .my_bar {
+        max-width: 255px;
+    }
+
+    .main_container_mypage {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .my_orders_info {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .titel_orders,
+    .orders_info_container {
+        width: 1100px;
+    }
+}
+
+
+
+
+
 @media (max-width: 968px) {
 
     .my_bar {
@@ -1351,7 +1438,10 @@ form button {
 }
 
 @media (max-width: 940px) {
-    
+
+    #my_orders_info_Id {
+        display: none;
+    }
 
     .my_info {
         display: none;
@@ -1390,6 +1480,13 @@ form button {
     .reset_password h4 {
         text-align: center;
     }
+
+    .my_page_form h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.13px;
+        text-align: left;
+    }
 }
 
 
@@ -1410,6 +1507,9 @@ form button {
         padding-inline: 24px;
     }
 
+    .my_bar button {
+        align-self: center;
+    }
 
     .notifications,
     .my_check,
@@ -1431,6 +1531,8 @@ form button {
         display: flex;
         flex-direction: column;
     }
+
+
 
     .see_password_my {
         position: relative;

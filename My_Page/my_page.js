@@ -70,22 +70,45 @@
 
 
 function openResponsiveMyInfo() {
-  const myBar = document.getElementById("my_bar_Id");
-  const myInfo = document.getElementById("my_info_Id");
-  const backArrow = document.getElementById("back_clike_id");
+  const screenWidth = window.innerWidth;
 
-  myBar.style.display = "none";
-  myInfo.style.display = "flex";
-  backArrow.style.display = "block";
+  if (screenWidth <= 940) {
+    const myBar = document.getElementById("my_bar_Id");
+    const myInfo = document.getElementById("my_info_Id");
+    const backArrow = document.getElementById("back_clike_id");
+
+    myBar.style.display = "none";
+    myInfo.style.display = "flex";
+    backArrow.style.display = "block";
+  }
 }
 
-
 function closeResponsiveMyInfo() {
-  const myBar = document.getElementById("my_bar_Id");
-  const myInfo = document.getElementById("my_info_Id");
-  const backArrow = document.getElementById("back_clike_id");
+  const screenWidth = window.innerWidth;
 
-  myBar.style.display = "block";
-  myInfo.style.display = "none";
-  backArrow.style.display = "none";
+  if (screenWidth <= 940) {
+    const myOrder = document.getElementById("my_orders_info_Id");
+    const myBar = document.getElementById("my_bar_Id");
+    const myInfo = document.getElementById("my_info_Id");
+    const backArrow = document.getElementById("back_clike_id");
+
+    myBar.style.display = "block";
+    myInfo.style.display = "none";
+    backArrow.style.display = "none";
+    myOrder.style.display = "none";
+  }
+}
+
+function openResponsiveMyOrders() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 940) {
+    const myBar = document.getElementById("my_bar_Id");
+    const myOrder = document.getElementById("my_orders_info_Id");
+    const backArrow = document.getElementById("back_clike_id");
+
+    myBar.style.display = "none";
+    myOrder.style.display = "flex";
+    backArrow.style.display = "block";
+  }
 }
