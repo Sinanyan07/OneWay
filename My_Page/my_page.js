@@ -91,11 +91,13 @@ function closeResponsiveMyInfo() {
     const myBar = document.getElementById("my_bar_Id");
     const myInfo = document.getElementById("my_info_Id");
     const backArrow = document.getElementById("back_clike_id");
+    const myAddress = document.getElementById("my_address_Id");
 
     myBar.style.display = "block";
     myInfo.style.display = "none";
     backArrow.style.display = "none";
     myOrder.style.display = "none";
+    myAddress.style.display = "none";
   }
 }
 
@@ -109,6 +111,21 @@ function openResponsiveMyOrders() {
 
     myBar.style.display = "none";
     myOrder.style.display = "flex";
+    backArrow.style.display = "block";
+  }
+}
+
+
+function openResponsiveMyAddress() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 940) {
+    const myBar = document.getElementById("my_bar_Id");
+    const myAddress = document.getElementById("my_address_Id");
+    const backArrow = document.getElementById("back_clike_id");
+
+    myBar.style.display = "none";
+    myAddress.style.display = "flex";
     backArrow.style.display = "block";
   }
 }
