@@ -17,6 +17,7 @@
     justify-content: space-between;
     gap: 50px;
     position: relative;
+    z-index: 0;
 }
 
 .abInLeft {
@@ -143,6 +144,11 @@
 
 
 @media (max-width: 1440px) {
+    .aboutInn {
+        max-width: 1390px;
+        width: 100%;
+        padding-left: 100px;
+    }
 
     .contBot {
         height: 80px;
@@ -263,6 +269,13 @@
         height: 490px;
     }
 
+
+    .abInLeft {
+        padding-right: 10%;
+    }
+
+
+
     .martyInn {
         min-height: 610px;
         gap: 10px;
@@ -277,6 +290,38 @@
         margin-top: 142px;
         gap: 12px;
     }
+}
+
+@media (max-width: 968px) {
+    .aboutInn {
+        min-height: 430px;
+    }
+
+    .abInLeft {
+        margin-top: 72px;
+    }
+
+    .abInLeft h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.16px;
+    }
+
+    .abInLeft {
+        max-width: 450px;
+        padding-right: 0%;
+    }
+
+    .abInLeft span {
+        margin-bottom: 25px;
+    }
+
+    .abInnRight {
+        width: 477px;
+        height: 430px;
+    }
+
+
 }
 
 @media (max-width: 876px) {
@@ -310,14 +355,41 @@
 
 }
 
+@media (max-width: 830px) {
+    .abInLeft {
+        max-width: 386px;
+    }
+}
+
+@media (max-width: 760px) {
+    .abInLeft {
+        max-width: 330px;
+    }
+}
 
 @media (max-width: 678px) {
+    .aboutInn {
+        max-width: 1390px;
+        width: 100%;
+        padding-left: 24px;
+    }
+
+    .abInnRight {
+        width: 358px;
+        height: 337px;
+        bottom: 0;
+    }
+
+    .abInLeft {
+        max-width: 453px;
+    }
+
     .marty {
         padding-inline: 30px;
     }
 
     .martyInn {
-        max-width: 367px;
+        max-width: 380px;
     }
 
     .martyInn {
@@ -325,15 +397,52 @@
         gap: 30px;
         align-items: center;
     }
-    
+
+    .mInnRight {
+        margin-bottom: 83px;
+    }
+}
+
+@media (max-width: 650px) {
+    .abInLeft {
+        max-width: 383px;
+    }
+}
+
+@media (max-width: 500px) {
+    .abInnRight {
+        width: 300px;
+        height: 270px;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 428px) {
+    .abInLeft {
+        margin-top: 59px;
+        max-width: 380px;
+    }
+
+    .abInLeft p {
+        margin-left: 0;
+        margin-bottom: 13px;
+    }
+
+    .abInLeft ul {
+        margin-left: 47px;
+    }
+
+    .abInnRight {
+        width: 234px;
+        height: 212px;
+    }
+
     .mInnLeft img {
         width: 100%;
         height: unset;
     }
-    .mInnLeft{
+
+    .mInnLeft {
         height: auto;
     }
 
@@ -345,13 +454,26 @@
         padding-inline: 20px;
     }
 
+
     .martyInn {
-        gap: 24px;
+        gap: 34px;
     }
 }
 
-@media (max-width: 428px) {
-    .martyInn {
-        gap: 34px;
+@media (max-width: 404px) {
+    .abInLeft {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 370px) {
+    .abInLeft {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 370px) {
+    .abInLeft {
+        max-width: 287px;
     }
 }

@@ -17,6 +17,8 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    position: relative;
+    z-index: 0;
 }
 
 .buyForLeft {
@@ -26,6 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .buyForLeft h1 {
@@ -44,6 +47,18 @@
     text-align: left;
     color: #263238;
     margin-bottom: 30px;
+}
+
+.abInnRight {
+    width: 904px;
+    height: 700px;
+    background-image: url(../img/buyIm.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
 
 
@@ -735,9 +750,11 @@ form {
 @media (max-width: 1440px) {
 
     .buyForInn {
+        max-width: 1380px;
+
         /* max-width: 1820px;
         width: 100%; */
-        padding-left: 150px;
+        padding-left: 100px;
         min-height: 540px;
     }
 
@@ -751,7 +768,7 @@ form {
         font-size: 40px;
         /* line-height: 46.88px; */
         /* text-align: left; */
-        margin-top: 177px;
+        margin-top: 150px;
         margin-bottom: 0px;
 
     }
@@ -765,6 +782,11 @@ form {
 
     .buyFor {
         margin-bottom: 130px;
+    }
+
+    .abInnRight {
+        width: 700px;
+        height: 540px;
     }
 
     .section_3 {
@@ -844,6 +866,33 @@ form {
 }
 
 @media (max-width: 968px) {
+
+    .buyForInn {
+        max-width: 1380px;
+        padding-left: 100px;
+        min-height: 430px;
+    }
+
+    .buyForLeft h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.16px;
+        margin-top: 143px;
+        margin-bottom: 10px;
+    }
+
+    .abInnRight {
+        width: 450px;
+        height: 390px;
+        bottom: 0px;
+    }
+
+
+
+
+
+
+    /*  */
     .section_3 {
         margin-top: 120px;
         margin-bottom: 0px;
@@ -992,6 +1041,10 @@ form {
         max-width: 460px;
         width: 100%;
     }
+
+    .buyForLeft {
+        max-width: 435px;
+    }
 }
 
 @media (max-width: 780px) {
@@ -1006,6 +1059,10 @@ form {
         max-width: 400px;
         width: 100%;
     }
+
+    .buyForLeft {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1017,6 +1074,33 @@ form {
 
 @media (max-width: 678px) {
 
+    .buyForInn {
+        max-width: 650px;
+        padding-left: 24px;
+        min-height: 430px;
+    }
+
+    .buyForLeft h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.16px;
+    }
+
+    .buyForLeft {
+        max-width: 266px;
+    }
+
+    .abInnRight {
+        width: 375px;
+        height: 384px;
+    }
+
+    .buyFor {
+        margin-bottom: 60px;
+    }
+
+
+    /*  */
     .section_3 {
         margin-top: 60px;
     }
@@ -1055,8 +1139,12 @@ form {
     .howToItems {
         top: 26px;
         padding-right: 50px;
+        justify-content: unset;
     }
 
+    .howTo {
+        margin-bottom: 50px;
+    }
 
 }
 
@@ -1130,8 +1218,14 @@ form {
 }
 
 @media (max-width: 428px) {
+    .buyForLeft h1 {
+        margin-top: 30px;
+    }
 
-
+    .abInnRight {
+        width: 291px;
+        height: 279px;
+    }
 
     .howTo {
         padding-inline: 0px;
@@ -1164,6 +1258,12 @@ form {
         padding-left: 18px;
         min-height: 262px;
     }
+    .howToItems {
+        padding-right: 0;
+        margin-left: 0px;
+        padding-inline: 24px;
+    }
+
 }
 
 @media (max-width: 415px) {
@@ -1225,6 +1325,10 @@ form {
         padding-left: 0px;
         padding-inline: 20px;
     }
+    .howToItems {
+        padding-inline: 20px;
+    }
+
 
     .howToItems {
         /* gap: 30px; */
@@ -1237,5 +1341,10 @@ form {
 
     .howTo {
         margin-bottom: 82px;
+    }
+    .itemsInn{
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-inline: 16px;
     }
 }
