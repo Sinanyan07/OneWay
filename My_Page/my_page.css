@@ -1,7 +1,7 @@
 .notifications,
-.my_account,
+/* .my_account, */
 .my_check,
-/* .my_page, */
+.my_page,
 .addOrd {
     display: none;
 }
@@ -1398,6 +1398,11 @@ form button {
     justify-content: space-between;
 }
 
+.my_prices_info {
+    width: 100%;
+    overflow-x: scroll;
+}
+
 /* For Rander My Addres END */
 
 
@@ -1516,6 +1521,19 @@ form button {
         height: 30px;
     }
 
+    .my_prices_tabel {
+        width: 768px;
+        max-width: unset;
+    }
+
+    .my_prices_sum {
+        align-self: flex-start;
+    }
+
+    .my_prices {
+        flex-direction: column-reverse;
+    }
+
     .my_bar {
         max-width: 242px;
     }
@@ -1583,7 +1601,9 @@ form button {
 
 @media (max-width: 678px) {
 
+
     .notifications,
+    .my_account,
     .my_check,
     .my_page {
         padding-inline: 24px;
