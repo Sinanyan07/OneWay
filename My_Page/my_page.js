@@ -69,6 +69,7 @@
 
 
 
+
 function openResponsiveMyInfo() {
   const screenWidth = window.innerWidth;
 
@@ -83,23 +84,6 @@ function openResponsiveMyInfo() {
   }
 }
 
-function closeResponsiveMyInfo() {
-  const screenWidth = window.innerWidth;
-
-  if (screenWidth <= 940) {
-    const myOrder = document.getElementById("my_orders_info_Id");
-    const myBar = document.getElementById("my_bar_Id");
-    const myInfo = document.getElementById("my_info_Id");
-    const backArrow = document.getElementById("back_clike_id");
-    const myAddress = document.getElementById("my_address_Id");
-
-    myBar.style.display = "block";
-    myInfo.style.display = "none";
-    backArrow.style.display = "none";
-    myOrder.style.display = "none";
-    myAddress.style.display = "none";
-  }
-}
 
 function openResponsiveMyOrders() {
   const screenWidth = window.innerWidth;
@@ -127,5 +111,25 @@ function openResponsiveMyAddress() {
     myBar.style.display = "none";
     myAddress.style.display = "flex";
     backArrow.style.display = "block";
+  }
+}
+
+
+
+function closeResponsiveMyInfo() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 940) {
+    const myOrder = document.getElementById("my_orders_info_Id");
+    const myBar = document.getElementById("my_bar_Id");
+    const myInfo = document.getElementById("my_info_Id");
+    const backArrow = document.getElementById("back_clike_id");
+    const myAddress = document.getElementById("my_address_Id");
+
+    myBar.style.display = "block";
+    myInfo.style.display = "none";
+    backArrow.style.display = "none";
+    myOrder.style.display = "none";
+    myAddress.style.display = "none";
   }
 }

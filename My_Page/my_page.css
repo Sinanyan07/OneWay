@@ -1,7 +1,7 @@
 .notifications,
-/* .my_account, */
+.my_account,
 .my_check,
-.my_page,
+/* .my_page, */
 .addOrd {
     display: none;
 }
@@ -1131,16 +1131,16 @@ form button {
 
 /* My order info START */
 
-#my_info_Id {
+/* #my_info_Id {
     display: none;
 }
+ */
 
 
 
-
-/* #my_orders_info_Id{
+#my_orders_info_Id{
     display: none;
-} */
+} 
 
 
 .my_orders_info {
