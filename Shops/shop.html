@@ -55,10 +55,16 @@
                     </li>
 
                     <li class="liMen">
-                        <button>
-                            <a href="#">Ծառայություններ</a>
-                            <img src="../img/downMen.svg" alt="down">
+                        <button id="serv" onclick="openServ()">
+                            Ծառայություններ
+                            <img class="dropDw" src="../img/downMen.svg" alt="down">
                         </button>
+                        <div class="services">
+                            <ul class="servUl">
+                                <li><a href="../BuyForMe/buy.html">Գնիր իմ փոխարեն</a></li>
+                                <li><a href=""></a>Առաքում ՀՀ տարածքում</a></li>
+                            </ul>
+                        </div>
 
                     </li>
                     <li class="vert">
@@ -104,12 +110,18 @@
                             <li>
                                 <a class="dropdown-item" href="../AboutPage/about.html">Մեր մասին</a>
                             </li>
-                            <li class="liMen">
-                                <button>
-                                    <a href="#">Ծառայություններ</a>
-                                    <img src="../img/downMen.svg" alt="down">
+                            <li class="liMen" onclick="openServ()">
+                                <button id="serv">
+                                    Ծառայություններ
+                                    <img class="dropDw" src="../img/downMen.svg" alt="down">
                                 </button>
-
+                                <div class="services">
+                                    <ul class="servUl">
+                                        <li><a href="../BuyForMe/buy.html">Գնիր իմ փոխարեն</a></li>
+                                        <li><a href=""></a>Առաքում ՀՀ տարածքում</a></li>
+                                    </ul>
+                                </div>
+        
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">Սակագներ</a>

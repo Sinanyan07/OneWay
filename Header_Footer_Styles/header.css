@@ -1,6 +1,7 @@
 .navbar {
     padding-top: 0;
     padding-bottom: 0;
+
 }
 
 .contMainTop {
@@ -70,10 +71,11 @@
 }
 
 
-button{
+button {
     padding-block: 0;
     padding-inline: 0;
 }
+
 .regBut {
     max-width: 126px;
     width: 100%;
@@ -105,6 +107,7 @@ button{
     height: 90px;
     display: flex;
     justify-content: center;
+
 }
 
 .contBotInn {
@@ -143,13 +146,56 @@ button{
     border: 1px solid #FFFFFF33
 }
 
-.liMen button {
+#serv {
     border: none;
     background-color: transparent;
     display: flex;
     gap: 10px;
     align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: center;
+    color: #FBFBFB;
+    position: relative;
 }
+
+.services {
+    position: absolute;
+    max-width: 347px;
+    width: 100%;
+    min-height: 106px;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #268E83;
+    margin-block: 16px;
+    z-index: 1;
+    margin-left: -30px;
+    margin-top: 33px;
+    display: none;
+}
+
+.services ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: flex-start;
+    padding-left: 26px;
+    margin-top: 16px;
+}
+
+.services ul li {
+    min-height: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.services ul li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    color: #FBFBFB;
+}
+
 
 .eventRig {
     max-width: 203px;
@@ -274,6 +320,7 @@ button{
     min-height: 440px;
     border-radius: 8px;
     margin: unset;
+    z-index: 1;
 }
 
 
@@ -430,6 +477,14 @@ input::-webkit-inner-spin-button {
     .langDv {
         top: 135px;
     }
+
+    .services {
+        margin-top: 29px;
+    }
+
+    .servUl {
+        margin-left: 0px !important;
+    }
 }
 
 
@@ -541,12 +596,17 @@ input::-webkit-inner-spin-button {
 
     .liMen button {
         padding: unset;
-
     }
 
 
     .forX {
         display: none;
+    }
+
+    #serv {
+        max-width: 748px;
+        width: 100%;
+        justify-content: space-between;
     }
 
     /* boot nav butt menu st */
